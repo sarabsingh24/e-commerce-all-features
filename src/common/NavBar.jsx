@@ -1,7 +1,10 @@
-import React from 'react'
+import React, { useState } from 'react';
 import { Fragment } from 'react';
 import { Disclosure, Menu, Transition } from '@headlessui/react';
 import { Bars3Icon, XMarkIcon,ShoppingCartIcon } from '@heroicons/react/24/outline';
+
+//component
+import Cart from 'features/cart/component/Cart'
 
 
 const user = {
@@ -28,6 +31,11 @@ function classNames(...classes) {
 }
 //===========================================
 const NavBar = ({ children }) => {
+  const [cartOpen, setCartOpen] = useState(false);
+const cartHandeler = ()=>{
+  setCartOpen(!cartOpen);
+}
+
   return (
     <React.Fragment>
       <div className="min-h-full">
@@ -69,6 +77,7 @@ const NavBar = ({ children }) => {
                       <button
                         type="button"
                         className="relative rounded-full bg-gray-800 p-1 text-gray-400 hover:text-white focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-800"
+                        onClick={cartHandeler}
                       >
                         <span className="absolute -inset-1.5" />
                         <span className="sr-only">View notifications</span>
@@ -185,6 +194,7 @@ const NavBar = ({ children }) => {
                     <button
                       type="button"
                       className="relative ml-auto flex-shrink-0 rounded-full bg-gray-800 p-1 text-gray-400 hover:text-white focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-800"
+                      onClick={cartHandeler}
                     >
                       <span className="absolute -inset-1.5" />
                       <span className="sr-only">View notifications</span>
@@ -229,6 +239,7 @@ const NavBar = ({ children }) => {
           </div>
         </main>
       </div>
+      <Cart isCart={cartOpen} setIsCart={setCartOpen} />
     </React.Fragment>
   );
 };

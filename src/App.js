@@ -5,19 +5,24 @@ import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import Home from 'pages/Home';
 import LoginPage from 'pages/LoginPage';
 import SignupPage from 'pages/SignupPage';
+import CartPage from 'pages/CartPage'
 
 const router = createBrowserRouter([
+  {
+    path: '/signup',
+    element: <SignupPage />,
+  },
+  {
+    path: '/login',
+    element: <LoginPage />,
+  },
   {
     path: '/',
     element: <Home />,
   },
   {
-    path: '/login',
-    element: <LoginPage /> ,
-  },
-  {
-    path: '/signup',
-    element: <SignupPage />,
+    path: '/cart',
+    element: <CartPage />,
   },
 ]);
 
