@@ -4,7 +4,7 @@ import ProductList from 'features/product/component/ProductList';
 const Home = () => {
   return (
     <div>
-      <NavBar>
+      <NavBar pageTitle="Dashboard">
         <ProductList />
       </NavBar>
     </div>
