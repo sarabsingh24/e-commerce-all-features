@@ -1,11 +1,11 @@
 import React from 'react';
 import NavBar from 'common/NavBar';
-import ProductList from 'features/product/component/ProductList';
+import Product from 'features/product/component/Product';
 const Home = () => {
   return (
     <div>
       <NavBar pageTitle="Dashboard">
-        <ProductList />
+        <Product />
       </NavBar>
     </div>
   );

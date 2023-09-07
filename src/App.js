@@ -1,11 +1,15 @@
 
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
+import store from 'app/store'
+import { Provider } from 'react-redux';
+
 
 // component pages
 import Home from 'pages/Home';
 import LoginPage from 'pages/LoginPage';
 import SignupPage from 'pages/SignupPage';
 import CheckoutPage from 'pages/CheckoutPage'
+import ProductDetailPage from 'pages/ProductDetailPage'
 
 const router = createBrowserRouter([
   {
@@ -21,6 +25,10 @@ const router = createBrowserRouter([
     element: <Home />,
   },
   {
+    path: '/product-detail',
+    element: <ProductDetailPage />,
+  },
+  {
     path: '/checkout',
     element: <CheckoutPage />,
   },
@@ -28,9 +36,9 @@ const router = createBrowserRouter([
 
 function App() {
   return (
-    <div>
+    <Provider store={store}>
       <RouterProvider router={router} />
-    </div>
+    </Provider>
   );
 }
 
