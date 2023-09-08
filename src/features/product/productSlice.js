@@ -29,6 +29,27 @@ export const getProductsAsync = createAsyncThunk(
   }
 );
 
+//fetch products using filter
+export const getProductsByFiltereAsync = createAsyncThunk(
+  'product/getFilteredProducts',
+  async (filterObj, thunkAPI) => {
+    try {
+      //   const token = thunkAPI.getState().auth.user.token;
+
+      return await productAPI.getFilteredProducts(filterObj);
+    } catch (error) {
+      const message =
+        (error.response &&
+          error.response.data &&
+          error.response.data.message) ||
+        error.message ||
+        error.toString();
+
+      return thunkAPI.rejectWithValue(message);
+    }
+  }
+);
+
 export const productSlice = createSlice({
   name: 'product',
   initialState,
@@ -46,16 +67,30 @@ export const productSlice = createSlice({
         state.IsLoading = true;
       })
       .addCase(getProductsAsync.fulfilled, (state, action) => {
-        state.IsLoading = false;
+        state.IsLoading = true;
         state.products = action.payload;
         state.IsSuccess = true;
       })
       .addCase(getProductsAsync.rejected, (state, action) => {
-        
-         state.IsLoading = false;
-         state.IsError = true;
-         state.IsSuccess = false;
-         state.products = [];
+        state.IsLoading = false;
+        state.IsError = true;
+        state.IsSuccess = false;
+        state.message = action.payload;
+      })
+
+      //fetch by filtered data
+      .addCase(getProductsByFiltereAsync.pending, (state) => {
+        state.IsLoading = true;
+      })
+      .addCase(getProductsByFiltereAsync.fulfilled, (state, action) => {
+        state.IsLoading = false;
+        state.products = action.payload;
+        state.IsSuccess = true;
+      })
+      .addCase(getProductsByFiltereAsync.rejected, (state, action) => {
+        state.IsLoading = false;
+        state.IsError = true;
+        state.IsSuccess = false;
         state.message = action.payload;
       });
   },
