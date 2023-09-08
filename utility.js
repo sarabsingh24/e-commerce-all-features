@@ -18,11 +18,26 @@
       category: 'smartphones',
       imageSrc: 'https://i.dummyjson.com/data/products/1/thumbnail.jpg',
       images: [
-        'https://i.dummyjson.com/data/products/1/1.jpg',
-        'https://i.dummyjson.com/data/products/1/2.jpg',
-        'https://i.dummyjson.com/data/products/1/3.jpg',
-        'https://i.dummyjson.com/data/products/1/4.jpg',
-        'https://i.dummyjson.com/data/products/1/thumbnail.jpg',
+        {
+          src: 'https://i.dummyjson.com/data/products/1/1.jpg',
+          alt: 'iPhone 9',
+        },
+        {
+          src: 'https://i.dummyjson.com/data/products/1/2.jpg',
+          alt: 'iPhone 9',
+        },
+        {
+          src: 'https://i.dummyjson.com/data/products/1/3.jpg',
+          alt: 'iPhone 9',
+        },
+        {
+          src: 'https://i.dummyjson.com/data/products/1/4.jpg',
+          alt: 'iPhone 9',
+        },
+        {
+          src: 'https://i.dummyjson.com/data/products/1/thumbnail.jpg',
+          alt: 'iPhone 9',
+        },
       ],
       color: 'Blue',
     },
@@ -39,10 +54,22 @@
       category: 'smartphones',
       imageSrc: 'https://i.dummyjson.com/data/products/2/thumbnail.jpg',
       images: [
-        'https://i.dummyjson.com/data/products/2/1.jpg',
-        'https://i.dummyjson.com/data/products/2/2.jpg',
-        'https://i.dummyjson.com/data/products/2/3.jpg',
-        'https://i.dummyjson.com/data/products/2/thumbnail.jpg',
+        {
+          src: 'https://i.dummyjson.com/data/products/2/1.jpg',
+          alt: 'iPhone X',
+        },
+        {
+          src: 'https://i.dummyjson.com/data/products/2/2.jpg',
+          alt: 'iPhone X',
+        },
+        {
+          src: 'https://i.dummyjson.com/data/products/2/3.jpg',
+          alt: 'iPhone X',
+        },
+        {
+          src: 'https://i.dummyjson.com/data/products/2/thumbnail.jpg',
+          alt: 'iPhone X',
+        },
       ],
       color: 'Blue',
     },
@@ -50,7 +77,7 @@
       id: 3,
       name: 'Samsung Universe 9',
       description:
-        "Samsung\\'s new variant which goes beyond Galaxy to the Universe",
+        "Samsung\\\\'s new variant which goes beyond Galaxy to the Universe",
       price: 1249,
       discountPercentage: 15.46,
       rating: 4.09,
@@ -58,7 +85,12 @@
       brand: 'Samsung',
       category: 'smartphones',
       imageSrc: 'https://i.dummyjson.com/data/products/3/thumbnail.jpg',
-      images: ['https://i.dummyjson.com/data/products/3/1.jpg'],
+      images: [
+        {
+          src: 'https://i.dummyjson.com/data/products/3/1.jpg',
+          alt: 'Samsung Universe 9',
+        },
+      ],
       color: 'Blue',
     },
     {
@@ -73,11 +105,26 @@
       category: 'smartphones',
       imageSrc: 'https://i.dummyjson.com/data/products/4/thumbnail.jpg',
       images: [
-        'https://i.dummyjson.com/data/products/4/1.jpg',
-        'https://i.dummyjson.com/data/products/4/2.jpg',
-        'https://i.dummyjson.com/data/products/4/3.jpg',
-        'https://i.dummyjson.com/data/products/4/4.jpg',
-        'https://i.dummyjson.com/data/products/4/thumbnail.jpg',
+        {
+          src: 'https://i.dummyjson.com/data/products/4/1.jpg',
+          alt: 'OPPOF19',
+        },
+        {
+          src: 'https://i.dummyjson.com/data/products/4/2.jpg',
+          alt: 'OPPOF19',
+        },
+        {
+          src: 'https://i.dummyjson.com/data/products/4/3.jpg',
+          alt: 'OPPOF19',
+        },
+        {
+          src: 'https://i.dummyjson.com/data/products/4/4.jpg',
+          alt: 'OPPOF19',
+        },
+        {
+          src: 'https://i.dummyjson.com/data/products/4/thumbnail.jpg',
+          alt: 'OPPOF19',
+        },
       ],
       color: 'Blue',
     },
@@ -94,9 +141,18 @@
       category: 'smartphones',
       imageSrc: 'https://i.dummyjson.com/data/products/5/thumbnail.jpg',
       images: [
-        'https://i.dummyjson.com/data/products/5/1.jpg',
-        'https://i.dummyjson.com/data/products/5/2.jpg',
-        'https://i.dummyjson.com/data/products/5/3.jpg',
+        {
+          src: 'https://i.dummyjson.com/data/products/5/1.jpg',
+          alt: 'Huawei P30',
+        },
+        {
+          src: 'https://i.dummyjson.com/data/products/5/2.jpg',
+          alt: 'Huawei P30',
+        },
+        {
+          src: 'https://i.dummyjson.com/data/products/5/3.jpg',
+          alt: 'Huawei P30',
+        },
       ],
       color: 'Blue',
     },
@@ -113,10 +169,22 @@
       category: 'laptops',
       imageSrc: 'https://i.dummyjson.com/data/products/6/thumbnail.png',
       images: [
-        'https://i.dummyjson.com/data/products/6/1.png',
-        'https://i.dummyjson.com/data/products/6/2.jpg',
-        'https://i.dummyjson.com/data/products/6/3.png',
-        'https://i.dummyjson.com/data/products/6/4.jpg',
+        {
+          src: 'https://i.dummyjson.com/data/products/6/1.png',
+          alt: 'MacBook Pro',
+        },
+        {
+          src: 'https://i.dummyjson.com/data/products/6/2.jpg',
+          alt: 'MacBook Pro',
+        },
+        {
+          src: 'https://i.dummyjson.com/data/products/6/3.png',
+          alt: 'MacBook Pro',
+        },
+        {
+          src: 'https://i.dummyjson.com/data/products/6/4.jpg',
+          alt: 'MacBook Pro',
+        },
       ],
       color: 'Blue',
     },
@@ -133,10 +201,22 @@
       category: 'laptops',
       imageSrc: 'https://i.dummyjson.com/data/products/7/thumbnail.jpg',
       images: [
-        'https://i.dummyjson.com/data/products/7/1.jpg',
-        'https://i.dummyjson.com/data/products/7/2.jpg',
-        'https://i.dummyjson.com/data/products/7/3.jpg',
-        'https://i.dummyjson.com/data/products/7/thumbnail.jpg',
+        {
+          src: 'https://i.dummyjson.com/data/products/7/1.jpg',
+          alt: 'Samsung Galaxy Book',
+        },
+        {
+          src: 'https://i.dummyjson.com/data/products/7/2.jpg',
+          alt: 'Samsung Galaxy Book',
+        },
+        {
+          src: 'https://i.dummyjson.com/data/products/7/3.jpg',
+          alt: 'Samsung Galaxy Book',
+        },
+        {
+          src: 'https://i.dummyjson.com/data/products/7/thumbnail.jpg',
+          alt: 'Samsung Galaxy Book',
+        },
       ],
       color: 'Blue',
     },
@@ -153,11 +233,26 @@
       category: 'laptops',
       imageSrc: 'https://i.dummyjson.com/data/products/8/thumbnail.jpg',
       images: [
-        'https://i.dummyjson.com/data/products/8/1.jpg',
-        'https://i.dummyjson.com/data/products/8/2.jpg',
-        'https://i.dummyjson.com/data/products/8/3.jpg',
-        'https://i.dummyjson.com/data/products/8/4.jpg',
-        'https://i.dummyjson.com/data/products/8/thumbnail.jpg',
+        {
+          src: 'https://i.dummyjson.com/data/products/8/1.jpg',
+          alt: 'Microsoft Surface Laptop 4',
+        },
+        {
+          src: 'https://i.dummyjson.com/data/products/8/2.jpg',
+          alt: 'Microsoft Surface Laptop 4',
+        },
+        {
+          src: 'https://i.dummyjson.com/data/products/8/3.jpg',
+          alt: 'Microsoft Surface Laptop 4',
+        },
+        {
+          src: 'https://i.dummyjson.com/data/products/8/4.jpg',
+          alt: 'Microsoft Surface Laptop 4',
+        },
+        {
+          src: 'https://i.dummyjson.com/data/products/8/thumbnail.jpg',
+          alt: 'Microsoft Surface Laptop 4',
+        },
       ],
       color: 'Blue',
     },
@@ -174,11 +269,26 @@
       category: 'laptops',
       imageSrc: 'https://i.dummyjson.com/data/products/9/thumbnail.jpg',
       images: [
-        'https://i.dummyjson.com/data/products/9/1.jpg',
-        'https://i.dummyjson.com/data/products/9/2.png',
-        'https://i.dummyjson.com/data/products/9/3.png',
-        'https://i.dummyjson.com/data/products/9/4.jpg',
-        'https://i.dummyjson.com/data/products/9/thumbnail.jpg',
+        {
+          src: 'https://i.dummyjson.com/data/products/9/1.jpg',
+          alt: 'Infinix INBOOK',
+        },
+        {
+          src: 'https://i.dummyjson.com/data/products/9/2.png',
+          alt: 'Infinix INBOOK',
+        },
+        {
+          src: 'https://i.dummyjson.com/data/products/9/3.png',
+          alt: 'Infinix INBOOK',
+        },
+        {
+          src: 'https://i.dummyjson.com/data/products/9/4.jpg',
+          alt: 'Infinix INBOOK',
+        },
+        {
+          src: 'https://i.dummyjson.com/data/products/9/thumbnail.jpg',
+          alt: 'Infinix INBOOK',
+        },
       ],
       color: 'Blue',
     },
@@ -195,10 +305,22 @@
       category: 'laptops',
       imageSrc: 'https://i.dummyjson.com/data/products/10/thumbnail.jpeg',
       images: [
-        'https://i.dummyjson.com/data/products/10/1.jpg',
-        'https://i.dummyjson.com/data/products/10/2.jpg',
-        'https://i.dummyjson.com/data/products/10/3.jpg',
-        'https://i.dummyjson.com/data/products/10/thumbnail.jpeg',
+        {
+          src: 'https://i.dummyjson.com/data/products/10/1.jpg',
+          alt: 'HP Pavilion 15-DK1056WM',
+        },
+        {
+          src: 'https://i.dummyjson.com/data/products/10/2.jpg',
+          alt: 'HP Pavilion 15-DK1056WM',
+        },
+        {
+          src: 'https://i.dummyjson.com/data/products/10/3.jpg',
+          alt: 'HP Pavilion 15-DK1056WM',
+        },
+        {
+          src: 'https://i.dummyjson.com/data/products/10/thumbnail.jpeg',
+          alt: 'HP Pavilion 15-DK1056WM',
+        },
       ],
       color: 'Blue',
     },
@@ -215,10 +337,22 @@
       category: 'fragrances',
       imageSrc: 'https://i.dummyjson.com/data/products/11/thumbnail.jpg',
       images: [
-        'https://i.dummyjson.com/data/products/11/1.jpg',
-        'https://i.dummyjson.com/data/products/11/2.jpg',
-        'https://i.dummyjson.com/data/products/11/3.jpg',
-        'https://i.dummyjson.com/data/products/11/thumbnail.jpg',
+        {
+          src: 'https://i.dummyjson.com/data/products/11/1.jpg',
+          alt: 'perfume Oil',
+        },
+        {
+          src: 'https://i.dummyjson.com/data/products/11/2.jpg',
+          alt: 'perfume Oil',
+        },
+        {
+          src: 'https://i.dummyjson.com/data/products/11/3.jpg',
+          alt: 'perfume Oil',
+        },
+        {
+          src: 'https://i.dummyjson.com/data/products/11/thumbnail.jpg',
+          alt: 'perfume Oil',
+        },
       ],
       color: 'Blue',
     },
@@ -234,11 +368,26 @@
       category: 'fragrances',
       imageSrc: 'https://i.dummyjson.com/data/products/12/thumbnail.jpg',
       images: [
-        'https://i.dummyjson.com/data/products/12/1.jpg',
-        'https://i.dummyjson.com/data/products/12/2.jpg',
-        'https://i.dummyjson.com/data/products/12/3.png',
-        'https://i.dummyjson.com/data/products/12/4.jpg',
-        'https://i.dummyjson.com/data/products/12/thumbnail.jpg',
+        {
+          src: 'https://i.dummyjson.com/data/products/12/1.jpg',
+          alt: 'Brown Perfume',
+        },
+        {
+          src: 'https://i.dummyjson.com/data/products/12/2.jpg',
+          alt: 'Brown Perfume',
+        },
+        {
+          src: 'https://i.dummyjson.com/data/products/12/3.png',
+          alt: 'Brown Perfume',
+        },
+        {
+          src: 'https://i.dummyjson.com/data/products/12/4.jpg',
+          alt: 'Brown Perfume',
+        },
+        {
+          src: 'https://i.dummyjson.com/data/products/12/thumbnail.jpg',
+          alt: 'Brown Perfume',
+        },
       ],
       color: 'Blue',
     },
@@ -255,11 +404,26 @@
       category: 'fragrances',
       imageSrc: 'https://i.dummyjson.com/data/products/13/thumbnail.webp',
       images: [
-        'https://i.dummyjson.com/data/products/13/1.jpg',
-        'https://i.dummyjson.com/data/products/13/2.png',
-        'https://i.dummyjson.com/data/products/13/3.jpg',
-        'https://i.dummyjson.com/data/products/13/4.jpg',
-        'https://i.dummyjson.com/data/products/13/thumbnail.webp',
+        {
+          src: 'https://i.dummyjson.com/data/products/13/1.jpg',
+          alt: 'Fog Scent Xpressio Perfume',
+        },
+        {
+          src: 'https://i.dummyjson.com/data/products/13/2.png',
+          alt: 'Fog Scent Xpressio Perfume',
+        },
+        {
+          src: 'https://i.dummyjson.com/data/products/13/3.jpg',
+          alt: 'Fog Scent Xpressio Perfume',
+        },
+        {
+          src: 'https://i.dummyjson.com/data/products/13/4.jpg',
+          alt: 'Fog Scent Xpressio Perfume',
+        },
+        {
+          src: 'https://i.dummyjson.com/data/products/13/thumbnail.webp',
+          alt: 'Fog Scent Xpressio Perfume',
+        },
       ],
       color: 'Blue',
     },
@@ -276,10 +440,22 @@
       category: 'fragrances',
       imageSrc: 'https://i.dummyjson.com/data/products/14/thumbnail.jpg',
       images: [
-        'https://i.dummyjson.com/data/products/14/1.jpg',
-        'https://i.dummyjson.com/data/products/14/2.jpg',
-        'https://i.dummyjson.com/data/products/14/3.jpg',
-        'https://i.dummyjson.com/data/products/14/thumbnail.jpg',
+        {
+          src: 'https://i.dummyjson.com/data/products/14/1.jpg',
+          alt: 'Non-Alcoholic Concentrated Perfume Oil',
+        },
+        {
+          src: 'https://i.dummyjson.com/data/products/14/2.jpg',
+          alt: 'Non-Alcoholic Concentrated Perfume Oil',
+        },
+        {
+          src: 'https://i.dummyjson.com/data/products/14/3.jpg',
+          alt: 'Non-Alcoholic Concentrated Perfume Oil',
+        },
+        {
+          src: 'https://i.dummyjson.com/data/products/14/thumbnail.jpg',
+          alt: 'Non-Alcoholic Concentrated Perfume Oil',
+        },
       ],
       color: 'Blue',
     },
@@ -296,11 +472,26 @@
       category: 'fragrances',
       imageSrc: 'https://i.dummyjson.com/data/products/15/thumbnail.jpg',
       images: [
-        'https://i.dummyjson.com/data/products/15/1.jpg',
-        'https://i.dummyjson.com/data/products/15/2.jpg',
-        'https://i.dummyjson.com/data/products/15/3.jpg',
-        'https://i.dummyjson.com/data/products/15/4.jpg',
-        'https://i.dummyjson.com/data/products/15/thumbnail.jpg',
+        {
+          src: 'https://i.dummyjson.com/data/products/15/1.jpg',
+          alt: 'Eau De Perfume Spray',
+        },
+        {
+          src: 'https://i.dummyjson.com/data/products/15/2.jpg',
+          alt: 'Eau De Perfume Spray',
+        },
+        {
+          src: 'https://i.dummyjson.com/data/products/15/3.jpg',
+          alt: 'Eau De Perfume Spray',
+        },
+        {
+          src: 'https://i.dummyjson.com/data/products/15/4.jpg',
+          alt: 'Eau De Perfume Spray',
+        },
+        {
+          src: 'https://i.dummyjson.com/data/products/15/thumbnail.jpg',
+          alt: 'Eau De Perfume Spray',
+        },
       ],
       color: 'Blue',
     },
@@ -308,20 +499,35 @@
       id: 16,
       name: 'Hyaluronic Acid Serum',
       description:
-        "L\\'OrÃ©al Paris introduces Hyaluron Expert Replumping Serum formulated with 1.5% Hyaluronic Acid",
+        "L\\\\'OrÃ©al Paris introduces Hyaluron Expert Replumping Serum formulated with 1.5% Hyaluronic Acid",
       price: 19,
       discountPercentage: 13.31,
       rating: 4.83,
       stock: 110,
-      brand: "L\\'Oreal Paris",
+      brand: "L\\\\'Oreal Paris",
       category: 'skincare',
       imageSrc: 'https://i.dummyjson.com/data/products/16/thumbnail.jpg',
       images: [
-        'https://i.dummyjson.com/data/products/16/1.png',
-        'https://i.dummyjson.com/data/products/16/2.webp',
-        'https://i.dummyjson.com/data/products/16/3.jpg',
-        'https://i.dummyjson.com/data/products/16/4.jpg',
-        'https://i.dummyjson.com/data/products/16/thumbnail.jpg',
+        {
+          src: 'https://i.dummyjson.com/data/products/16/1.png',
+          alt: 'Hyaluronic Acid Serum',
+        },
+        {
+          src: 'https://i.dummyjson.com/data/products/16/2.webp',
+          alt: 'Hyaluronic Acid Serum',
+        },
+        {
+          src: 'https://i.dummyjson.com/data/products/16/3.jpg',
+          alt: 'Hyaluronic Acid Serum',
+        },
+        {
+          src: 'https://i.dummyjson.com/data/products/16/4.jpg',
+          alt: 'Hyaluronic Acid Serum',
+        },
+        {
+          src: 'https://i.dummyjson.com/data/products/16/thumbnail.jpg',
+          alt: 'Hyaluronic Acid Serum',
+        },
       ],
       color: 'Blue',
     },
@@ -338,10 +544,22 @@
       category: 'skincare',
       imageSrc: 'https://i.dummyjson.com/data/products/17/thumbnail.jpg',
       images: [
-        'https://i.dummyjson.com/data/products/17/1.jpg',
-        'https://i.dummyjson.com/data/products/17/2.jpg',
-        'https://i.dummyjson.com/data/products/17/3.jpg',
-        'https://i.dummyjson.com/data/products/17/thumbnail.jpg',
+        {
+          src: 'https://i.dummyjson.com/data/products/17/1.jpg',
+          alt: 'Tree Oil 30ml',
+        },
+        {
+          src: 'https://i.dummyjson.com/data/products/17/2.jpg',
+          alt: 'Tree Oil 30ml',
+        },
+        {
+          src: 'https://i.dummyjson.com/data/products/17/3.jpg',
+          alt: 'Tree Oil 30ml',
+        },
+        {
+          src: 'https://i.dummyjson.com/data/products/17/thumbnail.jpg',
+          alt: 'Tree Oil 30ml',
+        },
       ],
       color: 'Blue',
     },
@@ -358,11 +576,26 @@
       category: 'skincare',
       imageSrc: 'https://i.dummyjson.com/data/products/18/thumbnail.jpg',
       images: [
-        'https://i.dummyjson.com/data/products/18/1.jpg',
-        'https://i.dummyjson.com/data/products/18/2.jpg',
-        'https://i.dummyjson.com/data/products/18/3.jpg',
-        'https://i.dummyjson.com/data/products/18/4.jpg',
-        'https://i.dummyjson.com/data/products/18/thumbnail.jpg',
+        {
+          src: 'https://i.dummyjson.com/data/products/18/1.jpg',
+          alt: 'Oil Free Moisturizer 100ml',
+        },
+        {
+          src: 'https://i.dummyjson.com/data/products/18/2.jpg',
+          alt: 'Oil Free Moisturizer 100ml',
+        },
+        {
+          src: 'https://i.dummyjson.com/data/products/18/3.jpg',
+          alt: 'Oil Free Moisturizer 100ml',
+        },
+        {
+          src: 'https://i.dummyjson.com/data/products/18/4.jpg',
+          alt: 'Oil Free Moisturizer 100ml',
+        },
+        {
+          src: 'https://i.dummyjson.com/data/products/18/thumbnail.jpg',
+          alt: 'Oil Free Moisturizer 100ml',
+        },
       ],
       color: 'Blue',
     },
@@ -379,10 +612,22 @@
       category: 'skincare',
       imageSrc: 'https://i.dummyjson.com/data/products/19/thumbnail.jpg',
       images: [
-        'https://i.dummyjson.com/data/products/19/1.jpg',
-        'https://i.dummyjson.com/data/products/19/2.jpg',
-        'https://i.dummyjson.com/data/products/19/3.png',
-        'https://i.dummyjson.com/data/products/19/thumbnail.jpg',
+        {
+          src: 'https://i.dummyjson.com/data/products/19/1.jpg',
+          alt: 'Skin Beauty Serum.',
+        },
+        {
+          src: 'https://i.dummyjson.com/data/products/19/2.jpg',
+          alt: 'Skin Beauty Serum.',
+        },
+        {
+          src: 'https://i.dummyjson.com/data/products/19/3.png',
+          alt: 'Skin Beauty Serum.',
+        },
+        {
+          src: 'https://i.dummyjson.com/data/products/19/thumbnail.jpg',
+          alt: 'Skin Beauty Serum.',
+        },
       ],
       color: 'Blue',
     },
@@ -390,7 +635,7 @@
       id: 20,
       name: 'Freckle Treatment Cream- 15gm',
       description:
-        "Fair & Clear is Pakistan\\'s only pure Freckle cream which helpsfade Freckles, Darkspots and pigments. Mercury level is 0%, so there are no side effects.",
+        "Fair & Clear is Pakistan\\\\'s only pure Freckle cream which helpsfade Freckles, Darkspots and pigments. Mercury level is 0%, so there are no side effects.",
       price: 70,
       discountPercentage: 16.99,
       rating: 4.06,
@@ -399,11 +644,26 @@
       category: 'skincare',
       imageSrc: 'https://i.dummyjson.com/data/products/20/thumbnail.jpg',
       images: [
-        'https://i.dummyjson.com/data/products/20/1.jpg',
-        'https://i.dummyjson.com/data/products/20/2.jpg',
-        'https://i.dummyjson.com/data/products/20/3.jpg',
-        'https://i.dummyjson.com/data/products/20/4.jpg',
-        'https://i.dummyjson.com/data/products/20/thumbnail.jpg',
+        {
+          src: 'https://i.dummyjson.com/data/products/20/1.jpg',
+          alt: 'Freckle Treatment Cream- 15gm',
+        },
+        {
+          src: 'https://i.dummyjson.com/data/products/20/2.jpg',
+          alt: 'Freckle Treatment Cream- 15gm',
+        },
+        {
+          src: 'https://i.dummyjson.com/data/products/20/3.jpg',
+          alt: 'Freckle Treatment Cream- 15gm',
+        },
+        {
+          src: 'https://i.dummyjson.com/data/products/20/4.jpg',
+          alt: 'Freckle Treatment Cream- 15gm',
+        },
+        {
+          src: 'https://i.dummyjson.com/data/products/20/thumbnail.jpg',
+          alt: 'Freckle Treatment Cream- 15gm',
+        },
       ],
       color: 'Blue',
     },
@@ -419,9 +679,18 @@
       category: 'groceries',
       imageSrc: 'https://i.dummyjson.com/data/products/21/thumbnail.png',
       images: [
-        'https://i.dummyjson.com/data/products/21/1.png',
-        'https://i.dummyjson.com/data/products/21/2.jpg',
-        'https://i.dummyjson.com/data/products/21/3.jpg',
+        {
+          src: 'https://i.dummyjson.com/data/products/21/1.png',
+          alt: '- Daal Masoor 500 grams',
+        },
+        {
+          src: 'https://i.dummyjson.com/data/products/21/2.jpg',
+          alt: '- Daal Masoor 500 grams',
+        },
+        {
+          src: 'https://i.dummyjson.com/data/products/21/3.jpg',
+          alt: '- Daal Masoor 500 grams',
+        },
       ],
       color: 'Blue',
     },
@@ -437,9 +706,18 @@
       category: 'groceries',
       imageSrc: 'https://i.dummyjson.com/data/products/22/thumbnail.jpg',
       images: [
-        'https://i.dummyjson.com/data/products/22/1.jpg',
-        'https://i.dummyjson.com/data/products/22/2.jpg',
-        'https://i.dummyjson.com/data/products/22/3.jpg',
+        {
+          src: 'https://i.dummyjson.com/data/products/22/1.jpg',
+          alt: 'Elbow Macaroni - 400 gm',
+        },
+        {
+          src: 'https://i.dummyjson.com/data/products/22/2.jpg',
+          alt: 'Elbow Macaroni - 400 gm',
+        },
+        {
+          src: 'https://i.dummyjson.com/data/products/22/3.jpg',
+          alt: 'Elbow Macaroni - 400 gm',
+        },
       ],
       color: 'Blue',
     },
@@ -456,11 +734,26 @@
       category: 'groceries',
       imageSrc: 'https://i.dummyjson.com/data/products/23/thumbnail.jpg',
       images: [
-        'https://i.dummyjson.com/data/products/23/1.jpg',
-        'https://i.dummyjson.com/data/products/23/2.jpg',
-        'https://i.dummyjson.com/data/products/23/3.jpg',
-        'https://i.dummyjson.com/data/products/23/4.jpg',
-        'https://i.dummyjson.com/data/products/23/thumbnail.jpg',
+        {
+          src: 'https://i.dummyjson.com/data/products/23/1.jpg',
+          alt: 'Orange Essence Food Flavou',
+        },
+        {
+          src: 'https://i.dummyjson.com/data/products/23/2.jpg',
+          alt: 'Orange Essence Food Flavou',
+        },
+        {
+          src: 'https://i.dummyjson.com/data/products/23/3.jpg',
+          alt: 'Orange Essence Food Flavou',
+        },
+        {
+          src: 'https://i.dummyjson.com/data/products/23/4.jpg',
+          alt: 'Orange Essence Food Flavou',
+        },
+        {
+          src: 'https://i.dummyjson.com/data/products/23/thumbnail.jpg',
+          alt: 'Orange Essence Food Flavou',
+        },
       ],
       color: 'Blue',
     },
@@ -477,11 +770,26 @@
       category: 'groceries',
       imageSrc: 'https://i.dummyjson.com/data/products/24/thumbnail.jpg',
       images: [
-        'https://i.dummyjson.com/data/products/24/1.jpg',
-        'https://i.dummyjson.com/data/products/24/2.jpg',
-        'https://i.dummyjson.com/data/products/24/3.jpg',
-        'https://i.dummyjson.com/data/products/24/4.jpg',
-        'https://i.dummyjson.com/data/products/24/thumbnail.jpg',
+        {
+          src: 'https://i.dummyjson.com/data/products/24/1.jpg',
+          alt: 'cereals muesli fruit nuts',
+        },
+        {
+          src: 'https://i.dummyjson.com/data/products/24/2.jpg',
+          alt: 'cereals muesli fruit nuts',
+        },
+        {
+          src: 'https://i.dummyjson.com/data/products/24/3.jpg',
+          alt: 'cereals muesli fruit nuts',
+        },
+        {
+          src: 'https://i.dummyjson.com/data/products/24/4.jpg',
+          alt: 'cereals muesli fruit nuts',
+        },
+        {
+          src: 'https://i.dummyjson.com/data/products/24/thumbnail.jpg',
+          alt: 'cereals muesli fruit nuts',
+        },
       ],
       color: 'Blue',
     },
@@ -498,11 +806,26 @@
       category: 'groceries',
       imageSrc: 'https://i.dummyjson.com/data/products/25/thumbnail.jpg',
       images: [
-        'https://i.dummyjson.com/data/products/25/1.png',
-        'https://i.dummyjson.com/data/products/25/2.jpg',
-        'https://i.dummyjson.com/data/products/25/3.png',
-        'https://i.dummyjson.com/data/products/25/4.jpg',
-        'https://i.dummyjson.com/data/products/25/thumbnail.jpg',
+        {
+          src: 'https://i.dummyjson.com/data/products/25/1.png',
+          alt: 'Gulab Powder 50 Gram',
+        },
+        {
+          src: 'https://i.dummyjson.com/data/products/25/2.jpg',
+          alt: 'Gulab Powder 50 Gram',
+        },
+        {
+          src: 'https://i.dummyjson.com/data/products/25/3.png',
+          alt: 'Gulab Powder 50 Gram',
+        },
+        {
+          src: 'https://i.dummyjson.com/data/products/25/4.jpg',
+          alt: 'Gulab Powder 50 Gram',
+        },
+        {
+          src: 'https://i.dummyjson.com/data/products/25/thumbnail.jpg',
+          alt: 'Gulab Powder 50 Gram',
+        },
       ],
       color: 'Blue',
     },
@@ -519,12 +842,30 @@
       category: 'home-decoration',
       imageSrc: 'https://i.dummyjson.com/data/products/26/thumbnail.jpg',
       images: [
-        'https://i.dummyjson.com/data/products/26/1.jpg',
-        'https://i.dummyjson.com/data/products/26/2.jpg',
-        'https://i.dummyjson.com/data/products/26/3.jpg',
-        'https://i.dummyjson.com/data/products/26/4.jpg',
-        'https://i.dummyjson.com/data/products/26/5.jpg',
-        'https://i.dummyjson.com/data/products/26/thumbnail.jpg',
+        {
+          src: 'https://i.dummyjson.com/data/products/26/1.jpg',
+          alt: 'Plant Hanger For Home',
+        },
+        {
+          src: 'https://i.dummyjson.com/data/products/26/2.jpg',
+          alt: 'Plant Hanger For Home',
+        },
+        {
+          src: 'https://i.dummyjson.com/data/products/26/3.jpg',
+          alt: 'Plant Hanger For Home',
+        },
+        {
+          src: 'https://i.dummyjson.com/data/products/26/4.jpg',
+          alt: 'Plant Hanger For Home',
+        },
+        {
+          src: 'https://i.dummyjson.com/data/products/26/5.jpg',
+          alt: 'Plant Hanger For Home',
+        },
+        {
+          src: 'https://i.dummyjson.com/data/products/26/thumbnail.jpg',
+          alt: 'Plant Hanger For Home',
+        },
       ],
       color: 'Blue',
     },
@@ -541,11 +882,26 @@
       category: 'home-decoration',
       imageSrc: 'https://i.dummyjson.com/data/products/27/thumbnail.webp',
       images: [
-        'https://i.dummyjson.com/data/products/27/1.jpg',
-        'https://i.dummyjson.com/data/products/27/2.jpg',
-        'https://i.dummyjson.com/data/products/27/3.jpg',
-        'https://i.dummyjson.com/data/products/27/4.jpg',
-        'https://i.dummyjson.com/data/products/27/thumbnail.webp',
+        {
+          src: 'https://i.dummyjson.com/data/products/27/1.jpg',
+          alt: 'Flying Wooden Bird',
+        },
+        {
+          src: 'https://i.dummyjson.com/data/products/27/2.jpg',
+          alt: 'Flying Wooden Bird',
+        },
+        {
+          src: 'https://i.dummyjson.com/data/products/27/3.jpg',
+          alt: 'Flying Wooden Bird',
+        },
+        {
+          src: 'https://i.dummyjson.com/data/products/27/4.jpg',
+          alt: 'Flying Wooden Bird',
+        },
+        {
+          src: 'https://i.dummyjson.com/data/products/27/thumbnail.webp',
+          alt: 'Flying Wooden Bird',
+        },
       ],
       color: 'Blue',
     },
@@ -562,11 +918,26 @@
       category: 'home-decoration',
       imageSrc: 'https://i.dummyjson.com/data/products/28/thumbnail.jpg',
       images: [
-        'https://i.dummyjson.com/data/products/28/1.jpg',
-        'https://i.dummyjson.com/data/products/28/2.jpg',
-        'https://i.dummyjson.com/data/products/28/3.png',
-        'https://i.dummyjson.com/data/products/28/4.jpg',
-        'https://i.dummyjson.com/data/products/28/thumbnail.jpg',
+        {
+          src: 'https://i.dummyjson.com/data/products/28/1.jpg',
+          alt: '3D Embellishment Art Lamp',
+        },
+        {
+          src: 'https://i.dummyjson.com/data/products/28/2.jpg',
+          alt: '3D Embellishment Art Lamp',
+        },
+        {
+          src: 'https://i.dummyjson.com/data/products/28/3.png',
+          alt: '3D Embellishment Art Lamp',
+        },
+        {
+          src: 'https://i.dummyjson.com/data/products/28/4.jpg',
+          alt: '3D Embellishment Art Lamp',
+        },
+        {
+          src: 'https://i.dummyjson.com/data/products/28/thumbnail.jpg',
+          alt: '3D Embellishment Art Lamp',
+        },
       ],
       color: 'Blue',
     },
@@ -583,11 +954,26 @@
       category: 'home-decoration',
       imageSrc: 'https://i.dummyjson.com/data/products/29/thumbnail.webp',
       images: [
-        'https://i.dummyjson.com/data/products/29/1.jpg',
-        'https://i.dummyjson.com/data/products/29/2.jpg',
-        'https://i.dummyjson.com/data/products/29/3.webp',
-        'https://i.dummyjson.com/data/products/29/4.webp',
-        'https://i.dummyjson.com/data/products/29/thumbnail.webp',
+        {
+          src: 'https://i.dummyjson.com/data/products/29/1.jpg',
+          alt: 'Handcraft Chinese style',
+        },
+        {
+          src: 'https://i.dummyjson.com/data/products/29/2.jpg',
+          alt: 'Handcraft Chinese style',
+        },
+        {
+          src: 'https://i.dummyjson.com/data/products/29/3.webp',
+          alt: 'Handcraft Chinese style',
+        },
+        {
+          src: 'https://i.dummyjson.com/data/products/29/4.webp',
+          alt: 'Handcraft Chinese style',
+        },
+        {
+          src: 'https://i.dummyjson.com/data/products/29/thumbnail.webp',
+          alt: 'Handcraft Chinese style',
+        },
       ],
       color: 'Blue',
     },
@@ -604,10 +990,22 @@
       category: 'home-decoration',
       imageSrc: 'https://i.dummyjson.com/data/products/30/thumbnail.jpg',
       images: [
-        'https://i.dummyjson.com/data/products/30/1.jpg',
-        'https://i.dummyjson.com/data/products/30/2.jpg',
-        'https://i.dummyjson.com/data/products/30/3.jpg',
-        'https://i.dummyjson.com/data/products/30/thumbnail.jpg',
+        {
+          src: 'https://i.dummyjson.com/data/products/30/1.jpg',
+          alt: 'Key Holder',
+        },
+        {
+          src: 'https://i.dummyjson.com/data/products/30/2.jpg',
+          alt: 'Key Holder',
+        },
+        {
+          src: 'https://i.dummyjson.com/data/products/30/3.jpg',
+          alt: 'Key Holder',
+        },
+        {
+          src: 'https://i.dummyjson.com/data/products/30/thumbnail.jpg',
+          alt: 'Key Holder',
+        },
       ],
       color: 'Blue',
     },
@@ -624,11 +1022,26 @@
       category: 'furniture',
       imageSrc: 'https://i.dummyjson.com/data/products/31/thumbnail.jpg',
       images: [
-        'https://i.dummyjson.com/data/products/31/1.jpg',
-        'https://i.dummyjson.com/data/products/31/2.jpg',
-        'https://i.dummyjson.com/data/products/31/3.jpg',
-        'https://i.dummyjson.com/data/products/31/4.jpg',
-        'https://i.dummyjson.com/data/products/31/thumbnail.jpg',
+        {
+          src: 'https://i.dummyjson.com/data/products/31/1.jpg',
+          alt: 'Mornadi Velvet Bed',
+        },
+        {
+          src: 'https://i.dummyjson.com/data/products/31/2.jpg',
+          alt: 'Mornadi Velvet Bed',
+        },
+        {
+          src: 'https://i.dummyjson.com/data/products/31/3.jpg',
+          alt: 'Mornadi Velvet Bed',
+        },
+        {
+          src: 'https://i.dummyjson.com/data/products/31/4.jpg',
+          alt: 'Mornadi Velvet Bed',
+        },
+        {
+          src: 'https://i.dummyjson.com/data/products/31/thumbnail.jpg',
+          alt: 'Mornadi Velvet Bed',
+        },
       ],
       color: 'Blue',
     },
@@ -645,10 +1058,22 @@
       category: 'furniture',
       imageSrc: 'https://i.dummyjson.com/data/products/32/thumbnail.jpg',
       images: [
-        'https://i.dummyjson.com/data/products/32/1.jpg',
-        'https://i.dummyjson.com/data/products/32/2.jpg',
-        'https://i.dummyjson.com/data/products/32/3.jpg',
-        'https://i.dummyjson.com/data/products/32/thumbnail.jpg',
+        {
+          src: 'https://i.dummyjson.com/data/products/32/1.jpg',
+          alt: 'Sofa for Coffe Cafe',
+        },
+        {
+          src: 'https://i.dummyjson.com/data/products/32/2.jpg',
+          alt: 'Sofa for Coffe Cafe',
+        },
+        {
+          src: 'https://i.dummyjson.com/data/products/32/3.jpg',
+          alt: 'Sofa for Coffe Cafe',
+        },
+        {
+          src: 'https://i.dummyjson.com/data/products/32/thumbnail.jpg',
+          alt: 'Sofa for Coffe Cafe',
+        },
       ],
       color: 'Blue',
     },
@@ -665,11 +1090,26 @@
       category: 'furniture',
       imageSrc: 'https://i.dummyjson.com/data/products/33/thumbnail.jpg',
       images: [
-        'https://i.dummyjson.com/data/products/33/1.jpg',
-        'https://i.dummyjson.com/data/products/33/2.jpg',
-        'https://i.dummyjson.com/data/products/33/3.jpg',
-        'https://i.dummyjson.com/data/products/33/4.jpg',
-        'https://i.dummyjson.com/data/products/33/thumbnail.jpg',
+        {
+          src: 'https://i.dummyjson.com/data/products/33/1.jpg',
+          alt: '3 Tier Corner Shelves',
+        },
+        {
+          src: 'https://i.dummyjson.com/data/products/33/2.jpg',
+          alt: '3 Tier Corner Shelves',
+        },
+        {
+          src: 'https://i.dummyjson.com/data/products/33/3.jpg',
+          alt: '3 Tier Corner Shelves',
+        },
+        {
+          src: 'https://i.dummyjson.com/data/products/33/4.jpg',
+          alt: '3 Tier Corner Shelves',
+        },
+        {
+          src: 'https://i.dummyjson.com/data/products/33/thumbnail.jpg',
+          alt: '3 Tier Corner Shelves',
+        },
       ],
       color: 'Blue',
     },
@@ -686,11 +1126,26 @@
       category: 'furniture',
       imageSrc: 'https://i.dummyjson.com/data/products/34/thumbnail.jpg',
       images: [
-        'https://i.dummyjson.com/data/products/34/1.jpg',
-        'https://i.dummyjson.com/data/products/34/2.jpg',
-        'https://i.dummyjson.com/data/products/34/3.jpg',
-        'https://i.dummyjson.com/data/products/34/4.jpg',
-        'https://i.dummyjson.com/data/products/34/thumbnail.jpg',
+        {
+          src: 'https://i.dummyjson.com/data/products/34/1.jpg',
+          alt: 'Plastic Table',
+        },
+        {
+          src: 'https://i.dummyjson.com/data/products/34/2.jpg',
+          alt: 'Plastic Table',
+        },
+        {
+          src: 'https://i.dummyjson.com/data/products/34/3.jpg',
+          alt: 'Plastic Table',
+        },
+        {
+          src: 'https://i.dummyjson.com/data/products/34/4.jpg',
+          alt: 'Plastic Table',
+        },
+        {
+          src: 'https://i.dummyjson.com/data/products/34/thumbnail.jpg',
+          alt: 'Plastic Table',
+        },
       ],
       color: 'Blue',
     },
@@ -707,11 +1162,26 @@
       category: 'furniture',
       imageSrc: 'https://i.dummyjson.com/data/products/35/thumbnail.jpg',
       images: [
-        'https://i.dummyjson.com/data/products/35/1.jpg',
-        'https://i.dummyjson.com/data/products/35/2.jpg',
-        'https://i.dummyjson.com/data/products/35/3.jpg',
-        'https://i.dummyjson.com/data/products/35/4.jpg',
-        'https://i.dummyjson.com/data/products/35/thumbnail.jpg',
+        {
+          src: 'https://i.dummyjson.com/data/products/35/1.jpg',
+          alt: '3 DOOR PORTABLE',
+        },
+        {
+          src: 'https://i.dummyjson.com/data/products/35/2.jpg',
+          alt: '3 DOOR PORTABLE',
+        },
+        {
+          src: 'https://i.dummyjson.com/data/products/35/3.jpg',
+          alt: '3 DOOR PORTABLE',
+        },
+        {
+          src: 'https://i.dummyjson.com/data/products/35/4.jpg',
+          alt: '3 DOOR PORTABLE',
+        },
+        {
+          src: 'https://i.dummyjson.com/data/products/35/thumbnail.jpg',
+          alt: '3 DOOR PORTABLE',
+        },
       ],
       color: 'Blue',
     },
@@ -728,11 +1198,26 @@
       category: 'tops',
       imageSrc: 'https://i.dummyjson.com/data/products/36/thumbnail.jpg',
       images: [
-        'https://i.dummyjson.com/data/products/36/1.jpg',
-        'https://i.dummyjson.com/data/products/36/2.webp',
-        'https://i.dummyjson.com/data/products/36/3.webp',
-        'https://i.dummyjson.com/data/products/36/4.jpg',
-        'https://i.dummyjson.com/data/products/36/thumbnail.jpg',
+        {
+          src: 'https://i.dummyjson.com/data/products/36/1.jpg',
+          alt: 'Sleeve Shirt Womens',
+        },
+        {
+          src: 'https://i.dummyjson.com/data/products/36/2.webp',
+          alt: 'Sleeve Shirt Womens',
+        },
+        {
+          src: 'https://i.dummyjson.com/data/products/36/3.webp',
+          alt: 'Sleeve Shirt Womens',
+        },
+        {
+          src: 'https://i.dummyjson.com/data/products/36/4.jpg',
+          alt: 'Sleeve Shirt Womens',
+        },
+        {
+          src: 'https://i.dummyjson.com/data/products/36/thumbnail.jpg',
+          alt: 'Sleeve Shirt Womens',
+        },
       ],
       color: 'Blue',
     },
@@ -749,13 +1234,62 @@
       category: 'tops',
       imageSrc: 'https://i.dummyjson.com/data/products/37/thumbnail.jpg',
       images: [
-        'https://i.dummyjson.com/data/products/37/1.jpg',
-        'https://i.dummyjson.com/data/products/37/2.jpg',
-        'https://i.dummyjson.com/data/products/37/3.jpg',
-        'https://i.dummyjson.com/data/products/37/4.jpg',
-        'https://i.dummyjson.com/data/products/37/thumbnail.jpg',
+        {
+          src: 'https://i.dummyjson.com/data/products/37/1.jpg',
+          alt: 'ank Tops for Womens/Girls',
+        },
+        {
+          src: 'https://i.dummyjson.com/data/products/37/2.jpg',
+          alt: 'ank Tops for Womens/Girls',
+        },
+        {
+          src: 'https://i.dummyjson.com/data/products/37/3.jpg',
+          alt: 'ank Tops for Womens/Girls',
+        },
+        {
+          src: 'https://i.dummyjson.com/data/products/37/4.jpg',
+          alt: 'ank Tops for Womens/Girls',
+        },
+        {
+          src: 'https://i.dummyjson.com/data/products/37/thumbnail.jpg',
+          alt: 'ank Tops for Womens/Girls',
+        },
       ],
       color: 'Blue',
+      sizes: [
+        {
+          name: 'XXS',
+          inStock: false,
+        },
+        {
+          name: 'XS',
+          inStock: true,
+        },
+        {
+          name: 'S',
+          inStock: true,
+        },
+        {
+          name: 'M',
+          inStock: true,
+        },
+        {
+          name: 'L',
+          inStock: true,
+        },
+        {
+          name: 'XL',
+          inStock: true,
+        },
+        {
+          name: '2XL',
+          inStock: true,
+        },
+        {
+          name: '3XL',
+          inStock: true,
+        },
+      ],
     },
     {
       id: 38,
@@ -769,18 +1303,64 @@
       category: 'tops',
       imageSrc: 'https://i.dummyjson.com/data/products/38/thumbnail.jpg',
       images: [
-        'https://i.dummyjson.com/data/products/38/1.png',
-        'https://i.dummyjson.com/data/products/38/2.jpg',
-        'https://i.dummyjson.com/data/products/38/3.jpg',
-        'https://i.dummyjson.com/data/products/38/4.jpg',
+        {
+          src: 'https://i.dummyjson.com/data/products/38/1.png',
+          alt: 'sublimation plain kids tank',
+        },
+        {
+          src: 'https://i.dummyjson.com/data/products/38/2.jpg',
+          alt: 'sublimation plain kids tank',
+        },
+        {
+          src: 'https://i.dummyjson.com/data/products/38/3.jpg',
+          alt: 'sublimation plain kids tank',
+        },
+        {
+          src: 'https://i.dummyjson.com/data/products/38/4.jpg',
+          alt: 'sublimation plain kids tank',
+        },
       ],
       color: 'Blue',
+      sizes: [
+        {
+          name: 'XXS',
+          inStock: false,
+        },
+        {
+          name: 'XS',
+          inStock: true,
+        },
+        {
+          name: 'S',
+          inStock: true,
+        },
+        {
+          name: 'M',
+          inStock: true,
+        },
+        {
+          name: 'L',
+          inStock: true,
+        },
+        {
+          name: 'XL',
+          inStock: true,
+        },
+        {
+          name: '2XL',
+          inStock: true,
+        },
+        {
+          name: '3XL',
+          inStock: true,
+        },
+      ],
     },
     {
       id: 39,
       name: 'Women Sweaters Wool',
       description:
-        "2021 Custom Winter Fall Zebra Knit Crop Top Women Sweaters Wool Mohair Cos Customize Crew Neck Women\\' S Crop Top Sweater",
+        "2021 Custom Winter Fall Zebra Knit Crop Top Women Sweaters Wool Mohair Cos Customize Crew Neck Women\\\\' S Crop Top Sweater",
       price: 600,
       discountPercentage: 17.2,
       rating: 4.55,
@@ -789,13 +1369,62 @@
       category: 'tops',
       imageSrc: 'https://i.dummyjson.com/data/products/39/thumbnail.jpg',
       images: [
-        'https://i.dummyjson.com/data/products/39/1.jpg',
-        'https://i.dummyjson.com/data/products/39/2.jpg',
-        'https://i.dummyjson.com/data/products/39/3.jpg',
-        'https://i.dummyjson.com/data/products/39/4.jpg',
-        'https://i.dummyjson.com/data/products/39/thumbnail.jpg',
+        {
+          src: 'https://i.dummyjson.com/data/products/39/1.jpg',
+          alt: 'Women Sweaters Wool',
+        },
+        {
+          src: 'https://i.dummyjson.com/data/products/39/2.jpg',
+          alt: 'Women Sweaters Wool',
+        },
+        {
+          src: 'https://i.dummyjson.com/data/products/39/3.jpg',
+          alt: 'Women Sweaters Wool',
+        },
+        {
+          src: 'https://i.dummyjson.com/data/products/39/4.jpg',
+          alt: 'Women Sweaters Wool',
+        },
+        {
+          src: 'https://i.dummyjson.com/data/products/39/thumbnail.jpg',
+          alt: 'Women Sweaters Wool',
+        },
       ],
       color: 'Blue',
+      sizes: [
+        {
+          name: 'XXS',
+          inStock: false,
+        },
+        {
+          name: 'XS',
+          inStock: true,
+        },
+        {
+          name: 'S',
+          inStock: true,
+        },
+        {
+          name: 'M',
+          inStock: true,
+        },
+        {
+          name: 'L',
+          inStock: true,
+        },
+        {
+          name: 'XL',
+          inStock: true,
+        },
+        {
+          name: '2XL',
+          inStock: true,
+        },
+        {
+          name: '3XL',
+          inStock: true,
+        },
+      ],
     },
     {
       id: 40,
@@ -810,10 +1439,50 @@
       category: 'tops',
       imageSrc: 'https://i.dummyjson.com/data/products/40/thumbnail.jpg',
       images: [
-        'https://i.dummyjson.com/data/products/40/1.jpg',
-        'https://i.dummyjson.com/data/products/40/2.jpg',
+        {
+          src: 'https://i.dummyjson.com/data/products/40/1.jpg',
+          alt: 'women winter clothes',
+        },
+        {
+          src: 'https://i.dummyjson.com/data/products/40/2.jpg',
+          alt: 'women winter clothes',
+        },
       ],
       color: 'Blue',
+      sizes: [
+        {
+          name: 'XXS',
+          inStock: false,
+        },
+        {
+          name: 'XS',
+          inStock: true,
+        },
+        {
+          name: 'S',
+          inStock: true,
+        },
+        {
+          name: 'M',
+          inStock: true,
+        },
+        {
+          name: 'L',
+          inStock: true,
+        },
+        {
+          name: 'XL',
+          inStock: true,
+        },
+        {
+          name: '2XL',
+          inStock: true,
+        },
+        {
+          name: '3XL',
+          inStock: true,
+        },
+      ],
     },
     {
       id: 41,
@@ -827,13 +1496,62 @@
       category: 'womens-dresses',
       imageSrc: 'https://i.dummyjson.com/data/products/41/thumbnail.webp',
       images: [
-        'https://i.dummyjson.com/data/products/41/1.jpg',
-        'https://i.dummyjson.com/data/products/41/2.webp',
-        'https://i.dummyjson.com/data/products/41/3.jpg',
-        'https://i.dummyjson.com/data/products/41/4.jpg',
-        'https://i.dummyjson.com/data/products/41/thumbnail.webp',
+        {
+          src: 'https://i.dummyjson.com/data/products/41/1.jpg',
+          alt: 'NIGHT SUIT',
+        },
+        {
+          src: 'https://i.dummyjson.com/data/products/41/2.webp',
+          alt: 'NIGHT SUIT',
+        },
+        {
+          src: 'https://i.dummyjson.com/data/products/41/3.jpg',
+          alt: 'NIGHT SUIT',
+        },
+        {
+          src: 'https://i.dummyjson.com/data/products/41/4.jpg',
+          alt: 'NIGHT SUIT',
+        },
+        {
+          src: 'https://i.dummyjson.com/data/products/41/thumbnail.webp',
+          alt: 'NIGHT SUIT',
+        },
       ],
       color: 'Blue',
+      sizes: [
+        {
+          name: 'XXS',
+          inStock: false,
+        },
+        {
+          name: 'XS',
+          inStock: true,
+        },
+        {
+          name: 'S',
+          inStock: true,
+        },
+        {
+          name: 'M',
+          inStock: true,
+        },
+        {
+          name: 'L',
+          inStock: true,
+        },
+        {
+          name: 'XL',
+          inStock: true,
+        },
+        {
+          name: '2XL',
+          inStock: true,
+        },
+        {
+          name: '3XL',
+          inStock: true,
+        },
+      ],
     },
     {
       id: 42,
@@ -848,13 +1566,62 @@
       category: 'womens-dresses',
       imageSrc: 'https://i.dummyjson.com/data/products/42/thumbnail.jpg',
       images: [
-        'https://i.dummyjson.com/data/products/42/1.png',
-        'https://i.dummyjson.com/data/products/42/2.png',
-        'https://i.dummyjson.com/data/products/42/3.png',
-        'https://i.dummyjson.com/data/products/42/4.jpg',
-        'https://i.dummyjson.com/data/products/42/thumbnail.jpg',
+        {
+          src: 'https://i.dummyjson.com/data/products/42/1.png',
+          alt: 'Stiched Kurta plus trouser',
+        },
+        {
+          src: 'https://i.dummyjson.com/data/products/42/2.png',
+          alt: 'Stiched Kurta plus trouser',
+        },
+        {
+          src: 'https://i.dummyjson.com/data/products/42/3.png',
+          alt: 'Stiched Kurta plus trouser',
+        },
+        {
+          src: 'https://i.dummyjson.com/data/products/42/4.jpg',
+          alt: 'Stiched Kurta plus trouser',
+        },
+        {
+          src: 'https://i.dummyjson.com/data/products/42/thumbnail.jpg',
+          alt: 'Stiched Kurta plus trouser',
+        },
       ],
       color: 'Blue',
+      sizes: [
+        {
+          name: 'XXS',
+          inStock: false,
+        },
+        {
+          name: 'XS',
+          inStock: true,
+        },
+        {
+          name: 'S',
+          inStock: true,
+        },
+        {
+          name: 'M',
+          inStock: true,
+        },
+        {
+          name: 'L',
+          inStock: true,
+        },
+        {
+          name: 'XL',
+          inStock: true,
+        },
+        {
+          name: '2XL',
+          inStock: true,
+        },
+        {
+          name: '3XL',
+          inStock: true,
+        },
+      ],
     },
     {
       id: 43,
@@ -869,13 +1636,62 @@
       category: 'womens-dresses',
       imageSrc: 'https://i.dummyjson.com/data/products/43/thumbnail.jpg',
       images: [
-        'https://i.dummyjson.com/data/products/43/1.jpg',
-        'https://i.dummyjson.com/data/products/43/2.jpg',
-        'https://i.dummyjson.com/data/products/43/3.jpg',
-        'https://i.dummyjson.com/data/products/43/4.jpg',
-        'https://i.dummyjson.com/data/products/43/thumbnail.jpg',
+        {
+          src: 'https://i.dummyjson.com/data/products/43/1.jpg',
+          alt: 'frock gold printed',
+        },
+        {
+          src: 'https://i.dummyjson.com/data/products/43/2.jpg',
+          alt: 'frock gold printed',
+        },
+        {
+          src: 'https://i.dummyjson.com/data/products/43/3.jpg',
+          alt: 'frock gold printed',
+        },
+        {
+          src: 'https://i.dummyjson.com/data/products/43/4.jpg',
+          alt: 'frock gold printed',
+        },
+        {
+          src: 'https://i.dummyjson.com/data/products/43/thumbnail.jpg',
+          alt: 'frock gold printed',
+        },
       ],
       color: 'Blue',
+      sizes: [
+        {
+          name: 'XXS',
+          inStock: false,
+        },
+        {
+          name: 'XS',
+          inStock: true,
+        },
+        {
+          name: 'S',
+          inStock: true,
+        },
+        {
+          name: 'M',
+          inStock: true,
+        },
+        {
+          name: 'L',
+          inStock: true,
+        },
+        {
+          name: 'XL',
+          inStock: true,
+        },
+        {
+          name: '2XL',
+          inStock: true,
+        },
+        {
+          name: '3XL',
+          inStock: true,
+        },
+      ],
     },
     {
       id: 44,
@@ -890,13 +1706,62 @@
       category: 'womens-dresses',
       imageSrc: 'https://i.dummyjson.com/data/products/44/thumbnail.jpg',
       images: [
-        'https://i.dummyjson.com/data/products/44/1.jpg',
-        'https://i.dummyjson.com/data/products/44/2.jpg',
-        'https://i.dummyjson.com/data/products/44/3.jpg',
-        'https://i.dummyjson.com/data/products/44/4.jpg',
-        'https://i.dummyjson.com/data/products/44/thumbnail.jpg',
+        {
+          src: 'https://i.dummyjson.com/data/products/44/1.jpg',
+          alt: 'Ladies Multicolored Dress',
+        },
+        {
+          src: 'https://i.dummyjson.com/data/products/44/2.jpg',
+          alt: 'Ladies Multicolored Dress',
+        },
+        {
+          src: 'https://i.dummyjson.com/data/products/44/3.jpg',
+          alt: 'Ladies Multicolored Dress',
+        },
+        {
+          src: 'https://i.dummyjson.com/data/products/44/4.jpg',
+          alt: 'Ladies Multicolored Dress',
+        },
+        {
+          src: 'https://i.dummyjson.com/data/products/44/thumbnail.jpg',
+          alt: 'Ladies Multicolored Dress',
+        },
       ],
       color: 'Blue',
+      sizes: [
+        {
+          name: 'XXS',
+          inStock: false,
+        },
+        {
+          name: 'XS',
+          inStock: true,
+        },
+        {
+          name: 'S',
+          inStock: true,
+        },
+        {
+          name: 'M',
+          inStock: true,
+        },
+        {
+          name: 'L',
+          inStock: true,
+        },
+        {
+          name: 'XL',
+          inStock: true,
+        },
+        {
+          name: '2XL',
+          inStock: true,
+        },
+        {
+          name: '3XL',
+          inStock: true,
+        },
+      ],
     },
     {
       id: 45,
@@ -911,17 +1776,66 @@
       category: 'womens-dresses',
       imageSrc: 'https://i.dummyjson.com/data/products/45/thumbnail.jpg',
       images: [
-        'https://i.dummyjson.com/data/products/45/1.jpg',
-        'https://i.dummyjson.com/data/products/45/2.webp',
-        'https://i.dummyjson.com/data/products/45/3.jpg',
-        'https://i.dummyjson.com/data/products/45/4.jpg',
-        'https://i.dummyjson.com/data/products/45/thumbnail.jpg',
+        {
+          src: 'https://i.dummyjson.com/data/products/45/1.jpg',
+          alt: 'Malai Maxi Dress',
+        },
+        {
+          src: 'https://i.dummyjson.com/data/products/45/2.webp',
+          alt: 'Malai Maxi Dress',
+        },
+        {
+          src: 'https://i.dummyjson.com/data/products/45/3.jpg',
+          alt: 'Malai Maxi Dress',
+        },
+        {
+          src: 'https://i.dummyjson.com/data/products/45/4.jpg',
+          alt: 'Malai Maxi Dress',
+        },
+        {
+          src: 'https://i.dummyjson.com/data/products/45/thumbnail.jpg',
+          alt: 'Malai Maxi Dress',
+        },
       ],
       color: 'Blue',
+      sizes: [
+        {
+          name: 'XXS',
+          inStock: false,
+        },
+        {
+          name: 'XS',
+          inStock: true,
+        },
+        {
+          name: 'S',
+          inStock: true,
+        },
+        {
+          name: 'M',
+          inStock: true,
+        },
+        {
+          name: 'L',
+          inStock: true,
+        },
+        {
+          name: 'XL',
+          inStock: true,
+        },
+        {
+          name: '2XL',
+          inStock: true,
+        },
+        {
+          name: '3XL',
+          inStock: true,
+        },
+      ],
     },
     {
       id: 46,
-      name: "women\\'s shoes",
+      name: "women\\\\'s shoes",
       description:
         'Close: Lace, Style with bottom: Increased inside, Sole Material: Rubber',
       price: 40,
@@ -932,11 +1846,26 @@
       category: 'womens-shoes',
       imageSrc: 'https://i.dummyjson.com/data/products/46/thumbnail.jpg',
       images: [
-        'https://i.dummyjson.com/data/products/46/1.webp',
-        'https://i.dummyjson.com/data/products/46/2.jpg',
-        'https://i.dummyjson.com/data/products/46/3.jpg',
-        'https://i.dummyjson.com/data/products/46/4.jpg',
-        'https://i.dummyjson.com/data/products/46/thumbnail.jpg',
+        {
+          src: 'https://i.dummyjson.com/data/products/46/1.webp',
+          alt: "women\\\\'s shoes",
+        },
+        {
+          src: 'https://i.dummyjson.com/data/products/46/2.jpg',
+          alt: "women\\\\'s shoes",
+        },
+        {
+          src: 'https://i.dummyjson.com/data/products/46/3.jpg',
+          alt: "women\\\\'s shoes",
+        },
+        {
+          src: 'https://i.dummyjson.com/data/products/46/4.jpg',
+          alt: "women\\\\'s shoes",
+        },
+        {
+          src: 'https://i.dummyjson.com/data/products/46/thumbnail.jpg',
+          alt: "women\\\\'s shoes",
+        },
       ],
       color: 'Blue',
     },
@@ -953,10 +1882,22 @@
       category: 'womens-shoes',
       imageSrc: 'https://i.dummyjson.com/data/products/47/thumbnail.jpeg',
       images: [
-        'https://i.dummyjson.com/data/products/47/1.jpg',
-        'https://i.dummyjson.com/data/products/47/2.jpg',
-        'https://i.dummyjson.com/data/products/47/3.jpg',
-        'https://i.dummyjson.com/data/products/47/thumbnail.jpeg',
+        {
+          src: 'https://i.dummyjson.com/data/products/47/1.jpg',
+          alt: 'Sneaker shoes',
+        },
+        {
+          src: 'https://i.dummyjson.com/data/products/47/2.jpg',
+          alt: 'Sneaker shoes',
+        },
+        {
+          src: 'https://i.dummyjson.com/data/products/47/3.jpg',
+          alt: 'Sneaker shoes',
+        },
+        {
+          src: 'https://i.dummyjson.com/data/products/47/thumbnail.jpeg',
+          alt: 'Sneaker shoes',
+        },
       ],
       color: 'Blue',
     },
@@ -973,11 +1914,26 @@
       category: 'womens-shoes',
       imageSrc: 'https://i.dummyjson.com/data/products/48/thumbnail.jpg',
       images: [
-        'https://i.dummyjson.com/data/products/48/1.jpg',
-        'https://i.dummyjson.com/data/products/48/2.jpg',
-        'https://i.dummyjson.com/data/products/48/3.jpg',
-        'https://i.dummyjson.com/data/products/48/4.jpg',
-        'https://i.dummyjson.com/data/products/48/thumbnail.jpg',
+        {
+          src: 'https://i.dummyjson.com/data/products/48/1.jpg',
+          alt: 'Women Strip Heel',
+        },
+        {
+          src: 'https://i.dummyjson.com/data/products/48/2.jpg',
+          alt: 'Women Strip Heel',
+        },
+        {
+          src: 'https://i.dummyjson.com/data/products/48/3.jpg',
+          alt: 'Women Strip Heel',
+        },
+        {
+          src: 'https://i.dummyjson.com/data/products/48/4.jpg',
+          alt: 'Women Strip Heel',
+        },
+        {
+          src: 'https://i.dummyjson.com/data/products/48/thumbnail.jpg',
+          alt: 'Women Strip Heel',
+        },
       ],
       color: 'Blue',
     },
@@ -994,10 +1950,22 @@
       category: 'womens-shoes',
       imageSrc: 'https://i.dummyjson.com/data/products/49/thumbnail.jpg',
       images: [
-        'https://i.dummyjson.com/data/products/49/1.jpg',
-        'https://i.dummyjson.com/data/products/49/2.jpg',
-        'https://i.dummyjson.com/data/products/49/3.webp',
-        'https://i.dummyjson.com/data/products/49/thumbnail.jpg',
+        {
+          src: 'https://i.dummyjson.com/data/products/49/1.jpg',
+          alt: 'Chappals & Shoe Ladies Metallic',
+        },
+        {
+          src: 'https://i.dummyjson.com/data/products/49/2.jpg',
+          alt: 'Chappals & Shoe Ladies Metallic',
+        },
+        {
+          src: 'https://i.dummyjson.com/data/products/49/3.webp',
+          alt: 'Chappals & Shoe Ladies Metallic',
+        },
+        {
+          src: 'https://i.dummyjson.com/data/products/49/thumbnail.jpg',
+          alt: 'Chappals & Shoe Ladies Metallic',
+        },
       ],
       color: 'Blue',
     },
@@ -1014,9 +1982,18 @@
       category: 'womens-shoes',
       imageSrc: 'https://i.dummyjson.com/data/products/50/thumbnail.jpg',
       images: [
-        'https://i.dummyjson.com/data/products/50/1.jpeg',
-        'https://i.dummyjson.com/data/products/50/2.jpg',
-        'https://i.dummyjson.com/data/products/50/3.jpg',
+        {
+          src: 'https://i.dummyjson.com/data/products/50/1.jpeg',
+          alt: 'Women Shoes',
+        },
+        {
+          src: 'https://i.dummyjson.com/data/products/50/2.jpg',
+          alt: 'Women Shoes',
+        },
+        {
+          src: 'https://i.dummyjson.com/data/products/50/3.jpg',
+          alt: 'Women Shoes',
+        },
       ],
       color: 'Blue',
     },
@@ -1033,10 +2010,22 @@
       category: 'mens-shirts',
       imageSrc: 'https://i.dummyjson.com/data/products/51/thumbnail.jpg',
       images: [
-        'https://i.dummyjson.com/data/products/51/1.png',
-        'https://i.dummyjson.com/data/products/51/2.jpg',
-        'https://i.dummyjson.com/data/products/51/3.jpg',
-        'https://i.dummyjson.com/data/products/51/thumbnail.jpg',
+        {
+          src: 'https://i.dummyjson.com/data/products/51/1.png',
+          alt: 'half sleeves T shirts',
+        },
+        {
+          src: 'https://i.dummyjson.com/data/products/51/2.jpg',
+          alt: 'half sleeves T shirts',
+        },
+        {
+          src: 'https://i.dummyjson.com/data/products/51/3.jpg',
+          alt: 'half sleeves T shirts',
+        },
+        {
+          src: 'https://i.dummyjson.com/data/products/51/thumbnail.jpg',
+          alt: 'half sleeves T shirts',
+        },
       ],
       color: 'Blue',
     },
@@ -1044,7 +2033,7 @@
       id: 52,
       name: 'FREE FIRE T Shirt',
       description:
-        "quality and professional print - It doesn\\'t just look high quality, it is high quality.",
+        "quality and professional print - It doesn\\\\'t just look high quality, it is high quality.",
       price: 10,
       discountPercentage: 14.72,
       rating: 4.52,
@@ -1053,13 +2042,62 @@
       category: 'mens-shirts',
       imageSrc: 'https://i.dummyjson.com/data/products/52/thumbnail.jpg',
       images: [
-        'https://i.dummyjson.com/data/products/52/1.png',
-        'https://i.dummyjson.com/data/products/52/2.png',
-        'https://i.dummyjson.com/data/products/52/3.jpg',
-        'https://i.dummyjson.com/data/products/52/4.jpg',
-        'https://i.dummyjson.com/data/products/52/thumbnail.jpg',
+        {
+          src: 'https://i.dummyjson.com/data/products/52/1.png',
+          alt: 'FREE FIRE T Shirt',
+        },
+        {
+          src: 'https://i.dummyjson.com/data/products/52/2.png',
+          alt: 'FREE FIRE T Shirt',
+        },
+        {
+          src: 'https://i.dummyjson.com/data/products/52/3.jpg',
+          alt: 'FREE FIRE T Shirt',
+        },
+        {
+          src: 'https://i.dummyjson.com/data/products/52/4.jpg',
+          alt: 'FREE FIRE T Shirt',
+        },
+        {
+          src: 'https://i.dummyjson.com/data/products/52/thumbnail.jpg',
+          alt: 'FREE FIRE T Shirt',
+        },
       ],
       color: 'Blue',
+      sizes: [
+        {
+          name: 'XXS',
+          inStock: false,
+        },
+        {
+          name: 'XS',
+          inStock: true,
+        },
+        {
+          name: 'S',
+          inStock: true,
+        },
+        {
+          name: 'M',
+          inStock: true,
+        },
+        {
+          name: 'L',
+          inStock: true,
+        },
+        {
+          name: 'XL',
+          inStock: true,
+        },
+        {
+          name: '2XL',
+          inStock: true,
+        },
+        {
+          name: '3XL',
+          inStock: true,
+        },
+      ],
     },
     {
       id: 53,
@@ -1073,13 +2111,62 @@
       category: 'mens-shirts',
       imageSrc: 'https://i.dummyjson.com/data/products/53/thumbnail.jpg',
       images: [
-        'https://i.dummyjson.com/data/products/53/1.webp',
-        'https://i.dummyjson.com/data/products/53/2.jpg',
-        'https://i.dummyjson.com/data/products/53/3.jpg',
-        'https://i.dummyjson.com/data/products/53/4.jpg',
-        'https://i.dummyjson.com/data/products/53/thumbnail.jpg',
+        {
+          src: 'https://i.dummyjson.com/data/products/53/1.webp',
+          alt: 'printed high quality T shirts',
+        },
+        {
+          src: 'https://i.dummyjson.com/data/products/53/2.jpg',
+          alt: 'printed high quality T shirts',
+        },
+        {
+          src: 'https://i.dummyjson.com/data/products/53/3.jpg',
+          alt: 'printed high quality T shirts',
+        },
+        {
+          src: 'https://i.dummyjson.com/data/products/53/4.jpg',
+          alt: 'printed high quality T shirts',
+        },
+        {
+          src: 'https://i.dummyjson.com/data/products/53/thumbnail.jpg',
+          alt: 'printed high quality T shirts',
+        },
       ],
       color: 'Blue',
+      sizes: [
+        {
+          name: 'XXS',
+          inStock: false,
+        },
+        {
+          name: 'XS',
+          inStock: true,
+        },
+        {
+          name: 'S',
+          inStock: true,
+        },
+        {
+          name: 'M',
+          inStock: true,
+        },
+        {
+          name: 'L',
+          inStock: true,
+        },
+        {
+          name: 'XL',
+          inStock: true,
+        },
+        {
+          name: '2XL',
+          inStock: true,
+        },
+        {
+          name: '3XL',
+          inStock: true,
+        },
+      ],
     },
     {
       id: 54,
@@ -1094,13 +2181,62 @@
       category: 'mens-shirts',
       imageSrc: 'https://i.dummyjson.com/data/products/54/thumbnail.jpg',
       images: [
-        'https://i.dummyjson.com/data/products/54/1.jpg',
-        'https://i.dummyjson.com/data/products/54/2.jpg',
-        'https://i.dummyjson.com/data/products/54/3.jpg',
-        'https://i.dummyjson.com/data/products/54/4.jpg',
-        'https://i.dummyjson.com/data/products/54/thumbnail.jpg',
+        {
+          src: 'https://i.dummyjson.com/data/products/54/1.jpg',
+          alt: 'Pubg Printed Graphic T-Shirt',
+        },
+        {
+          src: 'https://i.dummyjson.com/data/products/54/2.jpg',
+          alt: 'Pubg Printed Graphic T-Shirt',
+        },
+        {
+          src: 'https://i.dummyjson.com/data/products/54/3.jpg',
+          alt: 'Pubg Printed Graphic T-Shirt',
+        },
+        {
+          src: 'https://i.dummyjson.com/data/products/54/4.jpg',
+          alt: 'Pubg Printed Graphic T-Shirt',
+        },
+        {
+          src: 'https://i.dummyjson.com/data/products/54/thumbnail.jpg',
+          alt: 'Pubg Printed Graphic T-Shirt',
+        },
       ],
       color: 'Blue',
+      sizes: [
+        {
+          name: 'XXS',
+          inStock: false,
+        },
+        {
+          name: 'XS',
+          inStock: true,
+        },
+        {
+          name: 'S',
+          inStock: true,
+        },
+        {
+          name: 'M',
+          inStock: true,
+        },
+        {
+          name: 'L',
+          inStock: true,
+        },
+        {
+          name: 'XL',
+          inStock: true,
+        },
+        {
+          name: '2XL',
+          inStock: true,
+        },
+        {
+          name: '3XL',
+          inStock: true,
+        },
+      ],
     },
     {
       id: 55,
@@ -1114,13 +2250,62 @@
       category: 'mens-shirts',
       imageSrc: 'https://i.dummyjson.com/data/products/55/thumbnail.jpg',
       images: [
-        'https://i.dummyjson.com/data/products/55/1.jpg',
-        'https://i.dummyjson.com/data/products/55/2.webp',
-        'https://i.dummyjson.com/data/products/55/3.jpg',
-        'https://i.dummyjson.com/data/products/55/4.jpg',
-        'https://i.dummyjson.com/data/products/55/thumbnail.jpg',
+        {
+          src: 'https://i.dummyjson.com/data/products/55/1.jpg',
+          alt: 'Money Heist Printed Summer T Shirts',
+        },
+        {
+          src: 'https://i.dummyjson.com/data/products/55/2.webp',
+          alt: 'Money Heist Printed Summer T Shirts',
+        },
+        {
+          src: 'https://i.dummyjson.com/data/products/55/3.jpg',
+          alt: 'Money Heist Printed Summer T Shirts',
+        },
+        {
+          src: 'https://i.dummyjson.com/data/products/55/4.jpg',
+          alt: 'Money Heist Printed Summer T Shirts',
+        },
+        {
+          src: 'https://i.dummyjson.com/data/products/55/thumbnail.jpg',
+          alt: 'Money Heist Printed Summer T Shirts',
+        },
       ],
       color: 'Blue',
+      sizes: [
+        {
+          name: 'XXS',
+          inStock: false,
+        },
+        {
+          name: 'XS',
+          inStock: true,
+        },
+        {
+          name: 'S',
+          inStock: true,
+        },
+        {
+          name: 'M',
+          inStock: true,
+        },
+        {
+          name: 'L',
+          inStock: true,
+        },
+        {
+          name: 'XL',
+          inStock: true,
+        },
+        {
+          name: '2XL',
+          inStock: true,
+        },
+        {
+          name: '3XL',
+          inStock: true,
+        },
+      ],
     },
     {
       id: 56,
@@ -1135,12 +2320,30 @@
       category: 'mens-shoes',
       imageSrc: 'https://i.dummyjson.com/data/products/56/thumbnail.jpg',
       images: [
-        'https://i.dummyjson.com/data/products/56/1.jpg',
-        'https://i.dummyjson.com/data/products/56/2.jpg',
-        'https://i.dummyjson.com/data/products/56/3.jpg',
-        'https://i.dummyjson.com/data/products/56/4.jpg',
-        'https://i.dummyjson.com/data/products/56/5.jpg',
-        'https://i.dummyjson.com/data/products/56/thumbnail.jpg',
+        {
+          src: 'https://i.dummyjson.com/data/products/56/1.jpg',
+          alt: 'Sneakers Joggers Shoes',
+        },
+        {
+          src: 'https://i.dummyjson.com/data/products/56/2.jpg',
+          alt: 'Sneakers Joggers Shoes',
+        },
+        {
+          src: 'https://i.dummyjson.com/data/products/56/3.jpg',
+          alt: 'Sneakers Joggers Shoes',
+        },
+        {
+          src: 'https://i.dummyjson.com/data/products/56/4.jpg',
+          alt: 'Sneakers Joggers Shoes',
+        },
+        {
+          src: 'https://i.dummyjson.com/data/products/56/5.jpg',
+          alt: 'Sneakers Joggers Shoes',
+        },
+        {
+          src: 'https://i.dummyjson.com/data/products/56/thumbnail.jpg',
+          alt: 'Sneakers Joggers Shoes',
+        },
       ],
       color: 'Blue',
     },
@@ -1157,11 +2360,26 @@
       category: 'mens-shoes',
       imageSrc: 'https://i.dummyjson.com/data/products/57/thumbnail.jpg',
       images: [
-        'https://i.dummyjson.com/data/products/57/1.jpg',
-        'https://i.dummyjson.com/data/products/57/2.jpg',
-        'https://i.dummyjson.com/data/products/57/3.jpg',
-        'https://i.dummyjson.com/data/products/57/4.jpg',
-        'https://i.dummyjson.com/data/products/57/thumbnail.jpg',
+        {
+          src: 'https://i.dummyjson.com/data/products/57/1.jpg',
+          alt: 'Loafers for men',
+        },
+        {
+          src: 'https://i.dummyjson.com/data/products/57/2.jpg',
+          alt: 'Loafers for men',
+        },
+        {
+          src: 'https://i.dummyjson.com/data/products/57/3.jpg',
+          alt: 'Loafers for men',
+        },
+        {
+          src: 'https://i.dummyjson.com/data/products/57/4.jpg',
+          alt: 'Loafers for men',
+        },
+        {
+          src: 'https://i.dummyjson.com/data/products/57/thumbnail.jpg',
+          alt: 'Loafers for men',
+        },
       ],
       color: 'Blue',
     },
@@ -1178,11 +2396,26 @@
       category: 'mens-shoes',
       imageSrc: 'https://i.dummyjson.com/data/products/58/thumbnail.jpg',
       images: [
-        'https://i.dummyjson.com/data/products/58/1.jpg',
-        'https://i.dummyjson.com/data/products/58/2.jpg',
-        'https://i.dummyjson.com/data/products/58/3.jpg',
-        'https://i.dummyjson.com/data/products/58/4.jpg',
-        'https://i.dummyjson.com/data/products/58/thumbnail.jpg',
+        {
+          src: 'https://i.dummyjson.com/data/products/58/1.jpg',
+          alt: 'formal offices shoes',
+        },
+        {
+          src: 'https://i.dummyjson.com/data/products/58/2.jpg',
+          alt: 'formal offices shoes',
+        },
+        {
+          src: 'https://i.dummyjson.com/data/products/58/3.jpg',
+          alt: 'formal offices shoes',
+        },
+        {
+          src: 'https://i.dummyjson.com/data/products/58/4.jpg',
+          alt: 'formal offices shoes',
+        },
+        {
+          src: 'https://i.dummyjson.com/data/products/58/thumbnail.jpg',
+          alt: 'formal offices shoes',
+        },
       ],
       color: 'Blue',
     },
@@ -1199,11 +2432,26 @@
       category: 'mens-shoes',
       imageSrc: 'https://i.dummyjson.com/data/products/59/thumbnail.jpg',
       images: [
-        'https://i.dummyjson.com/data/products/59/1.jpg',
-        'https://i.dummyjson.com/data/products/59/2.jpg',
-        'https://i.dummyjson.com/data/products/59/3.jpg',
-        'https://i.dummyjson.com/data/products/59/4.jpg',
-        'https://i.dummyjson.com/data/products/59/thumbnail.jpg',
+        {
+          src: 'https://i.dummyjson.com/data/products/59/1.jpg',
+          alt: 'Spring and summershoes',
+        },
+        {
+          src: 'https://i.dummyjson.com/data/products/59/2.jpg',
+          alt: 'Spring and summershoes',
+        },
+        {
+          src: 'https://i.dummyjson.com/data/products/59/3.jpg',
+          alt: 'Spring and summershoes',
+        },
+        {
+          src: 'https://i.dummyjson.com/data/products/59/4.jpg',
+          alt: 'Spring and summershoes',
+        },
+        {
+          src: 'https://i.dummyjson.com/data/products/59/thumbnail.jpg',
+          alt: 'Spring and summershoes',
+        },
       ],
       color: 'Blue',
     },
@@ -1220,10 +2468,22 @@
       category: 'mens-shoes',
       imageSrc: 'https://i.dummyjson.com/data/products/60/thumbnail.jpg',
       images: [
-        'https://i.dummyjson.com/data/products/60/1.jpg',
-        'https://i.dummyjson.com/data/products/60/2.jpg',
-        'https://i.dummyjson.com/data/products/60/3.jpg',
-        'https://i.dummyjson.com/data/products/60/thumbnail.jpg',
+        {
+          src: 'https://i.dummyjson.com/data/products/60/1.jpg',
+          alt: 'Stylish Casual Jeans Shoes',
+        },
+        {
+          src: 'https://i.dummyjson.com/data/products/60/2.jpg',
+          alt: 'Stylish Casual Jeans Shoes',
+        },
+        {
+          src: 'https://i.dummyjson.com/data/products/60/3.jpg',
+          alt: 'Stylish Casual Jeans Shoes',
+        },
+        {
+          src: 'https://i.dummyjson.com/data/products/60/thumbnail.jpg',
+          alt: 'Stylish Casual Jeans Shoes',
+        },
       ],
       color: 'Blue',
     },
@@ -1239,9 +2499,18 @@
       category: 'mens-watches',
       imageSrc: 'https://i.dummyjson.com/data/products/61/thumbnail.jpg',
       images: [
-        'https://i.dummyjson.com/data/products/61/1.jpg',
-        'https://i.dummyjson.com/data/products/61/2.png',
-        'https://i.dummyjson.com/data/products/61/3.jpg',
+        {
+          src: 'https://i.dummyjson.com/data/products/61/1.jpg',
+          alt: 'Leather Straps Wristwatch',
+        },
+        {
+          src: 'https://i.dummyjson.com/data/products/61/2.png',
+          alt: 'Leather Straps Wristwatch',
+        },
+        {
+          src: 'https://i.dummyjson.com/data/products/61/3.jpg',
+          alt: 'Leather Straps Wristwatch',
+        },
       ],
       color: 'Blue',
     },
@@ -1258,8 +2527,14 @@
       category: 'mens-watches',
       imageSrc: 'https://i.dummyjson.com/data/products/62/thumbnail.jpg',
       images: [
-        'https://i.dummyjson.com/data/products/62/1.jpg',
-        'https://i.dummyjson.com/data/products/62/2.jpg',
+        {
+          src: 'https://i.dummyjson.com/data/products/62/1.jpg',
+          alt: 'Waterproof Leather Brand Watch',
+        },
+        {
+          src: 'https://i.dummyjson.com/data/products/62/2.jpg',
+          alt: 'Waterproof Leather Brand Watch',
+        },
       ],
       color: 'Blue',
     },
@@ -1276,10 +2551,22 @@
       category: 'mens-watches',
       imageSrc: 'https://i.dummyjson.com/data/products/63/thumbnail.webp',
       images: [
-        'https://i.dummyjson.com/data/products/63/1.jpg',
-        'https://i.dummyjson.com/data/products/63/2.jpg',
-        'https://i.dummyjson.com/data/products/63/3.png',
-        'https://i.dummyjson.com/data/products/63/4.jpeg',
+        {
+          src: 'https://i.dummyjson.com/data/products/63/1.jpg',
+          alt: 'Royal Blue Premium Watch',
+        },
+        {
+          src: 'https://i.dummyjson.com/data/products/63/2.jpg',
+          alt: 'Royal Blue Premium Watch',
+        },
+        {
+          src: 'https://i.dummyjson.com/data/products/63/3.png',
+          alt: 'Royal Blue Premium Watch',
+        },
+        {
+          src: 'https://i.dummyjson.com/data/products/63/4.jpeg',
+          alt: 'Royal Blue Premium Watch',
+        },
       ],
       color: 'Blue',
     },
@@ -1296,10 +2583,22 @@
       category: 'mens-watches',
       imageSrc: 'https://i.dummyjson.com/data/products/64/thumbnail.jpg',
       images: [
-        'https://i.dummyjson.com/data/products/64/1.jpg',
-        'https://i.dummyjson.com/data/products/64/2.webp',
-        'https://i.dummyjson.com/data/products/64/3.jpg',
-        'https://i.dummyjson.com/data/products/64/thumbnail.jpg',
+        {
+          src: 'https://i.dummyjson.com/data/products/64/1.jpg',
+          alt: 'Leather Strap Skeleton Watch',
+        },
+        {
+          src: 'https://i.dummyjson.com/data/products/64/2.webp',
+          alt: 'Leather Strap Skeleton Watch',
+        },
+        {
+          src: 'https://i.dummyjson.com/data/products/64/3.jpg',
+          alt: 'Leather Strap Skeleton Watch',
+        },
+        {
+          src: 'https://i.dummyjson.com/data/products/64/thumbnail.jpg',
+          alt: 'Leather Strap Skeleton Watch',
+        },
       ],
       color: 'Blue',
     },
@@ -1307,7 +2606,7 @@
       id: 65,
       name: 'Stainless Steel Wrist Watch',
       description:
-        "Stylish Watch For Man (Luxury) Classy Men\\'s Stainless Steel Wrist Watch - Box Packed",
+        "Stylish Watch For Man (Luxury) Classy Men\\\\'s Stainless Steel Wrist Watch - Box Packed",
       price: 47,
       discountPercentage: 17.79,
       rating: 4.79,
@@ -1316,11 +2615,26 @@
       category: 'mens-watches',
       imageSrc: 'https://i.dummyjson.com/data/products/65/thumbnail.webp',
       images: [
-        'https://i.dummyjson.com/data/products/65/1.jpg',
-        'https://i.dummyjson.com/data/products/65/2.webp',
-        'https://i.dummyjson.com/data/products/65/3.jpg',
-        'https://i.dummyjson.com/data/products/65/4.webp',
-        'https://i.dummyjson.com/data/products/65/thumbnail.webp',
+        {
+          src: 'https://i.dummyjson.com/data/products/65/1.jpg',
+          alt: 'Stainless Steel Wrist Watch',
+        },
+        {
+          src: 'https://i.dummyjson.com/data/products/65/2.webp',
+          alt: 'Stainless Steel Wrist Watch',
+        },
+        {
+          src: 'https://i.dummyjson.com/data/products/65/3.jpg',
+          alt: 'Stainless Steel Wrist Watch',
+        },
+        {
+          src: 'https://i.dummyjson.com/data/products/65/4.webp',
+          alt: 'Stainless Steel Wrist Watch',
+        },
+        {
+          src: 'https://i.dummyjson.com/data/products/65/thumbnail.webp',
+          alt: 'Stainless Steel Wrist Watch',
+        },
       ],
       color: 'Blue',
     },
@@ -1336,11 +2650,26 @@
       category: 'womens-watches',
       imageSrc: 'https://i.dummyjson.com/data/products/66/thumbnail.jpg',
       images: [
-        'https://i.dummyjson.com/data/products/66/1.jpg',
-        'https://i.dummyjson.com/data/products/66/2.jpg',
-        'https://i.dummyjson.com/data/products/66/3.jpg',
-        'https://i.dummyjson.com/data/products/66/4.JPG',
-        'https://i.dummyjson.com/data/products/66/thumbnail.jpg',
+        {
+          src: 'https://i.dummyjson.com/data/products/66/1.jpg',
+          alt: 'Steel Analog Couple Watches',
+        },
+        {
+          src: 'https://i.dummyjson.com/data/products/66/2.jpg',
+          alt: 'Steel Analog Couple Watches',
+        },
+        {
+          src: 'https://i.dummyjson.com/data/products/66/3.jpg',
+          alt: 'Steel Analog Couple Watches',
+        },
+        {
+          src: 'https://i.dummyjson.com/data/products/66/4.JPG',
+          alt: 'Steel Analog Couple Watches',
+        },
+        {
+          src: 'https://i.dummyjson.com/data/products/66/thumbnail.jpg',
+          alt: 'Steel Analog Couple Watches',
+        },
       ],
       color: 'Blue',
     },
@@ -1348,7 +2677,7 @@
       id: 67,
       name: 'Fashion Magnetic Wrist Watch',
       description:
-        "Buy this awesome  The product is originally manufactured by the company and it\\'s a top selling product with a very reasonable",
+        "Buy this awesome  The product is originally manufactured by the company and it\\\\'s a top selling product with a very reasonable",
       price: 60,
       discountPercentage: 16.69,
       rating: 4.03,
@@ -1357,11 +2686,26 @@
       category: 'womens-watches',
       imageSrc: 'https://i.dummyjson.com/data/products/67/thumbnail.jpg',
       images: [
-        'https://i.dummyjson.com/data/products/67/1.jpg',
-        'https://i.dummyjson.com/data/products/67/2.jpg',
-        'https://i.dummyjson.com/data/products/67/3.jpg',
-        'https://i.dummyjson.com/data/products/67/4.jpg',
-        'https://i.dummyjson.com/data/products/67/thumbnail.jpg',
+        {
+          src: 'https://i.dummyjson.com/data/products/67/1.jpg',
+          alt: 'Fashion Magnetic Wrist Watch',
+        },
+        {
+          src: 'https://i.dummyjson.com/data/products/67/2.jpg',
+          alt: 'Fashion Magnetic Wrist Watch',
+        },
+        {
+          src: 'https://i.dummyjson.com/data/products/67/3.jpg',
+          alt: 'Fashion Magnetic Wrist Watch',
+        },
+        {
+          src: 'https://i.dummyjson.com/data/products/67/4.jpg',
+          alt: 'Fashion Magnetic Wrist Watch',
+        },
+        {
+          src: 'https://i.dummyjson.com/data/products/67/thumbnail.jpg',
+          alt: 'Fashion Magnetic Wrist Watch',
+        },
       ],
       color: 'Blue',
     },
@@ -1378,8 +2722,14 @@
       category: 'womens-watches',
       imageSrc: 'https://i.dummyjson.com/data/products/68/thumbnail.webp',
       images: [
-        'https://i.dummyjson.com/data/products/68/1.jpg',
-        'https://i.dummyjson.com/data/products/68/2.jpg',
+        {
+          src: 'https://i.dummyjson.com/data/products/68/1.jpg',
+          alt: 'Stylish Luxury Digital Watch',
+        },
+        {
+          src: 'https://i.dummyjson.com/data/products/68/2.jpg',
+          alt: 'Stylish Luxury Digital Watch',
+        },
       ],
       color: 'Blue',
     },
@@ -1396,11 +2746,26 @@
       category: 'womens-watches',
       imageSrc: 'https://i.dummyjson.com/data/products/69/thumbnail.jpg',
       images: [
-        'https://i.dummyjson.com/data/products/69/1.jpg',
-        'https://i.dummyjson.com/data/products/69/2.jpg',
-        'https://i.dummyjson.com/data/products/69/3.webp',
-        'https://i.dummyjson.com/data/products/69/4.jpg',
-        'https://i.dummyjson.com/data/products/69/thumbnail.jpg',
+        {
+          src: 'https://i.dummyjson.com/data/products/69/1.jpg',
+          alt: 'Golden Watch Pearls Bracelet Watch',
+        },
+        {
+          src: 'https://i.dummyjson.com/data/products/69/2.jpg',
+          alt: 'Golden Watch Pearls Bracelet Watch',
+        },
+        {
+          src: 'https://i.dummyjson.com/data/products/69/3.webp',
+          alt: 'Golden Watch Pearls Bracelet Watch',
+        },
+        {
+          src: 'https://i.dummyjson.com/data/products/69/4.jpg',
+          alt: 'Golden Watch Pearls Bracelet Watch',
+        },
+        {
+          src: 'https://i.dummyjson.com/data/products/69/thumbnail.jpg',
+          alt: 'Golden Watch Pearls Bracelet Watch',
+        },
       ],
       color: 'Blue',
     },
@@ -1417,9 +2782,18 @@
       category: 'womens-watches',
       imageSrc: 'https://i.dummyjson.com/data/products/70/thumbnail.jpg',
       images: [
-        'https://i.dummyjson.com/data/products/70/1.jpg',
-        'https://i.dummyjson.com/data/products/70/2.jpg',
-        'https://i.dummyjson.com/data/products/70/thumbnail.jpg',
+        {
+          src: 'https://i.dummyjson.com/data/products/70/1.jpg',
+          alt: 'Stainless Steel Women',
+        },
+        {
+          src: 'https://i.dummyjson.com/data/products/70/2.jpg',
+          alt: 'Stainless Steel Women',
+        },
+        {
+          src: 'https://i.dummyjson.com/data/products/70/thumbnail.jpg',
+          alt: 'Stainless Steel Women',
+        },
       ],
       color: 'Blue',
     },
@@ -1436,10 +2810,22 @@
       category: 'womens-bags',
       imageSrc: 'https://i.dummyjson.com/data/products/71/thumbnail.jpg',
       images: [
-        'https://i.dummyjson.com/data/products/71/1.jpg',
-        'https://i.dummyjson.com/data/products/71/2.jpg',
-        'https://i.dummyjson.com/data/products/71/3.webp',
-        'https://i.dummyjson.com/data/products/71/thumbnail.jpg',
+        {
+          src: 'https://i.dummyjson.com/data/products/71/1.jpg',
+          alt: 'Women Shoulder Bags',
+        },
+        {
+          src: 'https://i.dummyjson.com/data/products/71/2.jpg',
+          alt: 'Women Shoulder Bags',
+        },
+        {
+          src: 'https://i.dummyjson.com/data/products/71/3.webp',
+          alt: 'Women Shoulder Bags',
+        },
+        {
+          src: 'https://i.dummyjson.com/data/products/71/thumbnail.jpg',
+          alt: 'Women Shoulder Bags',
+        },
       ],
       color: 'Blue',
     },
@@ -1456,11 +2842,26 @@
       category: 'womens-bags',
       imageSrc: 'https://i.dummyjson.com/data/products/72/thumbnail.webp',
       images: [
-        'https://i.dummyjson.com/data/products/72/1.jpg',
-        'https://i.dummyjson.com/data/products/72/2.png',
-        'https://i.dummyjson.com/data/products/72/3.webp',
-        'https://i.dummyjson.com/data/products/72/4.jpg',
-        'https://i.dummyjson.com/data/products/72/thumbnail.webp',
+        {
+          src: 'https://i.dummyjson.com/data/products/72/1.jpg',
+          alt: 'Handbag For Girls',
+        },
+        {
+          src: 'https://i.dummyjson.com/data/products/72/2.png',
+          alt: 'Handbag For Girls',
+        },
+        {
+          src: 'https://i.dummyjson.com/data/products/72/3.webp',
+          alt: 'Handbag For Girls',
+        },
+        {
+          src: 'https://i.dummyjson.com/data/products/72/4.jpg',
+          alt: 'Handbag For Girls',
+        },
+        {
+          src: 'https://i.dummyjson.com/data/products/72/thumbnail.webp',
+          alt: 'Handbag For Girls',
+        },
       ],
       color: 'Blue',
     },
@@ -1477,10 +2878,22 @@
       category: 'womens-bags',
       imageSrc: 'https://i.dummyjson.com/data/products/73/thumbnail.jpg',
       images: [
-        'https://i.dummyjson.com/data/products/73/1.jpg',
-        'https://i.dummyjson.com/data/products/73/2.webp',
-        'https://i.dummyjson.com/data/products/73/3.jpg',
-        'https://i.dummyjson.com/data/products/73/thumbnail.jpg',
+        {
+          src: 'https://i.dummyjson.com/data/products/73/1.jpg',
+          alt: 'Fancy hand clutch',
+        },
+        {
+          src: 'https://i.dummyjson.com/data/products/73/2.webp',
+          alt: 'Fancy hand clutch',
+        },
+        {
+          src: 'https://i.dummyjson.com/data/products/73/3.jpg',
+          alt: 'Fancy hand clutch',
+        },
+        {
+          src: 'https://i.dummyjson.com/data/products/73/thumbnail.jpg',
+          alt: 'Fancy hand clutch',
+        },
       ],
       color: 'Blue',
     },
@@ -1497,11 +2910,26 @@
       category: 'womens-bags',
       imageSrc: 'https://i.dummyjson.com/data/products/74/thumbnail.jpg',
       images: [
-        'https://i.dummyjson.com/data/products/74/1.jpg',
-        'https://i.dummyjson.com/data/products/74/2.jpg',
-        'https://i.dummyjson.com/data/products/74/3.jpg',
-        'https://i.dummyjson.com/data/products/74/4.jpg',
-        'https://i.dummyjson.com/data/products/74/thumbnail.jpg',
+        {
+          src: 'https://i.dummyjson.com/data/products/74/1.jpg',
+          alt: 'Leather Hand Bag',
+        },
+        {
+          src: 'https://i.dummyjson.com/data/products/74/2.jpg',
+          alt: 'Leather Hand Bag',
+        },
+        {
+          src: 'https://i.dummyjson.com/data/products/74/3.jpg',
+          alt: 'Leather Hand Bag',
+        },
+        {
+          src: 'https://i.dummyjson.com/data/products/74/4.jpg',
+          alt: 'Leather Hand Bag',
+        },
+        {
+          src: 'https://i.dummyjson.com/data/products/74/thumbnail.jpg',
+          alt: 'Leather Hand Bag',
+        },
       ],
       color: 'Blue',
     },
@@ -1518,10 +2946,22 @@
       category: 'womens-bags',
       imageSrc: 'https://i.dummyjson.com/data/products/75/thumbnail.jpg',
       images: [
-        'https://i.dummyjson.com/data/products/75/1.jpg',
-        'https://i.dummyjson.com/data/products/75/2.jpg',
-        'https://i.dummyjson.com/data/products/75/3.jpg',
-        'https://i.dummyjson.com/data/products/75/thumbnail.jpg',
+        {
+          src: 'https://i.dummyjson.com/data/products/75/1.jpg',
+          alt: 'Seven Pocket Women Bag',
+        },
+        {
+          src: 'https://i.dummyjson.com/data/products/75/2.jpg',
+          alt: 'Seven Pocket Women Bag',
+        },
+        {
+          src: 'https://i.dummyjson.com/data/products/75/3.jpg',
+          alt: 'Seven Pocket Women Bag',
+        },
+        {
+          src: 'https://i.dummyjson.com/data/products/75/thumbnail.jpg',
+          alt: 'Seven Pocket Women Bag',
+        },
       ],
       color: 'Blue',
     },
@@ -1538,9 +2978,18 @@
       category: 'womens-jewellery',
       imageSrc: 'https://i.dummyjson.com/data/products/76/thumbnail.jpg',
       images: [
-        'https://i.dummyjson.com/data/products/76/1.jpg',
-        'https://i.dummyjson.com/data/products/76/2.jpg',
-        'https://i.dummyjson.com/data/products/76/thumbnail.jpg',
+        {
+          src: 'https://i.dummyjson.com/data/products/76/1.jpg',
+          alt: 'Silver Ring Set Women',
+        },
+        {
+          src: 'https://i.dummyjson.com/data/products/76/2.jpg',
+          alt: 'Silver Ring Set Women',
+        },
+        {
+          src: 'https://i.dummyjson.com/data/products/76/thumbnail.jpg',
+          alt: 'Silver Ring Set Women',
+        },
       ],
       color: 'Blue',
     },
@@ -1557,10 +3006,22 @@
       category: 'womens-jewellery',
       imageSrc: 'https://i.dummyjson.com/data/products/77/thumbnail.jpg',
       images: [
-        'https://i.dummyjson.com/data/products/77/1.jpg',
-        'https://i.dummyjson.com/data/products/77/2.jpg',
-        'https://i.dummyjson.com/data/products/77/3.jpg',
-        'https://i.dummyjson.com/data/products/77/thumbnail.jpg',
+        {
+          src: 'https://i.dummyjson.com/data/products/77/1.jpg',
+          alt: 'Rose Ring',
+        },
+        {
+          src: 'https://i.dummyjson.com/data/products/77/2.jpg',
+          alt: 'Rose Ring',
+        },
+        {
+          src: 'https://i.dummyjson.com/data/products/77/3.jpg',
+          alt: 'Rose Ring',
+        },
+        {
+          src: 'https://i.dummyjson.com/data/products/77/thumbnail.jpg',
+          alt: 'Rose Ring',
+        },
       ],
       color: 'Blue',
     },
@@ -1576,7 +3037,12 @@
       brand: 'Fashion Jewellery',
       category: 'womens-jewellery',
       imageSrc: 'https://i.dummyjson.com/data/products/78/thumbnail.jpg',
-      images: ['https://i.dummyjson.com/data/products/78/thumbnail.jpg'],
+      images: [
+        {
+          src: 'https://i.dummyjson.com/data/products/78/thumbnail.jpg',
+          alt: 'Rhinestone Korean Style Open Rings',
+        },
+      ],
       color: 'Blue',
     },
     {
@@ -1591,7 +3057,12 @@
       brand: 'Fashion Jewellery',
       category: 'womens-jewellery',
       imageSrc: 'https://i.dummyjson.com/data/products/79/thumbnail.jpg',
-      images: ['https://i.dummyjson.com/data/products/79/1.jpg'],
+      images: [
+        {
+          src: 'https://i.dummyjson.com/data/products/79/1.jpg',
+          alt: 'Elegant Female Pearl Earrings',
+        },
+      ],
       color: 'Blue',
     },
     {
@@ -1607,11 +3078,26 @@
       category: 'womens-jewellery',
       imageSrc: 'https://i.dummyjson.com/data/products/80/thumbnail.jpg',
       images: [
-        'https://i.dummyjson.com/data/products/80/1.jpg',
-        'https://i.dummyjson.com/data/products/80/2.jpg',
-        'https://i.dummyjson.com/data/products/80/3.png',
-        'https://i.dummyjson.com/data/products/80/4.jpg',
-        'https://i.dummyjson.com/data/products/80/thumbnail.jpg',
+        {
+          src: 'https://i.dummyjson.com/data/products/80/1.jpg',
+          alt: 'Chain Pin Tassel Earrings',
+        },
+        {
+          src: 'https://i.dummyjson.com/data/products/80/2.jpg',
+          alt: 'Chain Pin Tassel Earrings',
+        },
+        {
+          src: 'https://i.dummyjson.com/data/products/80/3.png',
+          alt: 'Chain Pin Tassel Earrings',
+        },
+        {
+          src: 'https://i.dummyjson.com/data/products/80/4.jpg',
+          alt: 'Chain Pin Tassel Earrings',
+        },
+        {
+          src: 'https://i.dummyjson.com/data/products/80/thumbnail.jpg',
+          alt: 'Chain Pin Tassel Earrings',
+        },
       ],
       color: 'Blue',
     },
@@ -1628,11 +3114,26 @@
       category: 'sunglasses',
       imageSrc: 'https://i.dummyjson.com/data/products/81/thumbnail.jpg',
       images: [
-        'https://i.dummyjson.com/data/products/81/1.jpg',
-        'https://i.dummyjson.com/data/products/81/2.jpg',
-        'https://i.dummyjson.com/data/products/81/3.jpg',
-        'https://i.dummyjson.com/data/products/81/4.webp',
-        'https://i.dummyjson.com/data/products/81/thumbnail.jpg',
+        {
+          src: 'https://i.dummyjson.com/data/products/81/1.jpg',
+          alt: 'Round Silver Frame Sun Glasses',
+        },
+        {
+          src: 'https://i.dummyjson.com/data/products/81/2.jpg',
+          alt: 'Round Silver Frame Sun Glasses',
+        },
+        {
+          src: 'https://i.dummyjson.com/data/products/81/3.jpg',
+          alt: 'Round Silver Frame Sun Glasses',
+        },
+        {
+          src: 'https://i.dummyjson.com/data/products/81/4.webp',
+          alt: 'Round Silver Frame Sun Glasses',
+        },
+        {
+          src: 'https://i.dummyjson.com/data/products/81/thumbnail.jpg',
+          alt: 'Round Silver Frame Sun Glasses',
+        },
       ],
       color: 'Blue',
     },
@@ -1649,11 +3150,26 @@
       category: 'sunglasses',
       imageSrc: 'https://i.dummyjson.com/data/products/82/thumbnail.jpg',
       images: [
-        'https://i.dummyjson.com/data/products/82/1.jpg',
-        'https://i.dummyjson.com/data/products/82/2.webp',
-        'https://i.dummyjson.com/data/products/82/3.jpg',
-        'https://i.dummyjson.com/data/products/82/4.jpg',
-        'https://i.dummyjson.com/data/products/82/thumbnail.jpg',
+        {
+          src: 'https://i.dummyjson.com/data/products/82/1.jpg',
+          alt: 'Kabir Singh Square Sunglass',
+        },
+        {
+          src: 'https://i.dummyjson.com/data/products/82/2.webp',
+          alt: 'Kabir Singh Square Sunglass',
+        },
+        {
+          src: 'https://i.dummyjson.com/data/products/82/3.jpg',
+          alt: 'Kabir Singh Square Sunglass',
+        },
+        {
+          src: 'https://i.dummyjson.com/data/products/82/4.jpg',
+          alt: 'Kabir Singh Square Sunglass',
+        },
+        {
+          src: 'https://i.dummyjson.com/data/products/82/thumbnail.jpg',
+          alt: 'Kabir Singh Square Sunglass',
+        },
       ],
       color: 'Blue',
     },
@@ -1670,11 +3186,26 @@
       category: 'sunglasses',
       imageSrc: 'https://i.dummyjson.com/data/products/83/thumbnail.jpg',
       images: [
-        'https://i.dummyjson.com/data/products/83/1.jpg',
-        'https://i.dummyjson.com/data/products/83/2.jpg',
-        'https://i.dummyjson.com/data/products/83/3.jpg',
-        'https://i.dummyjson.com/data/products/83/4.jpg',
-        'https://i.dummyjson.com/data/products/83/thumbnail.jpg',
+        {
+          src: 'https://i.dummyjson.com/data/products/83/1.jpg',
+          alt: 'Wiley X Night Vision Yellow Glasses',
+        },
+        {
+          src: 'https://i.dummyjson.com/data/products/83/2.jpg',
+          alt: 'Wiley X Night Vision Yellow Glasses',
+        },
+        {
+          src: 'https://i.dummyjson.com/data/products/83/3.jpg',
+          alt: 'Wiley X Night Vision Yellow Glasses',
+        },
+        {
+          src: 'https://i.dummyjson.com/data/products/83/4.jpg',
+          alt: 'Wiley X Night Vision Yellow Glasses',
+        },
+        {
+          src: 'https://i.dummyjson.com/data/products/83/thumbnail.jpg',
+          alt: 'Wiley X Night Vision Yellow Glasses',
+        },
       ],
       color: 'Blue',
     },
@@ -1691,9 +3222,18 @@
       category: 'sunglasses',
       imageSrc: 'https://i.dummyjson.com/data/products/84/thumbnail.jpg',
       images: [
-        'https://i.dummyjson.com/data/products/84/1.jpg',
-        'https://i.dummyjson.com/data/products/84/2.jpg',
-        'https://i.dummyjson.com/data/products/84/thumbnail.jpg',
+        {
+          src: 'https://i.dummyjson.com/data/products/84/1.jpg',
+          alt: 'Square Sunglasses',
+        },
+        {
+          src: 'https://i.dummyjson.com/data/products/84/2.jpg',
+          alt: 'Square Sunglasses',
+        },
+        {
+          src: 'https://i.dummyjson.com/data/products/84/thumbnail.jpg',
+          alt: 'Square Sunglasses',
+        },
       ],
       color: 'Blue',
     },
@@ -1710,9 +3250,18 @@
       category: 'sunglasses',
       imageSrc: 'https://i.dummyjson.com/data/products/85/thumbnail.jpg',
       images: [
-        'https://i.dummyjson.com/data/products/85/1.jpg',
-        'https://i.dummyjson.com/data/products/85/2.jpg',
-        'https://i.dummyjson.com/data/products/85/thumbnail.jpg',
+        {
+          src: 'https://i.dummyjson.com/data/products/85/1.jpg',
+          alt: 'LouisWill Men Sunglasses',
+        },
+        {
+          src: 'https://i.dummyjson.com/data/products/85/2.jpg',
+          alt: 'LouisWill Men Sunglasses',
+        },
+        {
+          src: 'https://i.dummyjson.com/data/products/85/thumbnail.jpg',
+          alt: 'LouisWill Men Sunglasses',
+        },
       ],
       color: 'Blue',
     },
@@ -1729,11 +3278,26 @@
       category: 'automotive',
       imageSrc: 'https://i.dummyjson.com/data/products/86/thumbnail.jpg',
       images: [
-        'https://i.dummyjson.com/data/products/86/1.jpg',
-        'https://i.dummyjson.com/data/products/86/2.webp',
-        'https://i.dummyjson.com/data/products/86/3.jpg',
-        'https://i.dummyjson.com/data/products/86/4.jpg',
-        'https://i.dummyjson.com/data/products/86/thumbnail.jpg',
+        {
+          src: 'https://i.dummyjson.com/data/products/86/1.jpg',
+          alt: 'Bluetooth Aux',
+        },
+        {
+          src: 'https://i.dummyjson.com/data/products/86/2.webp',
+          alt: 'Bluetooth Aux',
+        },
+        {
+          src: 'https://i.dummyjson.com/data/products/86/3.jpg',
+          alt: 'Bluetooth Aux',
+        },
+        {
+          src: 'https://i.dummyjson.com/data/products/86/4.jpg',
+          alt: 'Bluetooth Aux',
+        },
+        {
+          src: 'https://i.dummyjson.com/data/products/86/thumbnail.jpg',
+          alt: 'Bluetooth Aux',
+        },
       ],
       color: 'Blue',
     },
@@ -1750,11 +3314,26 @@
       category: 'automotive',
       imageSrc: 'https://i.dummyjson.com/data/products/87/thumbnail.jpg',
       images: [
-        'https://i.dummyjson.com/data/products/87/1.jpg',
-        'https://i.dummyjson.com/data/products/87/2.jpg',
-        'https://i.dummyjson.com/data/products/87/3.jpg',
-        'https://i.dummyjson.com/data/products/87/4.jpg',
-        'https://i.dummyjson.com/data/products/87/thumbnail.jpg',
+        {
+          src: 'https://i.dummyjson.com/data/products/87/1.jpg',
+          alt: 't Temperature Controller Incubator Controller',
+        },
+        {
+          src: 'https://i.dummyjson.com/data/products/87/2.jpg',
+          alt: 't Temperature Controller Incubator Controller',
+        },
+        {
+          src: 'https://i.dummyjson.com/data/products/87/3.jpg',
+          alt: 't Temperature Controller Incubator Controller',
+        },
+        {
+          src: 'https://i.dummyjson.com/data/products/87/4.jpg',
+          alt: 't Temperature Controller Incubator Controller',
+        },
+        {
+          src: 'https://i.dummyjson.com/data/products/87/thumbnail.jpg',
+          alt: 't Temperature Controller Incubator Controller',
+        },
       ],
       color: 'Blue',
     },
@@ -1771,11 +3350,26 @@
       category: 'automotive',
       imageSrc: 'https://i.dummyjson.com/data/products/88/thumbnail.jpg',
       images: [
-        'https://i.dummyjson.com/data/products/88/1.jpg',
-        'https://i.dummyjson.com/data/products/88/2.jpg',
-        'https://i.dummyjson.com/data/products/88/3.jpg',
-        'https://i.dummyjson.com/data/products/88/4.webp',
-        'https://i.dummyjson.com/data/products/88/thumbnail.jpg',
+        {
+          src: 'https://i.dummyjson.com/data/products/88/1.jpg',
+          alt: 'TC Reusable Silicone Magic Washing Gloves',
+        },
+        {
+          src: 'https://i.dummyjson.com/data/products/88/2.jpg',
+          alt: 'TC Reusable Silicone Magic Washing Gloves',
+        },
+        {
+          src: 'https://i.dummyjson.com/data/products/88/3.jpg',
+          alt: 'TC Reusable Silicone Magic Washing Gloves',
+        },
+        {
+          src: 'https://i.dummyjson.com/data/products/88/4.webp',
+          alt: 'TC Reusable Silicone Magic Washing Gloves',
+        },
+        {
+          src: 'https://i.dummyjson.com/data/products/88/thumbnail.jpg',
+          alt: 'TC Reusable Silicone Magic Washing Gloves',
+        },
       ],
       color: 'Blue',
     },
@@ -1792,11 +3386,26 @@
       category: 'automotive',
       imageSrc: 'https://i.dummyjson.com/data/products/89/thumbnail.jpg',
       images: [
-        'https://i.dummyjson.com/data/products/89/1.jpg',
-        'https://i.dummyjson.com/data/products/89/2.jpg',
-        'https://i.dummyjson.com/data/products/89/3.jpg',
-        'https://i.dummyjson.com/data/products/89/4.jpg',
-        'https://i.dummyjson.com/data/products/89/thumbnail.jpg',
+        {
+          src: 'https://i.dummyjson.com/data/products/89/1.jpg',
+          alt: 'Qualcomm original Car Charger',
+        },
+        {
+          src: 'https://i.dummyjson.com/data/products/89/2.jpg',
+          alt: 'Qualcomm original Car Charger',
+        },
+        {
+          src: 'https://i.dummyjson.com/data/products/89/3.jpg',
+          alt: 'Qualcomm original Car Charger',
+        },
+        {
+          src: 'https://i.dummyjson.com/data/products/89/4.jpg',
+          alt: 'Qualcomm original Car Charger',
+        },
+        {
+          src: 'https://i.dummyjson.com/data/products/89/thumbnail.jpg',
+          alt: 'Qualcomm original Car Charger',
+        },
       ],
       color: 'Blue',
     },
@@ -1813,11 +3422,26 @@
       category: 'automotive',
       imageSrc: 'https://i.dummyjson.com/data/products/90/thumbnail.jpg',
       images: [
-        'https://i.dummyjson.com/data/products/90/1.jpg',
-        'https://i.dummyjson.com/data/products/90/2.jpg',
-        'https://i.dummyjson.com/data/products/90/3.jpg',
-        'https://i.dummyjson.com/data/products/90/4.jpg',
-        'https://i.dummyjson.com/data/products/90/thumbnail.jpg',
+        {
+          src: 'https://i.dummyjson.com/data/products/90/1.jpg',
+          alt: 'Cycle Bike Glow',
+        },
+        {
+          src: 'https://i.dummyjson.com/data/products/90/2.jpg',
+          alt: 'Cycle Bike Glow',
+        },
+        {
+          src: 'https://i.dummyjson.com/data/products/90/3.jpg',
+          alt: 'Cycle Bike Glow',
+        },
+        {
+          src: 'https://i.dummyjson.com/data/products/90/4.jpg',
+          alt: 'Cycle Bike Glow',
+        },
+        {
+          src: 'https://i.dummyjson.com/data/products/90/thumbnail.jpg',
+          alt: 'Cycle Bike Glow',
+        },
       ],
       color: 'Blue',
     },
@@ -1834,11 +3458,26 @@
       category: 'motorcycle',
       imageSrc: 'https://i.dummyjson.com/data/products/91/thumbnail.jpg',
       images: [
-        'https://i.dummyjson.com/data/products/91/1.jpg',
-        'https://i.dummyjson.com/data/products/91/2.jpg',
-        'https://i.dummyjson.com/data/products/91/3.jpg',
-        'https://i.dummyjson.com/data/products/91/4.jpg',
-        'https://i.dummyjson.com/data/products/91/thumbnail.jpg',
+        {
+          src: 'https://i.dummyjson.com/data/products/91/1.jpg',
+          alt: 'Black Motorbike',
+        },
+        {
+          src: 'https://i.dummyjson.com/data/products/91/2.jpg',
+          alt: 'Black Motorbike',
+        },
+        {
+          src: 'https://i.dummyjson.com/data/products/91/3.jpg',
+          alt: 'Black Motorbike',
+        },
+        {
+          src: 'https://i.dummyjson.com/data/products/91/4.jpg',
+          alt: 'Black Motorbike',
+        },
+        {
+          src: 'https://i.dummyjson.com/data/products/91/thumbnail.jpg',
+          alt: 'Black Motorbike',
+        },
       ],
       color: 'Blue',
     },
@@ -1855,10 +3494,22 @@
       category: 'motorcycle',
       imageSrc: 'https://i.dummyjson.com/data/products/92/thumbnail.jpg',
       images: [
-        'https://i.dummyjson.com/data/products/92/1.jpg',
-        'https://i.dummyjson.com/data/products/92/2.jpg',
-        'https://i.dummyjson.com/data/products/92/3.jpg',
-        'https://i.dummyjson.com/data/products/92/4.jpg',
+        {
+          src: 'https://i.dummyjson.com/data/products/92/1.jpg',
+          alt: 'HOT SALE IN EUROPE electric racing motorcycle',
+        },
+        {
+          src: 'https://i.dummyjson.com/data/products/92/2.jpg',
+          alt: 'HOT SALE IN EUROPE electric racing motorcycle',
+        },
+        {
+          src: 'https://i.dummyjson.com/data/products/92/3.jpg',
+          alt: 'HOT SALE IN EUROPE electric racing motorcycle',
+        },
+        {
+          src: 'https://i.dummyjson.com/data/products/92/4.jpg',
+          alt: 'HOT SALE IN EUROPE electric racing motorcycle',
+        },
       ],
       color: 'Blue',
     },
@@ -1875,11 +3526,26 @@
       category: 'motorcycle',
       imageSrc: 'https://i.dummyjson.com/data/products/93/thumbnail.jpg',
       images: [
-        'https://i.dummyjson.com/data/products/93/1.jpg',
-        'https://i.dummyjson.com/data/products/93/2.jpg',
-        'https://i.dummyjson.com/data/products/93/3.jpg',
-        'https://i.dummyjson.com/data/products/93/4.jpg',
-        'https://i.dummyjson.com/data/products/93/thumbnail.jpg',
+        {
+          src: 'https://i.dummyjson.com/data/products/93/1.jpg',
+          alt: 'Automatic Motor Gas Motorcycles',
+        },
+        {
+          src: 'https://i.dummyjson.com/data/products/93/2.jpg',
+          alt: 'Automatic Motor Gas Motorcycles',
+        },
+        {
+          src: 'https://i.dummyjson.com/data/products/93/3.jpg',
+          alt: 'Automatic Motor Gas Motorcycles',
+        },
+        {
+          src: 'https://i.dummyjson.com/data/products/93/4.jpg',
+          alt: 'Automatic Motor Gas Motorcycles',
+        },
+        {
+          src: 'https://i.dummyjson.com/data/products/93/thumbnail.jpg',
+          alt: 'Automatic Motor Gas Motorcycles',
+        },
       ],
       color: 'Blue',
     },
@@ -1896,10 +3562,22 @@
       category: 'motorcycle',
       imageSrc: 'https://i.dummyjson.com/data/products/94/thumbnail.webp',
       images: [
-        'https://i.dummyjson.com/data/products/94/1.webp',
-        'https://i.dummyjson.com/data/products/94/2.jpg',
-        'https://i.dummyjson.com/data/products/94/3.jpg',
-        'https://i.dummyjson.com/data/products/94/thumbnail.webp',
+        {
+          src: 'https://i.dummyjson.com/data/products/94/1.webp',
+          alt: 'new arrivals Fashion motocross goggles',
+        },
+        {
+          src: 'https://i.dummyjson.com/data/products/94/2.jpg',
+          alt: 'new arrivals Fashion motocross goggles',
+        },
+        {
+          src: 'https://i.dummyjson.com/data/products/94/3.jpg',
+          alt: 'new arrivals Fashion motocross goggles',
+        },
+        {
+          src: 'https://i.dummyjson.com/data/products/94/thumbnail.webp',
+          alt: 'new arrivals Fashion motocross goggles',
+        },
       ],
       color: 'Blue',
     },
@@ -1916,11 +3594,26 @@
       category: 'motorcycle',
       imageSrc: 'https://i.dummyjson.com/data/products/95/thumbnail.jpg',
       images: [
-        'https://i.dummyjson.com/data/products/95/1.jpg',
-        'https://i.dummyjson.com/data/products/95/2.jpg',
-        'https://i.dummyjson.com/data/products/95/3.jpg',
-        'https://i.dummyjson.com/data/products/95/4.jpg',
-        'https://i.dummyjson.com/data/products/95/thumbnail.jpg',
+        {
+          src: 'https://i.dummyjson.com/data/products/95/1.jpg',
+          alt: 'Wholesale cargo lashing Belt',
+        },
+        {
+          src: 'https://i.dummyjson.com/data/products/95/2.jpg',
+          alt: 'Wholesale cargo lashing Belt',
+        },
+        {
+          src: 'https://i.dummyjson.com/data/products/95/3.jpg',
+          alt: 'Wholesale cargo lashing Belt',
+        },
+        {
+          src: 'https://i.dummyjson.com/data/products/95/4.jpg',
+          alt: 'Wholesale cargo lashing Belt',
+        },
+        {
+          src: 'https://i.dummyjson.com/data/products/95/thumbnail.jpg',
+          alt: 'Wholesale cargo lashing Belt',
+        },
       ],
       color: 'Blue',
     },
@@ -1937,11 +3630,26 @@
       category: 'lighting',
       imageSrc: 'https://i.dummyjson.com/data/products/96/thumbnail.jpg',
       images: [
-        'https://i.dummyjson.com/data/products/96/1.jpg',
-        'https://i.dummyjson.com/data/products/96/2.jpg',
-        'https://i.dummyjson.com/data/products/96/3.jpg',
-        'https://i.dummyjson.com/data/products/96/4.jpg',
-        'https://i.dummyjson.com/data/products/96/thumbnail.jpg',
+        {
+          src: 'https://i.dummyjson.com/data/products/96/1.jpg',
+          alt: 'lighting ceiling kitchen',
+        },
+        {
+          src: 'https://i.dummyjson.com/data/products/96/2.jpg',
+          alt: 'lighting ceiling kitchen',
+        },
+        {
+          src: 'https://i.dummyjson.com/data/products/96/3.jpg',
+          alt: 'lighting ceiling kitchen',
+        },
+        {
+          src: 'https://i.dummyjson.com/data/products/96/4.jpg',
+          alt: 'lighting ceiling kitchen',
+        },
+        {
+          src: 'https://i.dummyjson.com/data/products/96/thumbnail.jpg',
+          alt: 'lighting ceiling kitchen',
+        },
       ],
       color: 'Blue',
     },
@@ -1958,11 +3666,26 @@
       category: 'lighting',
       imageSrc: 'https://i.dummyjson.com/data/products/97/thumbnail.jpg',
       images: [
-        'https://i.dummyjson.com/data/products/97/1.jpg',
-        'https://i.dummyjson.com/data/products/97/2.jpg',
-        'https://i.dummyjson.com/data/products/97/3.jpg',
-        'https://i.dummyjson.com/data/products/97/4.webp',
-        'https://i.dummyjson.com/data/products/97/thumbnail.jpg',
+        {
+          src: 'https://i.dummyjson.com/data/products/97/1.jpg',
+          alt: 'Metal Ceramic Flower',
+        },
+        {
+          src: 'https://i.dummyjson.com/data/products/97/2.jpg',
+          alt: 'Metal Ceramic Flower',
+        },
+        {
+          src: 'https://i.dummyjson.com/data/products/97/3.jpg',
+          alt: 'Metal Ceramic Flower',
+        },
+        {
+          src: 'https://i.dummyjson.com/data/products/97/4.webp',
+          alt: 'Metal Ceramic Flower',
+        },
+        {
+          src: 'https://i.dummyjson.com/data/products/97/thumbnail.jpg',
+          alt: 'Metal Ceramic Flower',
+        },
       ],
       color: 'Blue',
     },
@@ -1979,11 +3702,26 @@
       category: 'lighting',
       imageSrc: 'https://i.dummyjson.com/data/products/98/thumbnail.jpg',
       images: [
-        'https://i.dummyjson.com/data/products/98/1.jpg',
-        'https://i.dummyjson.com/data/products/98/2.jpg',
-        'https://i.dummyjson.com/data/products/98/3.jpg',
-        'https://i.dummyjson.com/data/products/98/4.jpg',
-        'https://i.dummyjson.com/data/products/98/thumbnail.jpg',
+        {
+          src: 'https://i.dummyjson.com/data/products/98/1.jpg',
+          alt: '3 lights lndenpant kitchen islang',
+        },
+        {
+          src: 'https://i.dummyjson.com/data/products/98/2.jpg',
+          alt: '3 lights lndenpant kitchen islang',
+        },
+        {
+          src: 'https://i.dummyjson.com/data/products/98/3.jpg',
+          alt: '3 lights lndenpant kitchen islang',
+        },
+        {
+          src: 'https://i.dummyjson.com/data/products/98/4.jpg',
+          alt: '3 lights lndenpant kitchen islang',
+        },
+        {
+          src: 'https://i.dummyjson.com/data/products/98/thumbnail.jpg',
+          alt: '3 lights lndenpant kitchen islang',
+        },
       ],
       color: 'Blue',
     },
@@ -2000,11 +3738,26 @@
       category: 'lighting',
       imageSrc: 'https://i.dummyjson.com/data/products/99/thumbnail.jpg',
       images: [
-        'https://i.dummyjson.com/data/products/99/1.jpg',
-        'https://i.dummyjson.com/data/products/99/2.jpg',
-        'https://i.dummyjson.com/data/products/99/3.jpg',
-        'https://i.dummyjson.com/data/products/99/4.jpg',
-        'https://i.dummyjson.com/data/products/99/thumbnail.jpg',
+        {
+          src: 'https://i.dummyjson.com/data/products/99/1.jpg',
+          alt: 'American Vintage Wood Pendant Light',
+        },
+        {
+          src: 'https://i.dummyjson.com/data/products/99/2.jpg',
+          alt: 'American Vintage Wood Pendant Light',
+        },
+        {
+          src: 'https://i.dummyjson.com/data/products/99/3.jpg',
+          alt: 'American Vintage Wood Pendant Light',
+        },
+        {
+          src: 'https://i.dummyjson.com/data/products/99/4.jpg',
+          alt: 'American Vintage Wood Pendant Light',
+        },
+        {
+          src: 'https://i.dummyjson.com/data/products/99/thumbnail.jpg',
+          alt: 'American Vintage Wood Pendant Light',
+        },
       ],
       color: 'Blue',
     },
@@ -2020,22 +3773,36 @@
       category: 'lighting',
       imageSrc: 'https://i.dummyjson.com/data/products/100/thumbnail.jpg',
       images: [
-        'https://i.dummyjson.com/data/products/100/1.jpg',
-        'https://i.dummyjson.com/data/products/100/2.jpg',
-        'https://i.dummyjson.com/data/products/100/3.jpg',
-        'https://i.dummyjson.com/data/products/100/thumbnail.jpg',
+        {
+          src: 'https://i.dummyjson.com/data/products/100/1.jpg',
+          alt: 'Crystal chandelier maria theresa for 12 light',
+        },
+        {
+          src: 'https://i.dummyjson.com/data/products/100/2.jpg',
+          alt: 'Crystal chandelier maria theresa for 12 light',
+        },
+        {
+          src: 'https://i.dummyjson.com/data/products/100/3.jpg',
+          alt: 'Crystal chandelier maria theresa for 12 light',
+        },
+        {
+          src: 'https://i.dummyjson.com/data/products/100/thumbnail.jpg',
+          alt: 'Crystal chandelier maria theresa for 12 light',
+        },
       ],
       color: 'Blue',
     },
   ];
     
-    const addColor = products.map((product) => ({
-      ...product,
-      images: product.images.map((img) => ({ src: img, alt: product .name})),
-    }));
+    const addSizes = products.map((product) => {
+      if(!product.sizes){
+        return {...product, sizes:[]}
+      }
+      return product
+    });
  
 
-console.log(addColor);
+console.log(addSizes);
   
 //  const categories = [...new Set(products.map((product) => product.images))];
 

@@ -1,7 +1,3 @@
-
-        
-
-
 {
     "products": [
         {
@@ -37,7 +33,8 @@
                     "alt": "iPhone 9"
                 }
             ],
-            "color": "Blue"
+            "color": "Blue",
+            "sizes": []
         },
         {
             "id": 2,
@@ -68,12 +65,13 @@
                     "alt": "iPhone X"
                 }
             ],
-            "color": "Blue"
+            "color": "Blue",
+            "sizes": []
         },
         {
             "id": 3,
             "name": "Samsung Universe 9",
-            "description": "Samsung\\\\'s new variant which goes beyond Galaxy to the Universe",
+            "description": "Samsung\\\\\\'s new variant which goes beyond Galaxy to the Universe",
             "price": 1249,
             "discountPercentage": 15.46,
             "rating": 4.09,
@@ -87,7 +85,8 @@
                     "alt": "Samsung Universe 9"
                 }
             ],
-            "color": "Blue"
+            "color": "Blue",
+            "sizes": []
         },
         {
             "id": 4,
@@ -122,7 +121,8 @@
                     "alt": "OPPOF19"
                 }
             ],
-            "color": "Blue"
+            "color": "Blue",
+            "sizes": []
         },
         {
             "id": 5,
@@ -149,7 +149,8 @@
                     "alt": "Huawei P30"
                 }
             ],
-            "color": "Blue"
+            "color": "Blue",
+            "sizes": []
         },
         {
             "id": 6,
@@ -180,7 +181,8 @@
                     "alt": "MacBook Pro"
                 }
             ],
-            "color": "Blue"
+            "color": "Blue",
+            "sizes": []
         },
         {
             "id": 7,
@@ -211,7 +213,8 @@
                     "alt": "Samsung Galaxy Book"
                 }
             ],
-            "color": "Blue"
+            "color": "Blue",
+            "sizes": []
         },
         {
             "id": 8,
@@ -246,7 +249,8 @@
                     "alt": "Microsoft Surface Laptop 4"
                 }
             ],
-            "color": "Blue"
+            "color": "Blue",
+            "sizes": []
         },
         {
             "id": 9,
@@ -281,7 +285,8 @@
                     "alt": "Infinix INBOOK"
                 }
             ],
-            "color": "Blue"
+            "color": "Blue",
+            "sizes": []
         },
         {
             "id": 10,
@@ -312,7 +317,8 @@
                     "alt": "HP Pavilion 15-DK1056WM"
                 }
             ],
-            "color": "Blue"
+            "color": "Blue",
+            "sizes": []
         },
         {
             "id": 11,
@@ -343,7 +349,8 @@
                     "alt": "perfume Oil"
                 }
             ],
-            "color": "Blue"
+            "color": "Blue",
+            "sizes": []
         },
         {
             "id": 12,
@@ -378,7 +385,8 @@
                     "alt": "Brown Perfume"
                 }
             ],
-            "color": "Blue"
+            "color": "Blue",
+            "sizes": []
         },
         {
             "id": 13,
@@ -413,7 +421,8 @@
                     "alt": "Fog Scent Xpressio Perfume"
                 }
             ],
-            "color": "Blue"
+            "color": "Blue",
+            "sizes": []
         },
         {
             "id": 14,
@@ -444,7 +453,8 @@
                     "alt": "Non-Alcoholic Concentrated Perfume Oil"
                 }
             ],
-            "color": "Blue"
+            "color": "Blue",
+            "sizes": []
         },
         {
             "id": 15,
@@ -479,17 +489,18 @@
                     "alt": "Eau De Perfume Spray"
                 }
             ],
-            "color": "Blue"
+            "color": "Blue",
+            "sizes": []
         },
         {
             "id": 16,
             "name": "Hyaluronic Acid Serum",
-            "description": "L\\\\'OrÃ©al Paris introduces Hyaluron Expert Replumping Serum formulated with 1.5% Hyaluronic Acid",
+            "description": "L\\\\\\'OrÃ©al Paris introduces Hyaluron Expert Replumping Serum formulated with 1.5% Hyaluronic Acid",
             "price": 19,
             "discountPercentage": 13.31,
             "rating": 4.83,
             "stock": 110,
-            "brand": "L\\\\'Oreal Paris",
+            "brand": "L\\\\\\'Oreal Paris",
             "category": "skincare",
             "imageSrc": "https://i.dummyjson.com/data/products/16/thumbnail.jpg",
             "images": [
@@ -514,7 +525,8 @@
                     "alt": "Hyaluronic Acid Serum"
                 }
             ],
-            "color": "Blue"
+            "color": "Blue",
+            "sizes": []
         },
         {
             "id": 17,
@@ -545,7 +557,8 @@
                     "alt": "Tree Oil 30ml"
                 }
             ],
-            "color": "Blue"
+            "color": "Blue",
+            "sizes": []
         },
         {
             "id": 18,
@@ -580,7 +593,8 @@
                     "alt": "Oil Free Moisturizer 100ml"
                 }
             ],
-            "color": "Blue"
+            "color": "Blue",
+            "sizes": []
         },
         {
             "id": 19,
@@ -611,12 +625,13 @@
                     "alt": "Skin Beauty Serum."
                 }
             ],
-            "color": "Blue"
+            "color": "Blue",
+            "sizes": []
         },
         {
             "id": 20,
             "name": "Freckle Treatment Cream- 15gm",
-            "description": "Fair & Clear is Pakistan\\\\'s only pure Freckle cream which helpsfade Freckles, Darkspots and pigments. Mercury level is 0%, so there are no side effects.",
+            "description": "Fair & Clear is Pakistan\\\\\\'s only pure Freckle cream which helpsfade Freckles, Darkspots and pigments. Mercury level is 0%, so there are no side effects.",
             "price": 70,
             "discountPercentage": 16.99,
             "rating": 4.06,
@@ -646,7 +661,8 @@
                     "alt": "Freckle Treatment Cream- 15gm"
                 }
             ],
-            "color": "Blue"
+            "color": "Blue",
+            "sizes": []
         },
         {
             "id": 21,
@@ -673,7 +689,8 @@
                     "alt": "- Daal Masoor 500 grams"
                 }
             ],
-            "color": "Blue"
+            "color": "Blue",
+            "sizes": []
         },
         {
             "id": 22,
@@ -700,7 +717,8 @@
                     "alt": "Elbow Macaroni - 400 gm"
                 }
             ],
-            "color": "Blue"
+            "color": "Blue",
+            "sizes": []
         },
         {
             "id": 23,
@@ -735,7 +753,8 @@
                     "alt": "Orange Essence Food Flavou"
                 }
             ],
-            "color": "Blue"
+            "color": "Blue",
+            "sizes": []
         },
         {
             "id": 24,
@@ -770,7 +789,8 @@
                     "alt": "cereals muesli fruit nuts"
                 }
             ],
-            "color": "Blue"
+            "color": "Blue",
+            "sizes": []
         },
         {
             "id": 25,
@@ -805,7 +825,8 @@
                     "alt": "Gulab Powder 50 Gram"
                 }
             ],
-            "color": "Blue"
+            "color": "Blue",
+            "sizes": []
         },
         {
             "id": 26,
@@ -844,7 +865,8 @@
                     "alt": "Plant Hanger For Home"
                 }
             ],
-            "color": "Blue"
+            "color": "Blue",
+            "sizes": []
         },
         {
             "id": 27,
@@ -879,7 +901,8 @@
                     "alt": "Flying Wooden Bird"
                 }
             ],
-            "color": "Blue"
+            "color": "Blue",
+            "sizes": []
         },
         {
             "id": 28,
@@ -914,7 +937,8 @@
                     "alt": "3D Embellishment Art Lamp"
                 }
             ],
-            "color": "Blue"
+            "color": "Blue",
+            "sizes": []
         },
         {
             "id": 29,
@@ -949,7 +973,8 @@
                     "alt": "Handcraft Chinese style"
                 }
             ],
-            "color": "Blue"
+            "color": "Blue",
+            "sizes": []
         },
         {
             "id": 30,
@@ -980,7 +1005,8 @@
                     "alt": "Key Holder"
                 }
             ],
-            "color": "Blue"
+            "color": "Blue",
+            "sizes": []
         },
         {
             "id": 31,
@@ -1015,7 +1041,8 @@
                     "alt": "Mornadi Velvet Bed"
                 }
             ],
-            "color": "Blue"
+            "color": "Blue",
+            "sizes": []
         },
         {
             "id": 32,
@@ -1046,7 +1073,8 @@
                     "alt": "Sofa for Coffe Cafe"
                 }
             ],
-            "color": "Blue"
+            "color": "Blue",
+            "sizes": []
         },
         {
             "id": 33,
@@ -1081,7 +1109,8 @@
                     "alt": "3 Tier Corner Shelves"
                 }
             ],
-            "color": "Blue"
+            "color": "Blue",
+            "sizes": []
         },
         {
             "id": 34,
@@ -1116,7 +1145,8 @@
                     "alt": "Plastic Table"
                 }
             ],
-            "color": "Blue"
+            "color": "Blue",
+            "sizes": []
         },
         {
             "id": 35,
@@ -1151,7 +1181,8 @@
                     "alt": "3 DOOR PORTABLE"
                 }
             ],
-            "color": "Blue"
+            "color": "Blue",
+            "sizes": []
         },
         {
             "id": 36,
@@ -1186,7 +1217,8 @@
                     "alt": "Sleeve Shirt Womens"
                 }
             ],
-            "color": "Blue"
+            "color": "Blue",
+            "sizes": []
         },
         {
             "id": 37,
@@ -1221,7 +1253,41 @@
                     "alt": "ank Tops for Womens/Girls"
                 }
             ],
-            "color": "Blue"
+            "color": "Blue",
+            "sizes": [
+                {
+                    "name": "XXS",
+                    "inStock": false
+                },
+                {
+                    "name": "XS",
+                    "inStock": true
+                },
+                {
+                    "name": "S",
+                    "inStock": true
+                },
+                {
+                    "name": "M",
+                    "inStock": true
+                },
+                {
+                    "name": "L",
+                    "inStock": true
+                },
+                {
+                    "name": "XL",
+                    "inStock": true
+                },
+                {
+                    "name": "2XL",
+                    "inStock": true
+                },
+                {
+                    "name": "3XL",
+                    "inStock": true
+                }
+            ]
         },
         {
             "id": 38,
@@ -1252,12 +1318,46 @@
                     "alt": "sublimation plain kids tank"
                 }
             ],
-            "color": "Blue"
+            "color": "Blue",
+            "sizes": [
+                {
+                    "name": "XXS",
+                    "inStock": false
+                },
+                {
+                    "name": "XS",
+                    "inStock": true
+                },
+                {
+                    "name": "S",
+                    "inStock": true
+                },
+                {
+                    "name": "M",
+                    "inStock": true
+                },
+                {
+                    "name": "L",
+                    "inStock": true
+                },
+                {
+                    "name": "XL",
+                    "inStock": true
+                },
+                {
+                    "name": "2XL",
+                    "inStock": true
+                },
+                {
+                    "name": "3XL",
+                    "inStock": true
+                }
+            ]
         },
         {
             "id": 39,
             "name": "Women Sweaters Wool",
-            "description": "2021 Custom Winter Fall Zebra Knit Crop Top Women Sweaters Wool Mohair Cos Customize Crew Neck Women\\\\' S Crop Top Sweater",
+            "description": "2021 Custom Winter Fall Zebra Knit Crop Top Women Sweaters Wool Mohair Cos Customize Crew Neck Women\\\\\\' S Crop Top Sweater",
             "price": 600,
             "discountPercentage": 17.2,
             "rating": 4.55,
@@ -1287,7 +1387,41 @@
                     "alt": "Women Sweaters Wool"
                 }
             ],
-            "color": "Blue"
+            "color": "Blue",
+            "sizes": [
+                {
+                    "name": "XXS",
+                    "inStock": false
+                },
+                {
+                    "name": "XS",
+                    "inStock": true
+                },
+                {
+                    "name": "S",
+                    "inStock": true
+                },
+                {
+                    "name": "M",
+                    "inStock": true
+                },
+                {
+                    "name": "L",
+                    "inStock": true
+                },
+                {
+                    "name": "XL",
+                    "inStock": true
+                },
+                {
+                    "name": "2XL",
+                    "inStock": true
+                },
+                {
+                    "name": "3XL",
+                    "inStock": true
+                }
+            ]
         },
         {
             "id": 40,
@@ -1310,7 +1444,41 @@
                     "alt": "women winter clothes"
                 }
             ],
-            "color": "Blue"
+            "color": "Blue",
+            "sizes": [
+                {
+                    "name": "XXS",
+                    "inStock": false
+                },
+                {
+                    "name": "XS",
+                    "inStock": true
+                },
+                {
+                    "name": "S",
+                    "inStock": true
+                },
+                {
+                    "name": "M",
+                    "inStock": true
+                },
+                {
+                    "name": "L",
+                    "inStock": true
+                },
+                {
+                    "name": "XL",
+                    "inStock": true
+                },
+                {
+                    "name": "2XL",
+                    "inStock": true
+                },
+                {
+                    "name": "3XL",
+                    "inStock": true
+                }
+            ]
         },
         {
             "id": 41,
@@ -1345,7 +1513,41 @@
                     "alt": "NIGHT SUIT"
                 }
             ],
-            "color": "Blue"
+            "color": "Blue",
+            "sizes": [
+                {
+                    "name": "XXS",
+                    "inStock": false
+                },
+                {
+                    "name": "XS",
+                    "inStock": true
+                },
+                {
+                    "name": "S",
+                    "inStock": true
+                },
+                {
+                    "name": "M",
+                    "inStock": true
+                },
+                {
+                    "name": "L",
+                    "inStock": true
+                },
+                {
+                    "name": "XL",
+                    "inStock": true
+                },
+                {
+                    "name": "2XL",
+                    "inStock": true
+                },
+                {
+                    "name": "3XL",
+                    "inStock": true
+                }
+            ]
         },
         {
             "id": 42,
@@ -1380,7 +1582,41 @@
                     "alt": "Stiched Kurta plus trouser"
                 }
             ],
-            "color": "Blue"
+            "color": "Blue",
+            "sizes": [
+                {
+                    "name": "XXS",
+                    "inStock": false
+                },
+                {
+                    "name": "XS",
+                    "inStock": true
+                },
+                {
+                    "name": "S",
+                    "inStock": true
+                },
+                {
+                    "name": "M",
+                    "inStock": true
+                },
+                {
+                    "name": "L",
+                    "inStock": true
+                },
+                {
+                    "name": "XL",
+                    "inStock": true
+                },
+                {
+                    "name": "2XL",
+                    "inStock": true
+                },
+                {
+                    "name": "3XL",
+                    "inStock": true
+                }
+            ]
         },
         {
             "id": 43,
@@ -1415,7 +1651,41 @@
                     "alt": "frock gold printed"
                 }
             ],
-            "color": "Blue"
+            "color": "Blue",
+            "sizes": [
+                {
+                    "name": "XXS",
+                    "inStock": false
+                },
+                {
+                    "name": "XS",
+                    "inStock": true
+                },
+                {
+                    "name": "S",
+                    "inStock": true
+                },
+                {
+                    "name": "M",
+                    "inStock": true
+                },
+                {
+                    "name": "L",
+                    "inStock": true
+                },
+                {
+                    "name": "XL",
+                    "inStock": true
+                },
+                {
+                    "name": "2XL",
+                    "inStock": true
+                },
+                {
+                    "name": "3XL",
+                    "inStock": true
+                }
+            ]
         },
         {
             "id": 44,
@@ -1450,7 +1720,41 @@
                     "alt": "Ladies Multicolored Dress"
                 }
             ],
-            "color": "Blue"
+            "color": "Blue",
+            "sizes": [
+                {
+                    "name": "XXS",
+                    "inStock": false
+                },
+                {
+                    "name": "XS",
+                    "inStock": true
+                },
+                {
+                    "name": "S",
+                    "inStock": true
+                },
+                {
+                    "name": "M",
+                    "inStock": true
+                },
+                {
+                    "name": "L",
+                    "inStock": true
+                },
+                {
+                    "name": "XL",
+                    "inStock": true
+                },
+                {
+                    "name": "2XL",
+                    "inStock": true
+                },
+                {
+                    "name": "3XL",
+                    "inStock": true
+                }
+            ]
         },
         {
             "id": 45,
@@ -1485,11 +1789,45 @@
                     "alt": "Malai Maxi Dress"
                 }
             ],
-            "color": "Blue"
+            "color": "Blue",
+            "sizes": [
+                {
+                    "name": "XXS",
+                    "inStock": false
+                },
+                {
+                    "name": "XS",
+                    "inStock": true
+                },
+                {
+                    "name": "S",
+                    "inStock": true
+                },
+                {
+                    "name": "M",
+                    "inStock": true
+                },
+                {
+                    "name": "L",
+                    "inStock": true
+                },
+                {
+                    "name": "XL",
+                    "inStock": true
+                },
+                {
+                    "name": "2XL",
+                    "inStock": true
+                },
+                {
+                    "name": "3XL",
+                    "inStock": true
+                }
+            ]
         },
         {
             "id": 46,
-            "name": "women\\\\'s shoes",
+            "name": "women\\\\\\'s shoes",
             "description": "Close: Lace, Style with bottom: Increased inside, Sole Material: Rubber",
             "price": 40,
             "discountPercentage": 16.96,
@@ -1501,26 +1839,27 @@
             "images": [
                 {
                     "src": "https://i.dummyjson.com/data/products/46/1.webp",
-                    "alt": "women\\\\'s shoes"
+                    "alt": "women\\\\\\'s shoes"
                 },
                 {
                     "src": "https://i.dummyjson.com/data/products/46/2.jpg",
-                    "alt": "women\\\\'s shoes"
+                    "alt": "women\\\\\\'s shoes"
                 },
                 {
                     "src": "https://i.dummyjson.com/data/products/46/3.jpg",
-                    "alt": "women\\\\'s shoes"
+                    "alt": "women\\\\\\'s shoes"
                 },
                 {
                     "src": "https://i.dummyjson.com/data/products/46/4.jpg",
-                    "alt": "women\\\\'s shoes"
+                    "alt": "women\\\\\\'s shoes"
                 },
                 {
                     "src": "https://i.dummyjson.com/data/products/46/thumbnail.jpg",
-                    "alt": "women\\\\'s shoes"
+                    "alt": "women\\\\\\'s shoes"
                 }
             ],
-            "color": "Blue"
+            "color": "Blue",
+            "sizes": []
         },
         {
             "id": 47,
@@ -1551,7 +1890,8 @@
                     "alt": "Sneaker shoes"
                 }
             ],
-            "color": "Blue"
+            "color": "Blue",
+            "sizes": []
         },
         {
             "id": 48,
@@ -1586,7 +1926,8 @@
                     "alt": "Women Strip Heel"
                 }
             ],
-            "color": "Blue"
+            "color": "Blue",
+            "sizes": []
         },
         {
             "id": 49,
@@ -1617,7 +1958,8 @@
                     "alt": "Chappals & Shoe Ladies Metallic"
                 }
             ],
-            "color": "Blue"
+            "color": "Blue",
+            "sizes": []
         },
         {
             "id": 50,
@@ -1644,7 +1986,8 @@
                     "alt": "Women Shoes"
                 }
             ],
-            "color": "Blue"
+            "color": "Blue",
+            "sizes": []
         },
         {
             "id": 51,
@@ -1675,12 +2018,13 @@
                     "alt": "half sleeves T shirts"
                 }
             ],
-            "color": "Blue"
+            "color": "Blue",
+            "sizes": []
         },
         {
             "id": 52,
             "name": "FREE FIRE T Shirt",
-            "description": "quality and professional print - It doesn\\\\'t just look high quality, it is high quality.",
+            "description": "quality and professional print - It doesn\\\\\\'t just look high quality, it is high quality.",
             "price": 10,
             "discountPercentage": 14.72,
             "rating": 4.52,
@@ -1710,7 +2054,41 @@
                     "alt": "FREE FIRE T Shirt"
                 }
             ],
-            "color": "Blue"
+            "color": "Blue",
+            "sizes": [
+                {
+                    "name": "XXS",
+                    "inStock": false
+                },
+                {
+                    "name": "XS",
+                    "inStock": true
+                },
+                {
+                    "name": "S",
+                    "inStock": true
+                },
+                {
+                    "name": "M",
+                    "inStock": true
+                },
+                {
+                    "name": "L",
+                    "inStock": true
+                },
+                {
+                    "name": "XL",
+                    "inStock": true
+                },
+                {
+                    "name": "2XL",
+                    "inStock": true
+                },
+                {
+                    "name": "3XL",
+                    "inStock": true
+                }
+            ]
         },
         {
             "id": 53,
@@ -1745,7 +2123,41 @@
                     "alt": "printed high quality T shirts"
                 }
             ],
-            "color": "Blue"
+            "color": "Blue",
+            "sizes": [
+                {
+                    "name": "XXS",
+                    "inStock": false
+                },
+                {
+                    "name": "XS",
+                    "inStock": true
+                },
+                {
+                    "name": "S",
+                    "inStock": true
+                },
+                {
+                    "name": "M",
+                    "inStock": true
+                },
+                {
+                    "name": "L",
+                    "inStock": true
+                },
+                {
+                    "name": "XL",
+                    "inStock": true
+                },
+                {
+                    "name": "2XL",
+                    "inStock": true
+                },
+                {
+                    "name": "3XL",
+                    "inStock": true
+                }
+            ]
         },
         {
             "id": 54,
@@ -1780,7 +2192,41 @@
                     "alt": "Pubg Printed Graphic T-Shirt"
                 }
             ],
-            "color": "Blue"
+            "color": "Blue",
+            "sizes": [
+                {
+                    "name": "XXS",
+                    "inStock": false
+                },
+                {
+                    "name": "XS",
+                    "inStock": true
+                },
+                {
+                    "name": "S",
+                    "inStock": true
+                },
+                {
+                    "name": "M",
+                    "inStock": true
+                },
+                {
+                    "name": "L",
+                    "inStock": true
+                },
+                {
+                    "name": "XL",
+                    "inStock": true
+                },
+                {
+                    "name": "2XL",
+                    "inStock": true
+                },
+                {
+                    "name": "3XL",
+                    "inStock": true
+                }
+            ]
         },
         {
             "id": 55,
@@ -1815,7 +2261,41 @@
                     "alt": "Money Heist Printed Summer T Shirts"
                 }
             ],
-            "color": "Blue"
+            "color": "Blue",
+            "sizes": [
+                {
+                    "name": "XXS",
+                    "inStock": false
+                },
+                {
+                    "name": "XS",
+                    "inStock": true
+                },
+                {
+                    "name": "S",
+                    "inStock": true
+                },
+                {
+                    "name": "M",
+                    "inStock": true
+                },
+                {
+                    "name": "L",
+                    "inStock": true
+                },
+                {
+                    "name": "XL",
+                    "inStock": true
+                },
+                {
+                    "name": "2XL",
+                    "inStock": true
+                },
+                {
+                    "name": "3XL",
+                    "inStock": true
+                }
+            ]
         },
         {
             "id": 56,
@@ -1854,7 +2334,8 @@
                     "alt": "Sneakers Joggers Shoes"
                 }
             ],
-            "color": "Blue"
+            "color": "Blue",
+            "sizes": []
         },
         {
             "id": 57,
@@ -1889,7 +2370,8 @@
                     "alt": "Loafers for men"
                 }
             ],
-            "color": "Blue"
+            "color": "Blue",
+            "sizes": []
         },
         {
             "id": 58,
@@ -1924,7 +2406,8 @@
                     "alt": "formal offices shoes"
                 }
             ],
-            "color": "Blue"
+            "color": "Blue",
+            "sizes": []
         },
         {
             "id": 59,
@@ -1959,7 +2442,8 @@
                     "alt": "Spring and summershoes"
                 }
             ],
-            "color": "Blue"
+            "color": "Blue",
+            "sizes": []
         },
         {
             "id": 60,
@@ -1990,7 +2474,8 @@
                     "alt": "Stylish Casual Jeans Shoes"
                 }
             ],
-            "color": "Blue"
+            "color": "Blue",
+            "sizes": []
         },
         {
             "id": 61,
@@ -2017,7 +2502,8 @@
                     "alt": "Leather Straps Wristwatch"
                 }
             ],
-            "color": "Blue"
+            "color": "Blue",
+            "sizes": []
         },
         {
             "id": 62,
@@ -2040,7 +2526,8 @@
                     "alt": "Waterproof Leather Brand Watch"
                 }
             ],
-            "color": "Blue"
+            "color": "Blue",
+            "sizes": []
         },
         {
             "id": 63,
@@ -2071,7 +2558,8 @@
                     "alt": "Royal Blue Premium Watch"
                 }
             ],
-            "color": "Blue"
+            "color": "Blue",
+            "sizes": []
         },
         {
             "id": 64,
@@ -2102,12 +2590,13 @@
                     "alt": "Leather Strap Skeleton Watch"
                 }
             ],
-            "color": "Blue"
+            "color": "Blue",
+            "sizes": []
         },
         {
             "id": 65,
             "name": "Stainless Steel Wrist Watch",
-            "description": "Stylish Watch For Man (Luxury) Classy Men\\\\'s Stainless Steel Wrist Watch - Box Packed",
+            "description": "Stylish Watch For Man (Luxury) Classy Men\\\\\\'s Stainless Steel Wrist Watch - Box Packed",
             "price": 47,
             "discountPercentage": 17.79,
             "rating": 4.79,
@@ -2137,7 +2626,8 @@
                     "alt": "Stainless Steel Wrist Watch"
                 }
             ],
-            "color": "Blue"
+            "color": "Blue",
+            "sizes": []
         },
         {
             "id": 66,
@@ -2172,12 +2662,13 @@
                     "alt": "Steel Analog Couple Watches"
                 }
             ],
-            "color": "Blue"
+            "color": "Blue",
+            "sizes": []
         },
         {
             "id": 67,
             "name": "Fashion Magnetic Wrist Watch",
-            "description": "Buy this awesome  The product is originally manufactured by the company and it\\\\'s a top selling product with a very reasonable",
+            "description": "Buy this awesome  The product is originally manufactured by the company and it\\\\\\'s a top selling product with a very reasonable",
             "price": 60,
             "discountPercentage": 16.69,
             "rating": 4.03,
@@ -2207,7 +2698,8 @@
                     "alt": "Fashion Magnetic Wrist Watch"
                 }
             ],
-            "color": "Blue"
+            "color": "Blue",
+            "sizes": []
         },
         {
             "id": 68,
@@ -2230,7 +2722,8 @@
                     "alt": "Stylish Luxury Digital Watch"
                 }
             ],
-            "color": "Blue"
+            "color": "Blue",
+            "sizes": []
         },
         {
             "id": 69,
@@ -2265,7 +2758,8 @@
                     "alt": "Golden Watch Pearls Bracelet Watch"
                 }
             ],
-            "color": "Blue"
+            "color": "Blue",
+            "sizes": []
         },
         {
             "id": 70,
@@ -2292,7 +2786,8 @@
                     "alt": "Stainless Steel Women"
                 }
             ],
-            "color": "Blue"
+            "color": "Blue",
+            "sizes": []
         },
         {
             "id": 71,
@@ -2323,7 +2818,8 @@
                     "alt": "Women Shoulder Bags"
                 }
             ],
-            "color": "Blue"
+            "color": "Blue",
+            "sizes": []
         },
         {
             "id": 72,
@@ -2358,7 +2854,8 @@
                     "alt": "Handbag For Girls"
                 }
             ],
-            "color": "Blue"
+            "color": "Blue",
+            "sizes": []
         },
         {
             "id": 73,
@@ -2389,7 +2886,8 @@
                     "alt": "Fancy hand clutch"
                 }
             ],
-            "color": "Blue"
+            "color": "Blue",
+            "sizes": []
         },
         {
             "id": 74,
@@ -2424,7 +2922,8 @@
                     "alt": "Leather Hand Bag"
                 }
             ],
-            "color": "Blue"
+            "color": "Blue",
+            "sizes": []
         },
         {
             "id": 75,
@@ -2455,7 +2954,8 @@
                     "alt": "Seven Pocket Women Bag"
                 }
             ],
-            "color": "Blue"
+            "color": "Blue",
+            "sizes": []
         },
         {
             "id": 76,
@@ -2482,7 +2982,8 @@
                     "alt": "Silver Ring Set Women"
                 }
             ],
-            "color": "Blue"
+            "color": "Blue",
+            "sizes": []
         },
         {
             "id": 77,
@@ -2513,7 +3014,8 @@
                     "alt": "Rose Ring"
                 }
             ],
-            "color": "Blue"
+            "color": "Blue",
+            "sizes": []
         },
         {
             "id": 78,
@@ -2532,7 +3034,8 @@
                     "alt": "Rhinestone Korean Style Open Rings"
                 }
             ],
-            "color": "Blue"
+            "color": "Blue",
+            "sizes": []
         },
         {
             "id": 79,
@@ -2551,7 +3054,8 @@
                     "alt": "Elegant Female Pearl Earrings"
                 }
             ],
-            "color": "Blue"
+            "color": "Blue",
+            "sizes": []
         },
         {
             "id": 80,
@@ -2586,7 +3090,8 @@
                     "alt": "Chain Pin Tassel Earrings"
                 }
             ],
-            "color": "Blue"
+            "color": "Blue",
+            "sizes": []
         },
         {
             "id": 81,
@@ -2621,7 +3126,8 @@
                     "alt": "Round Silver Frame Sun Glasses"
                 }
             ],
-            "color": "Blue"
+            "color": "Blue",
+            "sizes": []
         },
         {
             "id": 82,
@@ -2656,7 +3162,8 @@
                     "alt": "Kabir Singh Square Sunglass"
                 }
             ],
-            "color": "Blue"
+            "color": "Blue",
+            "sizes": []
         },
         {
             "id": 83,
@@ -2691,7 +3198,8 @@
                     "alt": "Wiley X Night Vision Yellow Glasses"
                 }
             ],
-            "color": "Blue"
+            "color": "Blue",
+            "sizes": []
         },
         {
             "id": 84,
@@ -2718,7 +3226,8 @@
                     "alt": "Square Sunglasses"
                 }
             ],
-            "color": "Blue"
+            "color": "Blue",
+            "sizes": []
         },
         {
             "id": 85,
@@ -2745,7 +3254,8 @@
                     "alt": "LouisWill Men Sunglasses"
                 }
             ],
-            "color": "Blue"
+            "color": "Blue",
+            "sizes": []
         },
         {
             "id": 86,
@@ -2780,7 +3290,8 @@
                     "alt": "Bluetooth Aux"
                 }
             ],
-            "color": "Blue"
+            "color": "Blue",
+            "sizes": []
         },
         {
             "id": 87,
@@ -2815,7 +3326,8 @@
                     "alt": "t Temperature Controller Incubator Controller"
                 }
             ],
-            "color": "Blue"
+            "color": "Blue",
+            "sizes": []
         },
         {
             "id": 88,
@@ -2850,7 +3362,8 @@
                     "alt": "TC Reusable Silicone Magic Washing Gloves"
                 }
             ],
-            "color": "Blue"
+            "color": "Blue",
+            "sizes": []
         },
         {
             "id": 89,
@@ -2885,7 +3398,8 @@
                     "alt": "Qualcomm original Car Charger"
                 }
             ],
-            "color": "Blue"
+            "color": "Blue",
+            "sizes": []
         },
         {
             "id": 90,
@@ -2920,7 +3434,8 @@
                     "alt": "Cycle Bike Glow"
                 }
             ],
-            "color": "Blue"
+            "color": "Blue",
+            "sizes": []
         },
         {
             "id": 91,
@@ -2955,7 +3470,8 @@
                     "alt": "Black Motorbike"
                 }
             ],
-            "color": "Blue"
+            "color": "Blue",
+            "sizes": []
         },
         {
             "id": 92,
@@ -2986,7 +3502,8 @@
                     "alt": "HOT SALE IN EUROPE electric racing motorcycle"
                 }
             ],
-            "color": "Blue"
+            "color": "Blue",
+            "sizes": []
         },
         {
             "id": 93,
@@ -3021,7 +3538,8 @@
                     "alt": "Automatic Motor Gas Motorcycles"
                 }
             ],
-            "color": "Blue"
+            "color": "Blue",
+            "sizes": []
         },
         {
             "id": 94,
@@ -3052,7 +3570,8 @@
                     "alt": "new arrivals Fashion motocross goggles"
                 }
             ],
-            "color": "Blue"
+            "color": "Blue",
+            "sizes": []
         },
         {
             "id": 95,
@@ -3087,7 +3606,8 @@
                     "alt": "Wholesale cargo lashing Belt"
                 }
             ],
-            "color": "Blue"
+            "color": "Blue",
+            "sizes": []
         },
         {
             "id": 96,
@@ -3122,7 +3642,8 @@
                     "alt": "lighting ceiling kitchen"
                 }
             ],
-            "color": "Blue"
+            "color": "Blue",
+            "sizes": []
         },
         {
             "id": 97,
@@ -3157,7 +3678,8 @@
                     "alt": "Metal Ceramic Flower"
                 }
             ],
-            "color": "Blue"
+            "color": "Blue",
+            "sizes": []
         },
         {
             "id": 98,
@@ -3192,7 +3714,8 @@
                     "alt": "3 lights lndenpant kitchen islang"
                 }
             ],
-            "color": "Blue"
+            "color": "Blue",
+            "sizes": []
         },
         {
             "id": 99,
@@ -3227,7 +3750,8 @@
                     "alt": "American Vintage Wood Pendant Light"
                 }
             ],
-            "color": "Blue"
+            "color": "Blue",
+            "sizes": []
         },
         {
             "id": 100,
@@ -3258,8 +3782,8 @@
                     "alt": "Crystal chandelier maria theresa for 12 light"
                 }
             ],
-            "color": "Blue"
+            "color": "Blue",
+            "sizes": []
         }
     ]
-    
 }

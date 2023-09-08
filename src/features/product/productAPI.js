@@ -9,7 +9,13 @@ const getProducts = async () => {
 };
 
 const getFilteredProducts = async (filterObj) => {
-  const response = await axios.get(BASE_URL + `/products?${filterObj}`);
+  let queryString = '';
+  for (let obj of filterObj) {
+    for (let key in obj) {
+      queryString += `${key}=${obj[key]}&`;
+    }
+  }
+  const response = await axios.get(BASE_URL + `/products?${queryString}`);
   const data = await response.data;
   return data;
 };

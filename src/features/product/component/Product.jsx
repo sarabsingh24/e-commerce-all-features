@@ -16,18 +16,16 @@ import { getProductsByFiltereAsync } from 'features/product/productSlice';
 
 //component
 import ProductList from './ProductList';
-import {filters} from 'data/ProductData'
+import { filters } from 'data/ProductData';
+import ProductFilter from 'common/ProductFilter';
+import ProductsMenu from 'common/ProductsMenu'
 
 //const
 const sortOptions = [
-  { name: 'Most Popular', href: '#', current: true },
-  { name: 'Best Rating', href: '#', current: false },
-  { name: 'Newest', href: '#', current: false },
-  { name: 'Price: Low to High', href: '#', current: false },
-  { name: 'Price: High to Low', href: '#', current: false },
+  { name: 'Best Rating', sort: 'rating', order: 'desc', current: false },
+  { name: 'Price: Low to High', sort: 'price', order: 'asc', current: false },
+  { name: 'Price: High to Low', sort: 'price', order: 'desc', current: false },
 ];
-
-
 
 function classNames(...classes) {
   return classes.filter(Boolean).join(' ');
@@ -40,7 +38,7 @@ const Product = () => {
 
   const dispatch = useDispatch();
 
-  const handleFilter = (e, section, option) => {
+  const filterHandler = (e, section, option) => {
     const key = section.id;
     const value = option.value;
 
@@ -53,14 +51,17 @@ const Product = () => {
       setFilter(newFilter);
     }
 
-    let queryString = '';
-    for (let obj of newFilter) {
-      for (let key in obj) {
-        queryString += `${key}=${obj[key]}&`;
-      }
-    }
+    dispatch(getProductsByFiltereAsync(newFilter));
+  };
 
-    dispatch(getProductsByFiltereAsync(queryString));
+  const sortHandeler = (option) => {
+    let newFilter = [
+      ...filter,
+      { _sort: option.sort },
+      { _order: option.order },
+    ];
+
+    dispatch(getProductsByFiltereAsync(newFilter));
   };
 
   return (
@@ -96,6 +97,7 @@ const Product = () => {
                 leaveTo="translate-x-full"
               >
                 <Dialog.Panel className="relative ml-auto flex h-full w-full max-w-xs flex-col overflow-y-auto bg-white py-4 pb-12 shadow-xl">
+                  {/* open product menu in mobile */}
                   <div className="flex items-center justify-between px-4">
                     <h2 className="text-lg font-medium text-gray-900">
                       Filters
@@ -110,83 +112,12 @@ const Product = () => {
                     </button>
                   </div>
 
-                  {/* Filters */}
-                  <form className="mt-4 border-t border-gray-200">
-                    {/* <h3 className="sr-only">Categories</h3>
-                    <ul
-                      role="list"
-                      className="px-2 py-3 font-medium text-gray-900"
-                    >
-                      {subCategories.map((category) => (
-                        <li key={category.name}>
-                          <a href={category.href} className="block px-2 py-3">
-                            {category.name}
-                          </a>
-                        </li>
-                      ))} 
-                    </ul> */}
+                  {/* Filters / sort by price and rating  */}
 
-                    {filters.map((section) => (
-                      <Disclosure
-                        as="div"
-                        key={section.id}
-                        className="border-t border-gray-200 px-4 py-6"
-                      >
-                        {({ open }) => (
-                          <>
-                            <h3 className="-mx-2 -my-3 flow-root">
-                              <Disclosure.Button className="flex w-full items-center justify-between bg-white px-2 py-3 text-gray-400 hover:text-gray-500">
-                                <span className="font-medium text-gray-900">
-                                  {section.name}
-                                </span>
-                                <span className="ml-6 flex items-center">
-                                  {open ? (
-                                    <MinusIcon
-                                      className="h-5 w-5"
-                                      aria-hidden="true"
-                                    />
-                                  ) : (
-                                    <PlusIcon
-                                      className="h-5 w-5"
-                                      aria-hidden="true"
-                                    />
-                                  )}
-                                </span>
-                              </Disclosure.Button>
-                            </h3>
-                            <Disclosure.Panel className="pt-6">
-                              <div className="space-y-6">
-                                {section.options.map((option, optionIdx) => (
-                                  <div
-                                    key={option.value}
-                                    className="flex items-center"
-                                  >
-                                    <input
-                                      id={`filter-mobile-${section.id}-${optionIdx}`}
-                                      name={`${section.id}[]`}
-                                      defaultValue={option.value}
-                                      type="checkbox"
-                                      defaultChecked={option.checked}
-                                      onChange={(e) => {
-                                        console.log(e.target.value);
-                                      }}
-                                      className="h-4 w-4 rounded border-gray-300 text-indigo-600 focus:ring-indigo-500"
-                                    />
-                                    <label
-                                      htmlFor={`filter-mobile-${section.id}-${optionIdx}`}
-                                      className="ml-3 min-w-0 flex-1 text-gray-500"
-                                    >
-                                      {option.label}
-                                    </label>
-                                  </div>
-                                ))}
-                              </div>
-                            </Disclosure.Panel>
-                          </>
-                        )}
-                      </Disclosure>
-                    ))}
-                  </form>
+                  <ProductFilter
+                    filters={filters}
+                    filterHandler={filterHandler}
+                  />
                 </Dialog.Panel>
               </Transition.Child>
             </div>
@@ -225,8 +156,9 @@ const Product = () => {
                       {sortOptions.map((option) => (
                         <Menu.Item key={option.name}>
                           {({ active }) => (
-                            <a
-                              href={option.href}
+                            <div
+                              // href={option.href}
+                              onClick={() => sortHandeler(option)}
                               className={classNames(
                                 option.current
                                   ? 'font-medium text-gray-900'
@@ -236,7 +168,7 @@ const Product = () => {
                               )}
                             >
                               {option.name}
-                            </a>
+                            </div>
                           )}
                         </Menu.Item>
                       ))}
@@ -264,89 +196,11 @@ const Product = () => {
           </div>
 
           <section aria-labelledby="products-heading" className="pb-24 pt-6">
-            {/* <h2 id="products-heading" className="sr-only">
-              Products
-            </h2> */}
-
             <div className="grid grid-cols-1 gap-x-8 gap-y-10 lg:grid-cols-4">
-              {/* Filters */}
-              <form className="hidden lg:block">
-                {/* <h3 className="sr-only">Categories</h3> */}
-                {/* <ul
-                  role="list"
-                  className="space-y-4 border-b border-gray-200 pb-6 text-sm font-medium text-gray-900"
-                >
-                  {subCategories.map((category) => (
-                    <li key={category.name}>
-                      <a href={category.href}>{category.name}</a>
-                    </li>
-                  ))}
-                 
-                </ul> */}
+              {/* Filters by menu */}
+              <ProductsMenu filters={filters} filterHandler={filterHandler} />
 
-                {filters.map((section) => (
-                  <Disclosure
-                    as="div"
-                    key={section.id}
-                    className="border-b border-gray-200 py-6"
-                  >
-                    {({ open }) => (
-                      <>
-                        <h3 className="-my-3 flow-root">
-                          <Disclosure.Button className="flex w-full items-center justify-between bg-white py-3 text-sm text-gray-400 hover:text-gray-500">
-                            <span className="font-medium text-gray-900">
-                              {section.name}
-                            </span>
-                            <span className="ml-6 flex items-center">
-                              {open ? (
-                                <MinusIcon
-                                  className="h-5 w-5"
-                                  aria-hidden="true"
-                                />
-                              ) : (
-                                <PlusIcon
-                                  className="h-5 w-5"
-                                  aria-hidden="true"
-                                />
-                              )}
-                            </span>
-                          </Disclosure.Button>
-                        </h3>
-                        <Disclosure.Panel className="pt-6">
-                          <div className="space-y-4">
-                            {section.options.map((option, optionIdx) => (
-                              <div
-                                key={option.value}
-                                className="flex items-center"
-                              >
-                                <input
-                                  id={`filter-${section.id}-${optionIdx}`}
-                                  name={`${section.id}[]`}
-                                  defaultValue={option.value}
-                                  type="checkbox"
-                                  defaultChecked={option.checked}
-                                  onChange={(e) =>
-                                    handleFilter(e, section, option)
-                                  }
-                                  className="h-4 w-4 rounded border-gray-300 text-indigo-600 focus:ring-indigo-500"
-                                />
-                                <label
-                                  htmlFor={`filter-${section.id}-${optionIdx}`}
-                                  className="ml-3 text-sm text-gray-600"
-                                >
-                                  {option.label}
-                                </label>
-                              </div>
-                            ))}
-                          </div>
-                        </Disclosure.Panel>
-                      </>
-                    )}
-                  </Disclosure>
-                ))}
-              </form>
-
-              {/* Product grid */}
+              {/* Product display grid */}
               <div className="lg:col-span-3">
                 <ProductList />
               </div>
