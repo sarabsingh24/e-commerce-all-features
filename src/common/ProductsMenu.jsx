@@ -1,11 +1,7 @@
-import React from 'react'
-import {  Disclosure } from '@headlessui/react';
-import {
+import React from 'react';
+import { Disclosure } from '@headlessui/react';
+import { MinusIcon, PlusIcon } from '@heroicons/react/20/solid';
 
-  MinusIcon,
-  PlusIcon,
- 
-} from '@heroicons/react/20/solid';
 const ProductsMenu = ({ filters, filterHandler }) => {
   return (
     <form className="hidden lg:block">
@@ -31,7 +27,13 @@ const ProductsMenu = ({ filters, filterHandler }) => {
                   </span>
                 </Disclosure.Button>
               </h3>
-              <Disclosure.Panel className="pt-6">
+              <Disclosure.Panel
+                className="pt-6 px-2"
+                style={{
+                  maxHeight: '400px',
+                  overflow: 'auto',
+                }}
+              >
                 <div className="space-y-4">
                   {section.options.map((option, optionIdx) => (
                     <div key={option.value} className="flex items-center">
@@ -62,4 +64,4 @@ const ProductsMenu = ({ filters, filterHandler }) => {
   );
 };
 
-export default ProductsMenu
+export default ProductsMenu;

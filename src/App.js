@@ -1,4 +1,14 @@
+import React, { useEffect } from 'react';
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
+import { useSelector, useDispatch } from 'react-redux';
+import Protected from 'features/auth/component/Protected'
+//reducer
+import {
+  getProductsCategoriesAsync,
+  getProductsBrandsAsync,
+  getProductsColorsAsync,
+  getProductsSizesAsync,
+} from 'features/product/productSlice';
 
 // component pages
 import Home from 'pages/Home';
@@ -18,19 +28,41 @@ const router = createBrowserRouter([
   },
   {
     path: '/',
-    element: <Home />,
+    element: (
+      <Protected>
+        <Home />
+      </Protected>
+    ),
   },
   {
     path: '/product-detail/:id',
-    element: <ProductDetailPage />,
+    element: (
+      <Protected>
+        <ProductDetailPage />
+      </Protected>
+    ),
   },
   {
     path: '/checkout',
-    element: <CheckoutPage />,
+    element: (
+      <Protected>
+        <CheckoutPage />
+      </Protected>
+    ),
   },
 ]);
 
 function App() {
+  
+  const dispatch = useDispatch();
+
+  useEffect(() => {
+    dispatch(getProductsCategoriesAsync());
+    dispatch(getProductsBrandsAsync());
+    dispatch(getProductsColorsAsync());
+    dispatch(getProductsSizesAsync());
+  }, [dispatch]);
+
   return <RouterProvider router={router} />;
 }
 

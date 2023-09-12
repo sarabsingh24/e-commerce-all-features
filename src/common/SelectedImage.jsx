@@ -16,9 +16,9 @@ const SelectedImage = ({ productInfo }) => {
       <div className="flex flex-wrap gap-2  ">
         {/* Image gallery */}
         {Object.keys(productInfo).length > 0 &&
-          productInfo.images.map((img) => {
+          productInfo.images.map((img,ind) => {
             return (
-              <div className="h-16 w-16 flex-shrink-0 overflow-hidden group rounded-md border  border-gray-200">
+              <div  key={ind} className="h-16 w-16 flex-shrink-0 overflow-hidden group rounded-md border  border-gray-200">
                 <img
                   src={img.src}
                   alt={img.alt}

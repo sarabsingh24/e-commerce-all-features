@@ -3,8 +3,11 @@ import { Fragment } from 'react';
 import { Disclosure, Menu, Transition } from '@headlessui/react';
 import { Bars3Icon, XMarkIcon,ShoppingCartIcon } from '@heroicons/react/24/outline';
 import {Link} from 'react-router-dom'
+import { useSelector, useDispatch } from 'react-redux';
+
 //component
 import Cart from 'features/cart/component/Cart'
+import {logOut} from 'features/auth/authSlice'
 
 
 const user = {
@@ -15,11 +18,11 @@ const user = {
 };
 
 const navigation = [
-  { name: 'Dashboard', href: '/', current: true },
-  { name: 'Team', href: '#', current: false },
-  { name: 'Projects', href: '#', current: false },
-  { name: 'Calendar', href: '#', current: false },
-  { name: 'Reports', href: '#', current: false },
+  { name: 'Home', href: '/', current: true },
+  // { name: 'Signup', href: '/signup', current: false },
+  // { name: 'Projects', href: '#', current: false },
+  // { name: 'Calendar', href: '#', current: false },
+  // { name: 'Reports', href: '#', current: false },
 ];
 const userNavigation = [
   { name: 'Your Profile', href: '#' },
@@ -33,9 +36,17 @@ function classNames(...classes) {
 //===========================================
 const NavBar = ({ children, pageTitle }) => {
   const [cartOpen, setCartOpen] = useState(false);
+
+  const { IslogedIn } = useSelector((state) => state.auth);
+  const dispatch = useDispatch();
+
   const cartHandeler = () => {
     setCartOpen(!cartOpen);
   };
+
+const logoutHandeler =()=>{
+dispatch(logOut());
+}
 
   return (
     <React.Fragment>
@@ -70,6 +81,14 @@ const NavBar = ({ children, pageTitle }) => {
                             {item.name}
                           </Link>
                         ))}
+                        {IslogedIn && (
+                          <button
+                            className="text-white"
+                            onClick={logoutHandeler}
+                          >
+                            Logout
+                          </button>
+                        )}
                       </div>
                     </div>
                   </div>

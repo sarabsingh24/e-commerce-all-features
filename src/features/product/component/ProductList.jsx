@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react';
 import { Link } from 'react-router-dom';
-// import { products } from 'data/ProductData';
+
 import { StarIcon } from '@heroicons/react/20/solid';
 import { useSelector, useDispatch } from 'react-redux';
 
@@ -46,6 +46,8 @@ const ProductList = () => {
     
     return <Spinner />;
   }
+
+    
   return (
     <div className="bg-white">
       <div className="mx-auto max-w-2xl px-4 py-0 sm:px-6 sm:py-0 lg:max-w-7xl lg:px-8">

@@ -1,8 +1,15 @@
 import React from 'react';
 import { Disclosure } from '@headlessui/react';
 import { MinusIcon, PlusIcon } from '@heroicons/react/20/solid';
+import { useSelector, useDispatch } from 'react-redux';
+
 
 const ProductFilter = ({ filters, filterHandler }) => {
+const { categories } = useSelector((state) => state.product);
+
+
+
+
   return (
     <form className="mt-4 border-t border-gray-200">
       {filters.map((section) => (

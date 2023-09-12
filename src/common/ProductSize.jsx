@@ -1,16 +1,11 @@
-import React from 'react'
+import React from 'react';
 import { RadioGroup } from '@headlessui/react';
-
 
 function classNames(...classes) {
   return classes.filter(Boolean).join(' ');
 }
 
 const ProductSize = ({ productInfo, selectedSize, setSelectedSize }) => {
-
-  console.log(productInfo);
-   
-
   return (
     <div className="mt-10">
       <div className="flex items-center justify-between">
@@ -88,4 +83,4 @@ const ProductSize = ({ productInfo, selectedSize, setSelectedSize }) => {
   );
 };
 
-export default ProductSize
+export default ProductSize;
