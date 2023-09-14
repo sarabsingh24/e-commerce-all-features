@@ -10,12 +10,15 @@ import {
   getProductsSizesAsync,
 } from 'features/product/productSlice';
 
+import { fetchCartItemsAsync } from 'features/cart/cartSlice';
+
 // component pages
 import Home from 'pages/Home';
 import LoginPage from 'pages/LoginPage';
 import SignupPage from 'pages/SignupPage';
 import CheckoutPage from 'pages/CheckoutPage';
 import ProductDetailPage from 'pages/ProductDetailPage';
+import CartPage from 'pages/CartPage' 
 
 const router = createBrowserRouter([
   {
@@ -43,6 +46,14 @@ const router = createBrowserRouter([
     ),
   },
   {
+    path: '/cart',
+    element: (
+      <Protected>
+        <CartPage />
+      </Protected>
+    ),
+  },
+  {
     path: '/checkout',
     element: (
       <Protected>
@@ -61,6 +72,7 @@ function App() {
     dispatch(getProductsBrandsAsync());
     dispatch(getProductsColorsAsync());
     dispatch(getProductsSizesAsync());
+    dispatch(fetchCartItemsAsync());
   }, [dispatch]);
 
   return <RouterProvider router={router} />;

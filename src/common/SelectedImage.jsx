@@ -1,9 +1,8 @@
 import React from 'react'
 
-const SelectedImage = ({ productInfo }) => {
+const SelectedImage = ({ productInfo, newPrice }) => {
   return (
     <div>
-     
       <div className="py-6">
         {Object.keys(productInfo).length > 0 && (
           <img
@@ -16,9 +15,12 @@ const SelectedImage = ({ productInfo }) => {
       <div className="flex flex-wrap gap-2  ">
         {/* Image gallery */}
         {Object.keys(productInfo).length > 0 &&
-          productInfo.images.map((img,ind) => {
+          productInfo.images.map((img, ind) => {
             return (
-              <div  key={ind} className="h-16 w-16 flex-shrink-0 overflow-hidden group rounded-md border  border-gray-200">
+              <div
+                key={ind}
+                className="h-16 w-16 flex-shrink-0 overflow-hidden group rounded-md border  border-gray-200"
+              >
                 <img
                   src={img.src}
                   alt={img.alt}
@@ -31,10 +33,7 @@ const SelectedImage = ({ productInfo }) => {
       <p className="text-gray-500 mt-8">
         Discounted Price:{' '}
         <span className="text-3xl tracking-tight text-gray-900 ">
-          $
-          {Math.round(
-            productInfo.price * (1 - productInfo.discountPercentage / 100)
-          )}
+          ${newPrice}
         </span>
       </p>
       <p className="text-gray-500">

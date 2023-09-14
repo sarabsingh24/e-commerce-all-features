@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react';
-import { useSelector } from 'react-redux';
-import { useParams } from 'react-router-dom';
+import { useSelector, useDispatch } from 'react-redux';
+import { useParams,Link } from 'react-router-dom';
 
 // reducer
 
@@ -8,6 +8,7 @@ import ProductSize from 'common/ProductSize';
 import ColorsSelection from 'common/ColorsSelection';
 import ReviewRating from 'common/ReviewRating';
 import SelectedImage from 'common/SelectedImage';
+import { createCartAsync } from 'features/cart/cartSlice';
 
 const product = {
   name: 'Basic Tee 6-Pack',
@@ -67,9 +68,31 @@ const ProductDetail = () => {
   const [productInfo, setProductInfo] = useState({});
   const [selectedColor, setSelectedColor] = useState(product.colors[0]);
   const [selectedSize, setSelectedSize] = useState(product.sizes[2]);
+  const [newPrice, setNewPrice] = useState(0);
 
   const { products } = useSelector((state) => state.product);
+  const { user } = useSelector((state) => state.auth);
+  const dispatch = useDispatch();
   const { id } = useParams();
+
+  const addToCartHandeler = (e) => {
+    e.preventDefault();
+
+    const { name, description, category, imageSrc, color } = productInfo;
+
+    dispatch(
+      createCartAsync({
+        name,
+        description,
+        price: newPrice,
+        category,
+        imageSrc,
+        color,
+        quantity: 1,
+        userId: user.id,
+      })
+    );
+  };
 
   useEffect(() => {
     const productFilter = products.find(
@@ -77,6 +100,11 @@ const ProductDetail = () => {
     );
 
     setProductInfo(productFilter);
+    setNewPrice(
+      Math.round(
+        productFilter.price * (1 - productFilter.discountPercentage / 100)
+      )
+    );
   }, [products]);
 
   return (
@@ -132,12 +160,12 @@ const ProductDetail = () => {
 
           <div className="mt-4 lg:row-span-3 lg:mt-0 ">
             {/* images */}
-            <SelectedImage productInfo={productInfo} />
+            <SelectedImage productInfo={productInfo} newPrice={newPrice} />
 
             {/* Reviews */}
             <ReviewRating reviews={reviews} />
 
-            <form className="mt-10">
+            <form className="mt-10" onSubmit={addToCartHandeler}>
               {/* Colors */}
               <ColorsSelection
                 product={product}
@@ -154,12 +182,20 @@ const ProductDetail = () => {
                 />
               )}
 
-              <button
-                type="submit"
-                className="mt-10 flex w-full items-center justify-center rounded-md border border-transparent bg-indigo-600 px-8 py-3 text-base font-medium text-white hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2"
-              >
-                Add to cart
-              </button>
+              <div className="flex ">
+                <Link
+                 to="/"
+                  className="mt-10 flex w-full items-center justify-center rounded-md border border-transparent bg-indigo-600 mx-2 px-8 py-3 text-base font-medium text-white hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2"
+                >
+                  Back
+                </Link>
+                <button
+                  type="submit"
+                  className="mt-10 flex w-full items-center justify-center rounded-md border border-transparent bg-indigo-600 mx-2 px-8 py-3 text-base font-medium text-white hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2"
+                >
+                  Add to cart
+                </button>
+              </div>
             </form>
           </div>
 

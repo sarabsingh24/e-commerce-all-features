@@ -38,6 +38,7 @@ const NavBar = ({ children, pageTitle }) => {
   const [cartOpen, setCartOpen] = useState(false);
 
   const { IslogedIn } = useSelector((state) => state.auth);
+   const { cartItems } = useSelector((state) => state.cart);
   const dispatch = useDispatch();
 
   const cartHandeler = () => {
@@ -47,6 +48,8 @@ const NavBar = ({ children, pageTitle }) => {
 const logoutHandeler =()=>{
 dispatch(logOut());
 }
+
+
 
   return (
     <React.Fragment>
@@ -107,9 +110,9 @@ dispatch(logOut());
                           aria-hidden="true"
                         />
                       </button>
-                      <span className="inline-flex items-center mb-5 -ml-1 rounded-md bg-gray-50 px-1.5 py-1 text-xs font-medium text-red-700 ring-1 ring-inset ring-red-600/10">
-                        5
-                      </span>
+                      {cartItems.length > 0 ? <span className="inline-flex items-center mb-5 -ml-1 rounded-md bg-gray-50 px-1.5 py-1 text-xs font-medium text-red-700 ring-1 ring-inset ring-red-600/10">
+                        {cartItems.length}
+                      </span>:''}
 
                       {/* Profile dropdown */}
                       <Menu as="div" className="relative ml-3">
@@ -224,9 +227,10 @@ dispatch(logOut());
                         aria-hidden="true"
                       />
                     </button>
+                    {cartItems.length > 0 ? 
                     <span className="inline-flex items-center mb-5 -ml-1 rounded-md bg-gray-50 px-1.5 py-1  text-xs font-medium text-red-700 ring-1 ring-inset ring-red-600/10">
-                      5
-                    </span>
+                      {cartItems.length }
+                    </span>: ''}
                   </div>
                   <div className="mt-3 space-y-1 px-2">
                     {userNavigation.map((item) => (
