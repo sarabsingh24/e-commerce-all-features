@@ -4344,7 +4344,19 @@
       "checked": true
     }
   ],
-  "cart": [],
+  "cart": [
+    {
+      "name": "iPhone X",
+      "description": "SIM-Free, Model A19211 6.5-inch Super Retina HD display with OLED technology A12 Bionic chip with ...",
+      "price": 738,
+      "category": "smartphones",
+      "imageSrc": "https://i.dummyjson.com/data/products/2/thumbnail.jpg",
+      "color": "Blue",
+      "quantity": 1,
+      "userId": 4,
+      "id": 1
+    }
+  ],
   "users": [
     {
       "email": "karan@gmail.com",
