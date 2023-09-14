@@ -64,7 +64,7 @@ const router = createBrowserRouter([
 ]);
 
 function App() {
-  
+  const { user } = useSelector((state) => state.auth);
   const dispatch = useDispatch();
 
   useEffect(() => {
@@ -72,8 +72,9 @@ function App() {
     dispatch(getProductsBrandsAsync());
     dispatch(getProductsColorsAsync());
     dispatch(getProductsSizesAsync());
-    dispatch(fetchCartItemsAsync());
-  }, [dispatch]);
+    dispatch(fetchCartItemsAsync(user.id));
+  }, [dispatch, user.id]);
+
 
   return <RouterProvider router={router} />;
 }

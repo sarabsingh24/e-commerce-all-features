@@ -10,13 +10,10 @@ import { deleteCartItemAsync, updateCartAsync } from 'features/cart/cartSlice';
 //components
 import QuantityCounter from 'common/QuantityCounter';
 
-const CartDetail = ({
-  setOpen,
-  IsCheckout,
-}) => {
+const CartDetail = ({ setOpen, IsCheckout }) => {
   const [total, setTotal] = useState(0);
-
   const { cartItems } = useSelector((state) => state.cart);
+
   const dispatch = useDispatch();
 
   //cart Qty counter
@@ -50,10 +47,12 @@ const CartDetail = ({
     dispatch(updateCartAsync(updateProduct));
   };
 
+  //remove item from cart
   const removeHandeler = (id) => {
     dispatch(deleteCartItemAsync(id));
   };
 
+  // cart total amount
   useEffect(() => {
     if (cartItems.length > 0) {
       const calculate = cartItems.reduce((amount, curr) => {
@@ -66,6 +65,10 @@ const CartDetail = ({
     } else {
       setTotal(0);
     }
+  }, [cartItems]);
+
+  useEffect(() => {
+    
   }, [cartItems]);
 
   return (
@@ -140,7 +143,7 @@ const CartDetail = ({
                   </li>
                 ))
               ) : (
-                <div className='text-center'>Your cart is empty</div>
+                <div className="text-center">Your cart is empty</div>
               )}
             </ul>
           </div>

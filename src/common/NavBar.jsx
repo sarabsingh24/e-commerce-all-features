@@ -27,7 +27,7 @@ const navigation = [
 const userNavigation = [
   { name: 'Your Profile', href: '#' },
   { name: 'Settings', href: '#' },
-  { name: 'Sign out', href: '#' },
+  { name: 'Sign out',  fun: 'logoutHandeler' },
 ];
 
 function classNames(...classes) {
@@ -110,9 +110,13 @@ dispatch(logOut());
                           aria-hidden="true"
                         />
                       </button>
-                      {cartItems.length > 0 ? <span className="inline-flex items-center mb-5 -ml-1 rounded-md bg-gray-50 px-1.5 py-1 text-xs font-medium text-red-700 ring-1 ring-inset ring-red-600/10">
-                        {cartItems.length}
-                      </span>:''}
+                      {cartItems.length > 0 ? (
+                        <span className="inline-flex items-center mb-5 -ml-1 rounded-md bg-gray-50 px-1.5 py-1 text-xs font-medium text-red-700 ring-1 ring-inset ring-red-600/10">
+                          {cartItems.length}
+                        </span>
+                      ) : (
+                        ''
+                      )}
 
                       {/* Profile dropdown */}
                       <Menu as="div" className="relative ml-3">
@@ -137,21 +141,23 @@ dispatch(logOut());
                           leaveTo="transform opacity-0 scale-95"
                         >
                           <Menu.Items className="absolute right-0 z-10 mt-2 w-48 origin-top-right rounded-md bg-white py-1 shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none">
-                            {userNavigation.map((item) => (
-                              <Menu.Item key={item.name}>
-                                {({ active }) => (
-                                  <a
-                                    href={item.href}
-                                    className={classNames(
-                                      active ? 'bg-gray-100' : '',
-                                      'block px-4 py-2 text-sm text-gray-700'
-                                    )}
-                                  >
-                                    {item.name}
-                                  </a>
-                                )}
-                              </Menu.Item>
-                            ))}
+                            {IslogedIn &&
+                              userNavigation.map((item) => (
+                                <Menu.Item key={item.name}>
+                                  {({ active }) => (
+                                    <div
+                                      // to={item.href}
+                                      onClick={item.fun === 'logoutHandeler' ? logoutHandeler: null}
+                                      className={classNames(
+                                        active ? 'bg-gray-100' : '',
+                                        'block px-4 py-2 text-sm text-gray-700'
+                                      )}
+                                    >
+                                      {item.name}
+                                    </div>
+                                  )}
+                                </Menu.Item>
+                              ))}
                           </Menu.Items>
                         </Transition>
                       </Menu>
@@ -227,10 +233,13 @@ dispatch(logOut());
                         aria-hidden="true"
                       />
                     </button>
-                    {cartItems.length > 0 ? 
-                    <span className="inline-flex items-center mb-5 -ml-1 rounded-md bg-gray-50 px-1.5 py-1  text-xs font-medium text-red-700 ring-1 ring-inset ring-red-600/10">
-                      {cartItems.length }
-                    </span>: ''}
+                    {cartItems.length > 0 ? (
+                      <span className="inline-flex items-center mb-5 -ml-1 rounded-md bg-gray-50 px-1.5 py-1  text-xs font-medium text-red-700 ring-1 ring-inset ring-red-600/10">
+                        {cartItems.length}
+                      </span>
+                    ) : (
+                      ''
+                    )}
                   </div>
                   <div className="mt-3 space-y-1 px-2">
                     {userNavigation.map((item) => (

@@ -3,10 +3,9 @@ import axios from 'axios';
 const BASE_URL = 'http://localhost:8080';
 
 /// fetch to cart=========================================
-const getCartItems = async () => {
-  const response = await axios.get(BASE_URL + '/cart');
+const getCartItems = async (userId) => {
+  const response = await axios.get(BASE_URL + '/cart?userId=' + userId);
   const data = await response.data;
-
   return data;
 };
 

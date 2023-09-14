@@ -1,11 +1,11 @@
 import React, { useEffect } from 'react';
-import { Link, Navigate } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 
 import { useForm } from 'react-hook-form';
 import { useSelector, useDispatch } from 'react-redux';
 
 //reducer
-import { createUserAsync } from 'features/auth/authSlice';
+import { createUserAsync, resetUser } from 'features/auth/authSlice';
 
 const defaultValue = {
   email: '',
@@ -16,7 +16,7 @@ const defaultValue = {
 const Signup = () => {
   const { user, IsSuccess } = useSelector((state) => state.auth);
   const dispatch = useDispatch();
-  // const navigate = useNavigate();
+  const navigate = useNavigate();
 
   const {
     register,
@@ -35,12 +35,16 @@ const Signup = () => {
     );
     reset();
   };
-
- 
+  useEffect(() => {
+    if (IsSuccess) {
+      navigate('/login');
+      dispatch(resetUser());
+    }
+  }, [IsSuccess, dispatch, navigate, user]);
 
   return (
     <React.Fragment>
-      {user?.email && <Navigate to="/login" />}
+      {/* {user?.email && <Navigate to="/login" />} */}
 
       <div className="flex min-h-full flex-1 flex-col justify-center px-6 py-12 lg:px-8">
         <div className="sm:mx-auto sm:w-full sm:max-w-sm">

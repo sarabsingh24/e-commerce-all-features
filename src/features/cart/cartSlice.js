@@ -12,9 +12,9 @@ const initialState = {
 /////get all cart items
 export const fetchCartItemsAsync = createAsyncThunk(
   'cart/allItems',
-  async (_, thunkAPI) => {
+  async (userId, thunkAPI) => {
     try {
-      return await cartAPI.getCartItems();
+      return await cartAPI.getCartItems(userId);
     } catch (error) {
       const message =
         (error.response &&

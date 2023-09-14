@@ -2,9 +2,8 @@ import { createSlice, createAsyncThunk } from '@reduxjs/toolkit';
 import userAPI from './authAPI';
 
 const initialState = {
- 
   user: {},
-  IslogedIn:false,
+  IslogedIn: false,
   IsLoading: false,
   IsSuccess: false,
   IsError: false,
@@ -60,7 +59,7 @@ const userSlice = createSlice({
       state.IsMessage = false;
     },
     logOut: (state) => {
-      state.IslogedIn = false; 
+      state.IslogedIn = false;
       state.user = {};
     },
   },
@@ -71,8 +70,8 @@ const userSlice = createSlice({
       })
       .addCase(createUserAsync.fulfilled, (state, action) => {
         state.IsLoading = false;
-         state.user = action.payload;
-          state.IsSuccess = true;
+        // state.user = action.payload;
+        state.IsSuccess = true;
       })
       .addCase(createUserAsync.rejected, (state, action) => {
         state.IsLoading = false;
@@ -85,17 +84,16 @@ const userSlice = createSlice({
         state.IsLoading = true;
       })
       .addCase(loginUserAsync.fulfilled, (state, action) => {
-        console.log(action.payload);
         state.IsLoading = false;
-        state.IslogedIn= true;
+        state.IslogedIn = true;
         state.user = action.payload;
         state.IsSuccess = true;
       })
       .addCase(loginUserAsync.rejected, (state, action) => {
         state.IsLoading = false;
         state.IsSuccess = false;
-       state.IslogedIn = false;
-         state.user = {};
+        state.IslogedIn = false;
+        state.user = {};
         state.IsError = true;
         state.IsMessage = action.payload;
       });

@@ -27,7 +27,7 @@ const Login = () => {
   };
 
   useEffect(() => {
-    console.log(location);
+   
     if (user.email ) {
       navigate('/');
        dispatch(resetUser());
@@ -124,10 +124,9 @@ const Login = () => {
         <p className="mt-10 text-center text-sm text-gray-500">
           Not a member?{' '}
           <span
-            onClick={() => {
-              dispatch(logOut());
-              navigate('/signup');
-            }}
+            onClick={() => 
+              navigate('/signup')
+            }
             className=" font-semibold leading-6 text-indigo-600 hover:text-indigo-500"
           >
             Create an account
