@@ -35,6 +35,7 @@ const updateCartItem = async (obj) => {
 
 /// Add to cart=========================================
 const removeFormCart = async (itemId) => {
+  console.log(itemId);
   const response = await axios.delete(BASE_URL + '/cart/' + itemId);
   const data = await response.data;
   const newdata = { id: itemId };

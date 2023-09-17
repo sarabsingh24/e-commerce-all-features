@@ -48,6 +48,26 @@ export const loginUserAsync = createAsyncThunk(
   }
 );
 
+
+//Update user============================================
+export const updateUserAsync = createAsyncThunk(
+  'users/update',
+  async (obj, thunkAPI) => {
+    try {
+      return await userAPI.updateUser(obj);
+    } catch (error) {
+      const message =
+        (error.response &&
+          error.response.data &&
+          error.response.data.message) ||
+        error.message ||
+        error.toString();
+
+      return thunkAPI.rejectWithValue(message);
+    }
+  }
+);
+
 const userSlice = createSlice({
   name: 'user',
   initialState,
@@ -84,12 +104,32 @@ const userSlice = createSlice({
         state.IsLoading = true;
       })
       .addCase(loginUserAsync.fulfilled, (state, action) => {
+
+        const obj = action.payload;
+        state.IsLoading = false;
+        state.IslogedIn = true;
+        state.user = obj;
+        state.IsSuccess = true;
+      })
+      .addCase(loginUserAsync.rejected, (state, action) => {
+        state.IsLoading = false;
+        state.IsSuccess = false;
+        state.IslogedIn = false;
+        state.user = {};
+        state.IsError = true;
+        state.IsMessage = action.payload;
+      })
+      /// update user -----------------------------
+      .addCase(updateUserAsync.pending, (state, action) => {
+        state.IsLoading = true;
+      })
+      .addCase(updateUserAsync.fulfilled, (state, action) => {
         state.IsLoading = false;
         state.IslogedIn = true;
         state.user = action.payload;
         state.IsSuccess = true;
       })
-      .addCase(loginUserAsync.rejected, (state, action) => {
+      .addCase(updateUserAsync.rejected, (state, action) => {
         state.IsLoading = false;
         state.IsSuccess = false;
         state.IslogedIn = false;

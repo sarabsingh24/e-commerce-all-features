@@ -19,7 +19,8 @@ const user = {
 
 const navigation = [
   { name: 'Home', href: '/', current: true },
-  // { name: 'Signup', href: '/signup', current: false },
+  { name: 'Sign In', href: '/login', current: false },
+  { name: 'Sign Up', href: '/signup', current: false },
   // { name: 'Projects', href: '#', current: false },
   // { name: 'Calendar', href: '#', current: false },
   // { name: 'Reports', href: '#', current: false },
@@ -70,6 +71,8 @@ dispatch(logOut());
                     <div className="hidden md:block">
                       <div className="ml-10 flex items-baseline space-x-4">
                         {navigation.map((item) => (
+
+                          
                           <Link
                             key={item.name}
                             to={item.href}

@@ -1,6 +1,5 @@
 import React, { useEffect } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
-
 import { useForm } from 'react-hook-form';
 import { useSelector, useDispatch } from 'react-redux';
 
@@ -31,6 +30,7 @@ const Signup = () => {
       createUserAsync({
         email: data.email,
         password: data.password,
+        address:[]
       })
     );
     reset();

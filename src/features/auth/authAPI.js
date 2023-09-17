@@ -21,13 +21,27 @@ const loginUser = async (obj) => {
   const response = await axios.get(BASE_URL + '/users?email=' + emailId);
 
   const data = await response.data;
-  
-  if (data[0].password === password) {
 
+  if (data[0].password === password) {
     return data[0];
   }
 };
 
-const userAPI = { registerUser, loginUser };
+/// update User ==============================================
+const updateUser = async (obj) => {
+  const response = await axios.patch(BASE_URL + '/users/' + obj.id, obj, {
+    headers: {
+      'Content-Type': 'application/json',
+    },
+  });
+  const data = await response.data;
+console.log(data)
+  if (data.email) {
+    delete data.id;
+    return data;
+  }
+};
+
+const userAPI = { registerUser, loginUser, updateUser };
 
 export default userAPI;

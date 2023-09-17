@@ -4346,28 +4346,6 @@
   ],
   "cart": [
     {
-      "name": "iPhone X",
-      "description": "SIM-Free, Model A19211 6.5-inch Super Retina HD display with OLED technology A12 Bionic chip with ...",
-      "price": 738,
-      "category": "smartphones",
-      "imageSrc": "https://i.dummyjson.com/data/products/2/thumbnail.jpg",
-      "color": "Blue",
-      "quantity": 1,
-      "userId": 4,
-      "id": 1
-    },
-    {
-      "name": "Stainless Steel Women",
-      "description": "Fashion Skmei 1830 Shell Dial Stainless Steel Women Wrist Watch Lady Bracelet Watch Quartz Watches Ladies",
-      "price": 32,
-      "category": "womens-watches",
-      "imageSrc": "https://i.dummyjson.com/data/products/70/thumbnail.jpg",
-      "color": "Blue",
-      "quantity": 1,
-      "userId": 4,
-      "id": 2
-    },
-    {
       "name": "Huawei P30",
       "description": "Huawei’s re-badged P30 Pro New Edition was officially unveiled yesterday in Germany and now the device has made its way to the UK.",
       "price": 446,
@@ -4379,75 +4357,119 @@
       "id": 3
     },
     {
-      "name": "TC Reusable Silicone Magic Washing Gloves",
-      "description": "TC Reusable Silicone Magic Washing Gloves with Scrubber, Cleaning Brush Scrubber Gloves Heat Resistant Pair for Cleaning of Kitchen, Dishes, Vegetables and Fruits, Bathroom, Car Wash, Pet Care and Multipurpose",
-      "price": 28,
-      "category": "automotive",
-      "imageSrc": "https://i.dummyjson.com/data/products/88/thumbnail.jpg",
+      "name": "iPhone 9",
+      "description": "An apple mobile which is nothing like apple",
+      "price": 478,
+      "category": "smartphones",
+      "imageSrc": "https://i.dummyjson.com/data/products/1/thumbnail.jpg",
       "color": "Blue",
       "quantity": 1,
-      "userId": 4,
-      "id": 4
+      "id": 8
     },
     {
-      "name": "TC Reusable Silicone Magic Washing Gloves",
-      "description": "TC Reusable Silicone Magic Washing Gloves with Scrubber, Cleaning Brush Scrubber Gloves Heat Resistant Pair for Cleaning of Kitchen, Dishes, Vegetables and Fruits, Bathroom, Car Wash, Pet Care and Multipurpose",
-      "price": 28,
-      "category": "automotive",
-      "imageSrc": "https://i.dummyjson.com/data/products/88/thumbnail.jpg",
+      "name": "HP Pavilion 15-DK1056WM",
+      "description": "HP Pavilion 15-DK1056WM Gaming Laptop 10th Gen Core i5, 8GB, 256GB SSD, GTX 1650 4GB, Windows 10",
+      "price": 1031,
+      "category": "laptops",
+      "imageSrc": "https://i.dummyjson.com/data/products/10/thumbnail.jpeg",
       "color": "Blue",
       "quantity": 1,
-      "userId": 4,
-      "id": 5
+      "userId": 5,
+      "id": 10
     },
     {
-      "name": "Wholesale cargo lashing Belt",
-      "description": "Wholesale cargo lashing Belt Tie Down end Ratchet strap customized strap 25mm motorcycle 1500kgs with rubber handle",
-      "price": 766,
-      "category": "motorcycle",
-      "imageSrc": "https://i.dummyjson.com/data/products/95/thumbnail.jpg",
+      "name": "iPhone X",
+      "description": "SIM-Free, Model A19211 6.5-inch Super Retina HD display with OLED technology A12 Bionic chip with ...",
+      "price": 738,
+      "category": "smartphones",
+      "imageSrc": "https://i.dummyjson.com/data/products/2/thumbnail.jpg",
       "color": "Blue",
       "quantity": 1,
-      "userId": 2,
-      "id": 6
+      "userId": 6,
+      "id": 11
     },
     {
-      "name": "Automatic Motor Gas Motorcycles",
-      "description": "150cc 4-Stroke Motorcycle Automatic Motor Gas Motorcycles Scooter motorcycles 150cc scooter",
-      "price": 1015,
-      "category": "motorcycle",
-      "imageSrc": "https://i.dummyjson.com/data/products/93/thumbnail.jpg",
+      "name": "Samsung Universe 9",
+      "description": "Samsung\\\\\\'s new variant which goes beyond Galaxy to the Universe",
+      "price": 1056,
+      "category": "smartphones",
+      "imageSrc": "https://i.dummyjson.com/data/products/3/thumbnail.jpg",
       "color": "Blue",
       "quantity": 1,
-      "userId": 2,
-      "id": 7
+      "id": 12
+    },
+    {
+      "name": "Huawei P30",
+      "description": "Huawei’s re-badged P30 Pro New Edition was officially unveiled yesterday in Germany and now the device has made its way to the UK.",
+      "price": 446,
+      "category": "smartphones",
+      "imageSrc": "https://i.dummyjson.com/data/products/5/thumbnail.jpg",
+      "color": "Blue",
+      "quantity": 1,
+      "id": 13
     }
   ],
   "users": [
     {
-      "email": "karan@gmail.com",
-      "password": "2#Ws1237",
-      "id": 2
-    },
-    {
       "email": "rekha@gmail.com",
       "password": "2#Ws1237",
-      "id": 3
-    },
-    {
-      "email": "tanisk@gmail.com",
-      "password": "2#Ws1237",
-      "id": 4
+      "id": 3,
+      "addresses": [
+        {
+          "first_name": "Rekha",
+          "last_name": "Sangi",
+          "phone": "6666666666",
+          "country": "India",
+          "street": "D-12, Mahaveer Enclave",
+          "city": "Delhi",
+          "state": "Delhi",
+          "zip": "12345"
+        }
+      ]
     },
     {
       "email": "sarab@gmail.com",
       "password": "2#Ws1237",
-      "id": 5
+      "id": 5,
+      "addresses": [
+        {
+          "first_name": "Sarab",
+          "last_name": "Singh",
+          "phone": "3434343434",
+          "country": "India",
+          "street": "wz-117,",
+          "city": "delhi",
+          "state": "delhi",
+          "zip": "12345"
+        },
+        {
+          "first_name": "Sarab",
+          "last_name": "Singh",
+          "phone": "3434343434",
+          "country": "India",
+          "street": "Qtr-132, Type-III, AV Nagar",
+          "city": "Delhi",
+          "state": "Delhi",
+          "zip": "12345"
+        }
+      ]
     },
     {
-      "email": "chintu@gmail.com",
+      "email": "rakesh@gmail.com",
       "password": "2#Ws1237",
-      "id": 6
+      "id": 6,
+      "addresses": [
+        {
+          "first_name": "Rakesh",
+          "last_name": "Chadha",
+          "phone": "8888888888",
+          "country": "India",
+          "street": "C-9, Hunger Strike",
+          "city": "Amar Colony",
+          "state": "Delhi",
+          "zip": "12345"
+        }
+      ]
     }
   ]
 }
