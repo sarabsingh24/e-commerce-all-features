@@ -1,5 +1,5 @@
 import { useEffect } from 'react';
-import { Link, useNavigate ,useLocation} from 'react-router-dom';
+import { Link, useNavigate, useLocation } from 'react-router-dom';
 import { useForm } from 'react-hook-form';
 import { useSelector, useDispatch } from 'react-redux';
 
@@ -27,12 +27,10 @@ const Login = () => {
   };
 
   useEffect(() => {
-   
-    if (user.email ) {
+    if (user.email) {
       navigate('/');
-       dispatch(resetUser());
+      dispatch(resetUser());
     }
-   
   }, [user]);
 
   return (
@@ -123,13 +121,8 @@ const Login = () => {
 
         <p className="mt-10 text-center text-sm text-gray-500">
           Not a member?{' '}
-          <span
-            onClick={() => 
-              navigate('/signup')
-            }
-            className=" font-semibold leading-6 text-indigo-600 hover:text-indigo-500"
-          >
-            Create an account
+          <span className=" font-semibold leading-6 text-indigo-600 hover:text-indigo-500">
+            <Link to="/signup">Create an account</Link>
           </span>
         </p>
       </div>
