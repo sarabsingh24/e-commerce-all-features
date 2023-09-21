@@ -28,13 +28,14 @@ const [paymentMathod, setPaymentMathod] = useState('card');
 
   const checkoutHandeler = (data) => {
     dispatch(
-      updateUserAsync({
+      updateUserAsync({ 
         ...user,
         addresses: [
           ...user.addresses,
           {
             first_name: data.first_name,
             last_name: data.last_name,
+            email:data.email,
             phone: data.phone,
             country: data.country,
             street: data.street,
@@ -49,13 +50,13 @@ const [paymentMathod, setPaymentMathod] = useState('card');
   };
 
   const addressHandeler = (address)=> {
-    console.log(address);
+    
     setSelectAddress(address);
 
   }
 
   const paymentHandeler = (paymentMode) => {
-    console.log(paymentMode);
+  
     setPaymentMathod(paymentMode);
   };
 
@@ -125,8 +126,9 @@ const [paymentMathod, setPaymentMathod] = useState('card');
               <div className="mt-2">
                 <input
                   id="email"
-                  placeholder={user.email}
-                  disabled
+                  {...register('email', {
+                    required: 'email is required',
+                  })}
                   type="email"
                   className="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
                 />

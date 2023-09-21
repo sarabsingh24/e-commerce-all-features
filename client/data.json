@@ -4378,17 +4378,6 @@
       "id": 10
     },
     {
-      "name": "iPhone X",
-      "description": "SIM-Free, Model A19211 6.5-inch Super Retina HD display with OLED technology A12 Bionic chip with ...",
-      "price": 738,
-      "category": "smartphones",
-      "imageSrc": "https://i.dummyjson.com/data/products/2/thumbnail.jpg",
-      "color": "Blue",
-      "quantity": 1,
-      "userId": 6,
-      "id": 11
-    },
-    {
       "name": "Samsung Universe 9",
       "description": "Samsung\\\\\\'s new variant which goes beyond Galaxy to the Universe",
       "price": 1056,
@@ -4407,6 +4396,38 @@
       "color": "Blue",
       "quantity": 1,
       "id": 13
+    },
+    {
+      "name": "Women Sweaters Wool",
+      "description": "2021 Custom Winter Fall Zebra Knit Crop Top Women Sweaters Wool Mohair Cos Customize Crew Neck Women\\\\\\' S Crop Top Sweater",
+      "price": 497,
+      "category": "tops",
+      "imageSrc": "https://i.dummyjson.com/data/products/39/thumbnail.jpg",
+      "color": "Blue",
+      "quantity": 1,
+      "userId": 6,
+      "id": 14
+    },
+    {
+      "name": "Golden Watch Pearls Bracelet Watch",
+      "description": "Product details of Golden Watch Pearls Bracelet Watch For Girls - Golden Chain Ladies Bracelate Watch for Women",
+      "price": 39,
+      "category": "womens-watches",
+      "imageSrc": "https://i.dummyjson.com/data/products/69/thumbnail.jpg",
+      "color": "Blue",
+      "quantity": 1,
+      "userId": 6,
+      "id": 15
+    },
+    {
+      "name": "iPhone X",
+      "description": "SIM-Free, Model A19211 6.5-inch Super Retina HD display with OLED technology A12 Bionic chip with ...",
+      "price": 738,
+      "category": "smartphones",
+      "imageSrc": "https://i.dummyjson.com/data/products/2/thumbnail.jpg",
+      "color": "Blue",
+      "quantity": 1,
+      "id": 16
     }
   ],
   "users": [
