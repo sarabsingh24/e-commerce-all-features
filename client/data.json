@@ -4346,17 +4346,6 @@
   ],
   "cart": [
     {
-      "name": "Huawei P30",
-      "description": "Huawei’s re-badged P30 Pro New Edition was officially unveiled yesterday in Germany and now the device has made its way to the UK.",
-      "price": 446,
-      "category": "smartphones",
-      "imageSrc": "https://i.dummyjson.com/data/products/5/thumbnail.jpg",
-      "color": "Blue",
-      "quantity": 1,
-      "userId": 3,
-      "id": 3
-    },
-    {
       "name": "iPhone 9",
       "description": "An apple mobile which is nothing like apple",
       "price": 478,
@@ -4428,6 +4417,28 @@
       "color": "Blue",
       "quantity": 1,
       "id": 16
+    },
+    {
+      "name": "Loafers for men",
+      "description": "Men Shoes - Loafers for men - Rubber Shoes - Nylon Shoes - Shoes for men - Moccassion - Pure Nylon (Rubber) Expot Quality.",
+      "price": 42,
+      "category": "mens-shoes",
+      "imageSrc": "https://i.dummyjson.com/data/products/57/thumbnail.jpg",
+      "color": "Blue",
+      "quantity": 1,
+      "userId": 3,
+      "id": 17
+    },
+    {
+      "name": "Microsoft Surface Laptop 4",
+      "description": "Style and speed. Stand out on HD video calls backed by Studio Mics. Capture ideas on the vibrant touchscreen.",
+      "price": 1346,
+      "category": "laptops",
+      "imageSrc": "https://i.dummyjson.com/data/products/8/thumbnail.jpg",
+      "color": "Blue",
+      "quantity": 1,
+      "userId": 3,
+      "id": 18
     }
   ],
   "users": [
