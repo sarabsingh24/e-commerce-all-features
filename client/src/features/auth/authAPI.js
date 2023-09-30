@@ -21,7 +21,7 @@ const loginUser = async (obj) => {
   const response = await axios.get(BASE_URL + '/users?email=' + emailId);
 
   const data = await response.data;
-
+console.log(data)
   if (data[0].password === password) {
     return data[0];
   }
@@ -35,7 +35,7 @@ const updateUser = async (obj) => {
     },
   });
   const data = await response.data;
-console.log(data)
+
   if (data.email) {
     delete data.id;
     return data;

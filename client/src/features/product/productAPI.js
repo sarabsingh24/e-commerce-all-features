@@ -14,7 +14,7 @@ const getFilteredProducts = async (filterObj) => {
   let queryString = '';
   for (let obj of filterObj) {
     for (let key in obj) {
-      queryString += `${key}=${obj[key]}&`;
+      queryString += `${key}=${obj[key]}&`; 
     }
   }
 

@@ -85,6 +85,26 @@ export const deleteCartItemAsync = createAsyncThunk(
   }
 );
 
+///clear cart
+/////Delete from cart
+export const clearCartItemAsync = createAsyncThunk(
+  'cart/clear',
+  async (userId, thunkAPI) => {
+    try {
+      return await cartAPI.clearCart(userId);
+    } catch (error) {
+      const message =
+        (error.response &&
+          error.response.data &&
+          error.response.data.message) ||
+        error.message ||
+        error.toString();
+
+      return thunkAPI.rejectWithValue(message);
+    }
+  }
+);
+
 const cartSlice = createSlice({
   name: 'cart',
   initialState,
@@ -95,6 +115,7 @@ const cartSlice = createSlice({
       state.IsError = false;
       state.IsMessage = false;
     },
+   
   },
   extraReducers: (builder) => {
     builder
@@ -165,12 +186,28 @@ const cartSlice = createSlice({
         state.IsSuccess = false;
         state.cartItems = [];
         state.IsMessage = action.payload;
+      })
+
+      //clear cart
+      .addCase(clearCartItemAsync.pending, (state) => {
+        state.IsLoading = true;
+      })
+      .addCase(clearCartItemAsync.fulfilled, (state, action) => {
+        state.IsLoading = false;
+        state.cartItems = action.payload;
+        state.IsSuccess = true;
+      })
+      .addCase(clearCartItemAsync.rejected, (state, action) => {
+        state.IsLoading = false;
+        state.IsSuccess = false;
+        state.cartItems = [];
+        state.IsMessage = action.payload;
       });
   },
 });
 
 const { actions, reducer } = cartSlice;
 
-export const { resetCart } = actions;
+export const { resetCart, clearCart } = actions;
 
 export default reducer;

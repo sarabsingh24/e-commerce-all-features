@@ -18,7 +18,8 @@ import LoginPage from 'pages/LoginPage';
 import SignupPage from 'pages/SignupPage';
 import CheckoutPage from 'pages/CheckoutPage';
 import ProductDetailPage from 'pages/ProductDetailPage';
-import CartPage from 'pages/CartPage' 
+import CartPage from 'pages/CartPage' ;
+import OrdersPage from 'pages/OrdersPage';
 
 const router = createBrowserRouter([
   {
@@ -58,6 +59,14 @@ const router = createBrowserRouter([
     element: (
       <Protected>
         <CheckoutPage />
+      </Protected>
+    ),
+  },
+  {
+    path: '/orders',
+    element: (
+      <Protected>
+        <OrdersPage />
       </Protected>
     ),
   },

@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
-import { useParams,Link } from 'react-router-dom';
+import { useParams, Link } from 'react-router-dom';
 
 // reducer
 
@@ -77,7 +77,8 @@ const ProductDetail = () => {
 
   const addToCartHandeler = (e) => {
     e.preventDefault();
-
+    console.log(user);
+    console.log(id);
     const { name, description, category, imageSrc, color } = productInfo;
 
     dispatch(
@@ -184,7 +185,7 @@ const ProductDetail = () => {
 
               <div className="flex ">
                 <Link
-                 to="/"
+                  to="/"
                   className="mt-10 flex w-full items-center justify-center rounded-md border border-transparent bg-indigo-600 mx-2 px-8 py-3 text-base font-medium text-white hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2"
                 >
                   Back

@@ -1,7 +1,12 @@
 import { configureStore, combineReducers } from '@reduxjs/toolkit';
+
+//Reducers
 import productReducer from 'features/product/productSlice';
 import authRuducer from 'features/auth/authSlice';
 import cartRuducer from 'features/cart/cartSlice';
+import orderReducer from 'features/orders/orderSlice';
+import checkoutReducer from 'features/checkout/checkoutSlice'
+
 
 import {
   persistReducer,
@@ -24,6 +29,8 @@ const reducer = combineReducers({
   auth: authRuducer,
   product: productReducer,
   cart: cartRuducer,
+  checkoutDetail: checkoutReducer,
+  orders: orderReducer,
 });
 
 const persistedReducer = persistReducer(persistConfig, reducer);

@@ -2,19 +2,32 @@ import React, { useEffect, useState } from 'react';
 import { Dialog, Transition } from '@headlessui/react';
 import { useSelector, useDispatch } from 'react-redux';
 import { XMarkIcon } from '@heroicons/react/24/outline';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 
 //reducer
-import { deleteCartItemAsync, updateCartAsync } from 'features/cart/cartSlice';
+import {
+  deleteCartItemAsync,
+  clearCartItemAsync,
+  updateCartAsync,
+  clearCart,
+} from 'features/cart/cartSlice';
+import { createOrderAsync, resetOrders } from 'features/orders/orderSlice';
 
 //components
 import QuantityCounter from 'common/QuantityCounter';
 
 const CartDetail = ({ setOpen, IsCheckout }) => {
   const [total, setTotal] = useState(0);
+
+  const { user } = useSelector((state) => state.auth);
   const { cartItems } = useSelector((state) => state.cart);
+  const { selectedAddress, selectedPaymentMode } = useSelector(
+    (state) => state.checkoutDetail
+  );
+  const { processComplete } = useSelector((state) => state.orders);
 
   const dispatch = useDispatch();
+  const navigate = useNavigate();
 
   //cart Qty counter
   const qtyHandeler = (val, id) => {
@@ -52,6 +65,20 @@ const CartDetail = ({ setOpen, IsCheckout }) => {
     dispatch(deleteCartItemAsync(id));
   };
 
+  const handelSetOrder = () => {
+    const orderDetail = {
+      date:new Date(),
+      userId: user.id,
+      total:total,
+      items: [...cartItems],
+      address: { ...selectedAddress },
+      paymentMode: selectedPaymentMode,
+      orderStatus: 'pending',
+    };
+    dispatch(createOrderAsync(orderDetail));
+    dispatch(resetOrders());
+  };
+
   // cart total amount
   useEffect(() => {
     if (cartItems.length > 0) {
@@ -68,8 +95,13 @@ const CartDetail = ({ setOpen, IsCheckout }) => {
   }, [cartItems]);
 
   useEffect(() => {
-    
-  }, [cartItems]);
+   
+    if (processComplete) {
+      dispatch(resetOrders());
+      dispatch(clearCartItemAsync(user.id));
+      navigate('/orders');
+    }
+  }, [processComplete]);
 
   return (
     <div className="flex h-full flex-col overflow-y-scroll bg-white shadow-xl">
@@ -159,12 +191,21 @@ const CartDetail = ({ setOpen, IsCheckout }) => {
           Shipping and taxes calculated at checkout.
         </p>
         <div className="mt-6">
-          <Link
-            to="/checkout"
-            className="flex items-center justify-center rounded-md border border-transparent bg-indigo-600 px-6 py-3 text-base font-medium text-white shadow-sm hover:bg-indigo-700"
-          >
-            {!IsCheckout ? 'Checkout' : 'Initiate Payment'}
-          </Link>
+          {!IsCheckout ? (
+            <Link
+              to="/checkout"
+              className="flex items-center justify-center rounded-md border border-transparent bg-indigo-600 px-6 py-3 text-base font-medium text-white shadow-sm hover:bg-indigo-700"
+            >
+              Checkout
+            </Link>
+          ) : (
+            <Link
+              className="flex items-center justify-center rounded-md border border-transparent bg-indigo-600 px-6 py-3 text-base font-medium text-white shadow-sm hover:bg-indigo-700"
+              onClick={handelSetOrder}
+            >
+              Initiate Payment
+            </Link>
+          )}
         </div>
       </div>
     </div>

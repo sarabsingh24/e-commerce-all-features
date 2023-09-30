@@ -11,13 +11,13 @@ const getCartItems = async (userId) => {
 
 /// Add to cart=========================================
 const createCart = async (obj) => {
+  console.log(obj);
   const response = await axios.post(BASE_URL + '/cart', obj, {
     headers: {
       'content-type': 'application/json',
     },
   });
   const data = await response.data;
-
   return data;
 };
 
@@ -33,7 +33,7 @@ const updateCartItem = async (obj) => {
   return data;
 };
 
-/// Add to cart=========================================
+/// remove to cart=========================================
 const removeFormCart = async (itemId) => {
   console.log(itemId);
   const response = await axios.delete(BASE_URL + '/cart/' + itemId);
@@ -43,5 +43,23 @@ const removeFormCart = async (itemId) => {
   return newdata;
 };
 
-const cartAPI = { createCart, updateCartItem, removeFormCart, getCartItems };
+/// clear  cart=========================================
+const clearCart = async (userId) => {
+  const cartItems = await getCartItems(userId);
+  const data = [];
+
+  for (let key of cartItems) {
+    await removeFormCart(key.id);
+  }
+  
+  return data;
+};
+
+const cartAPI = {
+  createCart,
+  updateCartItem,
+  removeFormCart,
+  getCartItems,
+  clearCart,
+};
 export default cartAPI;

@@ -4,14 +4,16 @@ import { useSelector, useDispatch } from 'react-redux';
 
 //reducer
 import { updateUserAsync } from 'features/auth/authSlice';
+import { orderDetails } from 'features/checkout/checkoutSlice';
 
 //component
+import InputField from 'common/InputField';
+import SelectField from 'common/SelectField';
 
 const CheckoutForm = () => {
   const [pesron, setPerson] = useState({});
-const [selectAddress, setSelectAddress] = useState(null);
-const [paymentMathod, setPaymentMathod] = useState('card');
-
+  const [selectAddress, setSelectAddress] = useState(null);
+  const [paymentMathod, setPaymentMathod] = useState('card');
 
   const { user } = useSelector((state) => state.auth);
   const dispatch = useDispatch();
@@ -24,19 +26,19 @@ const [paymentMathod, setPaymentMathod] = useState('card');
 
   useEffect(() => {
     setPerson(user);
+    setSelectAddress(user.diliveryAddress);
   }, [user]);
 
   const checkoutHandeler = (data) => {
     dispatch(
-      updateUserAsync({ 
-      
+      updateUserAsync({
         ...user,
         addresses: [
           ...user.addresses,
           {
             first_name: data.first_name,
             last_name: data.last_name,
-            email:data.email,
+            email: data.email,
             phone: data.phone,
             country: data.country,
             street: data.street,
@@ -50,16 +52,19 @@ const [paymentMathod, setPaymentMathod] = useState('card');
     reset();
   };
 
-  const addressHandeler = (address)=> {
-    
+  const addressHandeler = (address) => {
     setSelectAddress(address);
-
-  }
+  };
 
   const paymentHandeler = (paymentMode) => {
-  
     setPaymentMathod(paymentMode);
   };
+
+  useEffect(() => {
+    const obj = { address: selectAddress, paymentMode: paymentMathod };
+    dispatch(orderDetails({ ...obj }));
+    
+  }, [selectAddress, paymentMathod]);
 
   return (
     <form onSubmit={handleSubmit(checkoutHandeler)}>
@@ -81,14 +86,14 @@ const [paymentMathod, setPaymentMathod] = useState('card');
                 First name
               </label>
               <div className="mt-2">
-                <input
+                <InputField
                   type="text"
-                  {...register('first_name', {
-                    required: 'first name required',
-                  })}
-                  id="first_name"
-                  className="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
+                  register={register}
+                  name="first_name"
+                  reqText="first - name required"
+                  disabled={false}
                 />
+
                 <small className="text-red-500">
                   {errors?.first_name?.message}
                 </small>
@@ -103,14 +108,15 @@ const [paymentMathod, setPaymentMathod] = useState('card');
                 Last name
               </label>
               <div className="mt-2">
-                <input
+                <InputField
                   type="text"
-                  {...register('last_name', {
-                    required: 'last name required',
-                  })}
+                  register={register}
+                  name="last_name"
+                  reqText="last - name required"
+                  disabled={false}
                   id="last_name"
-                  className="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
                 />
+
                 <small className="text-red-500">
                   {errors?.last_name?.message}
                 </small>
@@ -125,13 +131,13 @@ const [paymentMathod, setPaymentMathod] = useState('card');
                 Email address
               </label>
               <div className="mt-2">
-                <input
-                  id="email"
-                  {...register('email', {
-                    required: 'email is required',
-                  })}
+                <InputField
                   type="email"
-                  className="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
+                  register={register}
+                  name="email"
+                  reqText="email is required"
+                  disabled={false}
+                  id="email"
                 />
               </div>
             </div>
@@ -144,19 +150,14 @@ const [paymentMathod, setPaymentMathod] = useState('card');
                 Country
               </label>
               <div className="mt-2">
-                <select
+                <SelectField
+                  register={register}
+                  name="country"
+                  reqText="country required"
+                  disabled={false}
                   id="country"
-                  value={pesron.country || ''}
-                  {...register('country', {
-                    required: 'counter name required',
-                  })}
-                  className="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:max-w-xs sm:text-sm sm:leading-6"
-                >
-                  <option>India</option>
-                  <option>United States</option>
-                  <option>Canada</option>
-                  <option>Mexico</option>
-                </select>
+                />
+
                 <small className="text-red-500">
                   {errors?.country?.message}
                 </small>
@@ -170,21 +171,20 @@ const [paymentMathod, setPaymentMathod] = useState('card');
                 Phone
               </label>
               <div className="mt-2">
-                <input
+                <InputField
                   type="tel"
-                  {...register('phone', {
-                    required: 'phone is required',
-                    pattern: {
-                      value: /[(]?\d{3}[)]?\s?-?\s?\d{3}\s?-?\s?\d{4}/g,
-                      message: '10 digit number required',
-                    },
-                  })}
-                  id="phone"
-                  className="block w-full rounded-md border-0 py-1.5
-                text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300
-                placeholder:text-gray-400 focus:ring-2 focus:ring-inset
-                focus:ring-indigo-600 sm:text-sm sm:leading-6"
+                  register={register}
+                  name="phone"
+                  reqText="phone is required"
+                  pattern={true}
+                  condition={{
+                    value: /[(]?\d{3}[)]?\s?-?\s?\d{3}\s?-?\s?\d{4}/g,
+                    message: '10 digit number required',
+                  }}
+                  disabled={false}
+                  id="email"
                 />
+
                 <small className="text-red-500">{errors?.phone?.message}</small>
               </div>
             </div>
@@ -197,14 +197,15 @@ const [paymentMathod, setPaymentMathod] = useState('card');
                 Street address
               </label>
               <div className="mt-2">
-                <input
+                <InputField
                   type="text"
-                  {...register('street', {
-                    required: 'street is required',
-                  })}
+                  register={register}
+                  name="street"
+                  reqText="street is required"
+                  disabled={false}
                   id="street"
-                  className="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
                 />
+
                 <small className="text-red-500">
                   {errors?.street?.message}
                 </small>
@@ -219,14 +220,15 @@ const [paymentMathod, setPaymentMathod] = useState('card');
                 City
               </label>
               <div className="mt-2">
-                <input
+                <InputField
                   type="text"
-                  {...register('city', {
-                    required: 'city is required',
-                  })}
+                  register={register}
+                  name="city"
+                  reqText="city is required"
+                  disabled={false}
                   id="city"
-                  className="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
                 />
+
                 <small className="text-red-500">{errors?.city?.message}</small>
               </div>
             </div>
@@ -239,14 +241,15 @@ const [paymentMathod, setPaymentMathod] = useState('card');
                 State / Province
               </label>
               <div className="mt-2">
-                <input
+                <InputField
                   type="text"
-                  {...register('state', {
-                    required: 'state is required',
-                  })}
+                  register={register}
+                  name="state"
+                  reqText="state is required"
+                  disabled={false}
                   id="state"
-                  className="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
                 />
+
                 <small className="text-red-500">{errors?.state?.message}</small>
               </div>
             </div>
@@ -259,18 +262,20 @@ const [paymentMathod, setPaymentMathod] = useState('card');
                 ZIP / Postal code
               </label>
               <div className="mt-2">
-                <input
-                  type="text"
-                  {...register('zip', {
-                    required: 'zipis required',
-                    pattern: {
-                      value: /^\d{5}(\-?\d{4})?$/gm,
-                      message: `Valid: 58701-0124; 587010124; 58701`,
-                    },
-                  })}
-                  id="postal_code"
-                  className="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
+                <InputField
+                  type="tel"
+                  register={register}
+                  name="zip"
+                  reqText="zip is required"
+                  pattern={true}
+                  condition={{
+                    value: /^\d{5}(\-?\d{4})?$/gm,
+                    message: `Valid: 58701-0124; 587010124; 58701`,
+                  }}
+                  disabled={false}
+                  id="email"
                 />
+
                 <small className="text-red-500">{errors?.zip?.message}</small>
               </div>
             </div>
@@ -293,11 +298,20 @@ const [paymentMathod, setPaymentMathod] = useState('card');
 
         <div className="border-gray-900/10 pb-12">
           <h2 className="text-base font-semibold leading-7 text-gray-900">
-            Address
+            Last updated Address
           </h2>
+          <div className="mt-1 text-sm leading-6 text-gray-600">
+            <div className=" border-gray-200">
+              <dt className="font-medium text-gray-900">{`${user.diliveryAddress.first_name} ${user.diliveryAddress.last_name}`}</dt>
+              <dd className="mt-2 text-sm text-gray-500">
+                {`${user.diliveryAddress.street}, ${user.diliveryAddress.city}, ${user.diliveryAddress.state}, ${user.diliveryAddress.zip}`}
+              </dd>
+            </div>
+          </div>
           <p className="mt-1 text-sm leading-6 text-gray-600">
-            Choose for exesting address
-          </p>{' '}
+            Choose from exesting address
+          </p>
+
           <div className="mt-6 space-y-6">
             {user.addresses.length > 0 &&
               user.addresses.map((address, ind) => {
@@ -369,20 +383,6 @@ const [paymentMathod, setPaymentMathod] = useState('card');
               </div>
             </fieldset>
           </div>
-          {/* <div className="mt-6 flex items-center justify-end gap-x-6">
-            <button
-              type="button"
-              className="text-sm font-semibold leading-6 text-gray-900"
-            >
-              Cancel
-            </button>
-            <button
-              type="submit"
-              className="rounded-md bg-indigo-600 px-3 py-2 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
-            >
-              Save Details
-            </button>
-          </div> */}
         </div>
       </div>
     </form>

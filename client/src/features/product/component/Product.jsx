@@ -66,6 +66,7 @@ const Product = () => {
   };
 
   const sortHandeler = (option) => {
+
     let newFilter = [
       ...filter,
       { _sort: option.sort },

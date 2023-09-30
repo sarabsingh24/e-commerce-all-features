@@ -1,5 +1,7 @@
-// import React, { useState, useEffect } from 'react';
-// import { useWatch } from 'react-hook-form';
+import React, { useState, useEffect } from 'react';
+import { useWatch } from 'react-hook-form';
+
+
 
 // export const Controller = ({ control, register, name, rules, render }) => {
 //   const value = useWatch({ control, name });
@@ -19,27 +21,32 @@
 //   });
 // };
 
-// const InputField = (props) => {
-//   const [value, setValue] = useState(props.value || '');
+const InputField = ({
+  type,
+  name,
+  register,
+  reqText,
+  disabled,
+  pattern,
+  condition,
+}) => {
+  return (
+    <input
+      type={type}
+      {...register(name, {
+        required: reqText,
+        pattern: pattern && {
+          value: condition.value,
+          message: condition.message,
+        },
+      })}
+      disabled={disabled ? true : false}
+      className="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
+    />
+  );
+};
 
-//   useEffect(() => {
-//     setValue(props.value);
-//   }, [props.value]);
-//   return (
-//     <input
-//       name={props.name}
-//       onChange={(e) => {
-//         setValue(e.target.value);
-//         props.onChange && props.onChange(e);
-//       }}
-//       value={value}
-//       disabled={props.disabled ? true:false }
-//       className="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
-//     />
-//   );
-// };
-
-// export default InputField;
+export default InputField;
 
 
 // //=================== Controller component

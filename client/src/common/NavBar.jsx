@@ -19,6 +19,7 @@ const user = {
 
 const navigation = [
   { name: 'Home', href: '/', current: true },
+  { name: 'Orders', href: '/orders', current: true },
   // { name: 'Sign In', href: '/login', current: false },
   // { name: 'Sign Up', href: '/signup', current: false },
   // { name: 'Projects', href: '#', current: false },
@@ -47,7 +48,9 @@ const NavBar = ({ children, pageTitle }) => {
   };
 
 const logoutHandeler =()=>{
+
 dispatch(logOut());
+
 }
 
 
@@ -87,14 +90,14 @@ dispatch(logOut());
                             {item.name}
                           </Link>
                         ))}
-                        {IslogedIn && (
+                        {/* {IslogedIn && (
                           <button
                             className="text-white"
                             onClick={logoutHandeler}
                           >
                             Logout
                           </button>
-                        )}
+                        )} */}
                       </div>
                     </div>
                   </div>
