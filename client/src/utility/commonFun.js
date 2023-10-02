@@ -1,6 +1,4 @@
-
-
- const formatAMPM=(date)=> {
+const formatAMPM = (date) => {
   var hours = date.getHours();
   var minutes = date.getMinutes();
   var ampm = hours >= 12 ? 'pm' : 'am';
@@ -9,9 +7,7 @@
   minutes = minutes < 10 ? '0' + minutes : minutes;
   var strTime = hours + ':' + minutes + ' ' + ampm;
   return strTime;
-}
-
-
+};
 
 const helperFun = { formatAMPM };
 

@@ -69,16 +69,17 @@ const ProductDetail = () => {
   const [selectedColor, setSelectedColor] = useState(product.colors[0]);
   const [selectedSize, setSelectedSize] = useState(product.sizes[2]);
   const [newPrice, setNewPrice] = useState(0);
+  const [IsDisabled, setDisabled] = useState(false);
 
   const { products } = useSelector((state) => state.product);
   const { user } = useSelector((state) => state.auth);
+  const { cartItems } = useSelector((state) => state.cart);
   const dispatch = useDispatch();
   const { id } = useParams();
 
   const addToCartHandeler = (e) => {
     e.preventDefault();
-    console.log(user);
-    console.log(id);
+
     const { name, description, category, imageSrc, color } = productInfo;
 
     dispatch(
@@ -107,6 +108,20 @@ const ProductDetail = () => {
       )
     );
   }, [products]);
+
+  useEffect(() => {
+    const findItemId = cartItems.some((item) => item.name === productInfo.name);
+
+    if (findItemId) {
+      setDisabled(true);
+    } else {
+      setDisabled(false);
+    }
+  }, [cartItems]);
+
+  const addClass = IsDisabled
+    ? 'bg-gray-300'
+    : 'bg-indigo-600 hover:bg-indigo-700 ';
 
   return (
     <div className="bg-white">
@@ -192,9 +207,10 @@ const ProductDetail = () => {
                 </Link>
                 <button
                   type="submit"
-                  className="mt-10 flex w-full items-center justify-center rounded-md border border-transparent bg-indigo-600 mx-2 px-8 py-3 text-base font-medium text-white hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2"
+                  disabled={IsDisabled ? true : false}
+                  className={`mt-10 flex w-full items-center justify-center rounded-md border border-transparent ${addClass}   mx-2 px-8 py-3 text-base font-medium text-white  focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2`}
                 >
-                  Add to cart
+                  {IsDisabled ? 'Item Added' : 'Add to cart'}
                 </button>
               </div>
             </form>

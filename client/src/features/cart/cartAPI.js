@@ -11,7 +11,7 @@ const getCartItems = async (userId) => {
 
 /// Add to cart=========================================
 const createCart = async (obj) => {
-  console.log(obj);
+
   const response = await axios.post(BASE_URL + '/cart', obj, {
     headers: {
       'content-type': 'application/json',
@@ -35,7 +35,7 @@ const updateCartItem = async (obj) => {
 
 /// remove to cart=========================================
 const removeFormCart = async (itemId) => {
-  console.log(itemId);
+ 
   const response = await axios.delete(BASE_URL + '/cart/' + itemId);
   const data = await response.data;
   const newdata = { id: itemId };
